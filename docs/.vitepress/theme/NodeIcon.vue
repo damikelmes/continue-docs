@@ -39,6 +39,7 @@ const glyphCodes: Record<string, number> = {
   'cube-outline': 62105,
   'desktop-outline': 62111,
   'document-text-outline': 62132,
+  'document-text': 62131,
   'expand-outline': 62177,
   'extension-puzzle-outline': 62180,
   film: 62206,
@@ -60,6 +61,7 @@ const glyphCodes: Record<string, number> = {
   'phone-landscape-outline': 62642,
   'phone-portrait-outline': 62645,
   'play-forward-outline': 62676,
+  play: 62662,
   'play-outline': 62678,
   'planet-outline': 62660,
   'play-circle-outline': 62670,
@@ -89,6 +91,23 @@ const glyphCodes: Record<string, number> = {
   'water-outline': 63023,
   add: 61699,
   'arrow-down': 61741,
+  'arrow-back-outline': 61739,
+  'arrow-down-outline': 61745,
+  'arrow-forward-outline': 61751,
+  'arrow-up-outline': 61769,
+  'chevron-down-outline': 62006,
+  'chevron-up-outline': 62021,
+  'contract-outline': 62090,
+  'cut-outline': 62108,
+  'dice-outline': 62117,
+  'ellipse-outline': 62156,
+  'game-controller-outline': 62261,
+  layers: 62383,
+  'navigate-outline': 62576,
+  'remove-outline': 62756,
+  'reorder-three-outline': 62762,
+  'stopwatch-outline': 62885,
+  'time-outline': 62942,
   'arrow-up': 61765,
   trash: 62962,
 };
@@ -172,6 +191,13 @@ const style = computed(() => ({
     </span>
 
     <span
+      v-else-if="type === 'expression-object-x' || type === 'expression-object-y' || type === 'expression-touch-x' || type === 'expression-touch-y'"
+      class="icon-axis">
+      <span class="ion" :data-glyph="glyph(icon)" />
+      <b>{{ axis }}</b>
+    </span>
+
+    <span
       v-else-if="type === 'action-move-object-x' || type === 'action-move-object-y' || type === 'action-move-object-angle'"
       class="icon-axis movement">
       <span class="ion" :data-glyph="glyph('trending-up-outline')" />
@@ -196,6 +222,16 @@ const style = computed(() => ({
     <span v-else-if="type === 'doc-game-resolution'" class="resolution-icon" />
 
     <span v-else-if="type === 'doc-screen-orientation'" class="orientation-icon" />
+
+    <span v-else-if="type === 'flow-glyph'" class="flow-glyph">
+      <i class="flow-line flow-line--top" />
+      <i class="flow-line flow-line--branch" />
+      <i class="flow-line flow-line--left" />
+      <i class="flow-line flow-line--right" />
+      <b class="flow-node flow-node--start" />
+      <b class="flow-node flow-node--left" />
+      <b class="flow-node flow-node--right" />
+    </span>
 
     <span v-else class="ion" :data-glyph="glyph(icon)" />
   </span>
@@ -405,4 +441,73 @@ const style = computed(() => ({
   height: 42%;
   background: color-mix(in srgb, var(--node-color) 8%, #0b0a0d);
 }
+
+.flow-glyph {
+  position: relative;
+  width: var(--node-icon-size);
+  height: var(--node-icon-size);
+}
+
+.flow-line,
+.flow-node {
+  position: absolute;
+  display: block;
+}
+
+.flow-line {
+  border-radius: 999px;
+  background: var(--node-color);
+  opacity: 0.82;
+}
+
+.flow-line--top {
+  top: 19%;
+  left: 47%;
+  width: 7%;
+  height: 31%;
+}
+
+.flow-line--branch {
+  top: 48%;
+  left: 20%;
+  width: 60%;
+  height: 7%;
+}
+
+.flow-line--left,
+.flow-line--right {
+  top: 48%;
+  width: 7%;
+  height: 25%;
+}
+
+.flow-line--left { left: 17%; }
+.flow-line--right { left: 76%; }
+
+.flow-node {
+  border: max(2px, calc(var(--node-icon-size) * 0.065)) solid var(--node-color);
+  background: var(--vp-c-bg, #111113);
+}
+
+.flow-node--start {
+  top: 4%;
+  left: 38%;
+  width: 24%;
+  height: 24%;
+  border: 0;
+  border-radius: 24%;
+  background: var(--node-color);
+  transform: rotate(45deg);
+}
+
+.flow-node--left,
+.flow-node--right {
+  top: 72%;
+  width: 25%;
+  height: 25%;
+  border-radius: 34%;
+}
+
+.flow-node--left { left: 8%; }
+.flow-node--right { left: 67%; }
 </style>

@@ -27,12 +27,12 @@ pageClass: continue-home
       <h2>O que você quer fazer?</h2>
     </div>
     <div class="guide-grid home-guide-grid">
-      <GuideCard href="/nos/" icon="grid-outline" color="#a78bfa" title="Encontrar um nó" description="Veja os mesmos nomes, cores e ícones do editor." />
-      <GuideCard href="/primeiros-passos/criar-projeto" icon="rocket-outline" color="#34d399" title="Criar um projeto" description="Configure a tela e prepare a primeira cena." />
+      <GuideCard href="/nos/" icon="search-outline" color="#a78bfa" title="Encontrar um nó" description="Veja os mesmos nomes, cores e ícones do editor." />
+      <GuideCard href="/primeiros-passos/criar-projeto" icon="game-controller-outline" color="#34d399" title="Criar um projeto" description="Configure a tela e prepare a primeira cena." />
       <GuideCard href="/editor/visao-geral" icon="construct-outline" color="#60a5fa" title="Conhecer o editor" description="Aprenda as ferramentas para montar cada cena." />
       <GuideCard href="/comportamentos/" icon="extension-puzzle-outline" color="#fb923c" title="Usar comportamentos" description="Adicione animação, física, luz e interação." />
       <GuideCard href="/expressoes/" icon="calculator-outline" color="#2dd4bf" title="Usar expressões" description="Combine posições, câmera, tempo, toque e matemática." />
-      <GuideCard href="/editor/scripts-visuais" icon="git-branch" color="#f472b6" title="Entender os fluxos" description="Veja a ordem dos nós e evite valores atrasados." />
+      <GuideCard href="/editor/scripts-visuais" type="flow-glyph" icon="git-branch" color="#f472b6" title="Entender os fluxos" description="Veja a ordem dos nós e evite valores atrasados." />
     </div>
   </section>
 

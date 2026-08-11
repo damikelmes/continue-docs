@@ -19,14 +19,14 @@ description: "Cria novas instâncias durante o jogo."
 
 ## Para que serve
 
-Adiciona cópias de um objeto à cena em uma posição, camada e ordem Z escolhidas.
+Adiciona cópias de um ou vários objetos à cena em uma posição, camada e ordem Z escolhidas.
 
 ## Campos
 
 <div class="doc-field-list" style="--doc-field-color: #4ADE80">
   <div class="doc-field-item">
-    <strong>Objeto</strong>
-    <p>Tipo de objeto que será criado.</p>
+    <strong>Objetos</strong>
+    <p>Um ou vários tipos de objeto que serão criados juntos.</p>
   </div>
   <div class="doc-field-item">
     <strong>Camada</strong>
@@ -54,18 +54,19 @@ Adiciona cópias de um objeto à cena em uma posição, camada e ordem Z escolhi
 
 <div class="node-example" style="--node-page-color: #4ADE80">
   <ol>
-    <li>Escolha “Projétil”.</li>
-    <li>Use X = PlayerX(), Y = PlayerY(), ordem Z = 5 e quantidade = 1.</li>
+    <li>Escolha “Projétil” e “Clarão”.</li>
+    <li>Use X = jogador.center_x, Y = jogador.center_y, ordem Z = 5 e quantidade = 1.</li>
     <li>Execute Uma única vez por disparo.</li>
   </ol>
-  <p class="node-result"><strong>Resultado:</strong> Um projétil nasce no centro do jogador.</p>
+  <p class="node-result"><strong>Resultado:</strong> Um Projétil e um Clarão nascem juntos no centro do jogador.</p>
 </div>
 
 ## Regras
 
-- O objeto e a camada precisam existir no projeto.
+- Os objetos e a camada precisam existir no projeto.
+- Quando vários objetos são escolhidos, a quantidade é criada para cada um. Dois objetos com quantidade 3 criam seis instâncias no total.
 - Use Uma única vez ou Quantidade controlada para não criar instâncias a cada quadro.
-- X e Y representam o centro da nova instância.
+- X e Y representam o centro de cada nova instância.
 - Escolha o modo de execução de acordo com a duração desejada. “Uma única vez” não mantém uma ação contínua ativa.
 
 ## Nós relacionados

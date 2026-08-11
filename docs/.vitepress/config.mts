@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { behaviorCategories, behaviorsByCategory } from './behavior-data.mjs';
+import { expressionCategories, expressionsByCategory } from './expression-data.mjs';
 import { nodeCategories, nodesByCategory } from './node-data.mjs';
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
@@ -23,6 +24,15 @@ const behaviorSidebarItems = behaviorCategories.map((category) => ({
   items: behaviorsByCategory[category.key].map((behavior) => ({
     text: behavior.title,
     link: `/comportamentos/${behavior.slug}`,
+  })),
+}));
+
+const expressionSidebarItems = expressionCategories.map((category) => ({
+  text: category.label,
+  collapsed: true,
+  items: expressionsByCategory[category.key].map((expression) => ({
+    text: expression.title,
+    link: `/expressoes/${expression.slug}`,
   })),
 }));
 
@@ -79,7 +89,8 @@ export default defineConfig({
         items: [
           { text: 'Condições', link: '/condicoes/' },
           { text: 'Repetições e execução', link: '/condicoes/repeticoes-e-execucao' },
-          { text: 'Expressões numéricas', link: '/expressoes/' },
+          { text: 'Todas as expressões', link: '/expressoes/' },
+          ...expressionSidebarItems,
         ],
       },
       {

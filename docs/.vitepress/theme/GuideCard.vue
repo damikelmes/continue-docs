@@ -10,8 +10,9 @@ const props = withDefaults(
     href: string;
     icon: string;
     title: string;
+    type?: string;
   }>(),
-  { color: '#8b5cf6' },
+  { color: '#8b5cf6', type: 'plain' },
 );
 
 const resolvedHref = computed(() => props.href.startsWith('#') ? props.href : withBase(props.href));
@@ -20,7 +21,7 @@ const resolvedHref = computed(() => props.href.startsWith('#') ? props.href : wi
 <template>
   <a class="guide-card" :href="resolvedHref" :style="{ '--guide-card-color': color }">
     <span class="guide-card-icon">
-      <NodeIcon type="plain" :icon="icon" :color="color" :size="25" />
+      <NodeIcon :type="type" :icon="icon" :color="color" :size="25" />
     </span>
     <span class="guide-card-copy">
       <strong>{{ title }}</strong>
