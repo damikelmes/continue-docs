@@ -23,12 +23,24 @@ Cria controles de apontar e mover. O objeto acelera, freia e troca de destino se
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Velocidade** | Velocidade máxima em pixels por segundo. |
-| **Aceleração** | Rapidez com que o objeto ganha velocidade. Use 0 para resposta instantânea. |
-| **Desaceleração** | Rapidez com que freia ao chegar ao destino. Use 0 para parada instantânea. |
-| **Continuar seguindo o dedo** | Quando ativado, atualiza o destino enquanto o dedo desliza; começa desativado. |
+<div class="doc-field-list" style="--doc-field-color: #34D399">
+  <div class="doc-field-item">
+    <strong>Velocidade</strong>
+    <p>Velocidade máxima em pixels por segundo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Aceleração</strong>
+    <p>Rapidez com que o objeto ganha velocidade. Use 0 para resposta instantânea.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Desaceleração</strong>
+    <p>Rapidez com que freia ao chegar ao destino. Use 0 para parada instantânea.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Continuar seguindo o dedo</strong>
+    <p>Quando ativado, atualiza o destino enquanto o dedo desliza; começa desativado.</p>
+  </div>
+</div>
 
 ## Exemplo
 

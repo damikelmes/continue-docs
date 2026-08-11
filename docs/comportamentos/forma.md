@@ -23,13 +23,28 @@ Cria objetos visuais simples e leves para cenários, fundos, plataformas, interf
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Largura e altura** | Tamanho base da forma em pixels. |
-| **Arredondamento** | Raio dos cantos do retângulo. |
-| **Cor e opacidade do preenchimento** | Aparência da parte interna da forma. |
-| **Borda** | Ativa ou desativa o contorno. |
-| **Cor, largura e opacidade da borda** | Aparência do contorno quando ele estiver ativado. |
+<div class="doc-field-list" style="--doc-field-color: #FB923C">
+  <div class="doc-field-item">
+    <strong>Largura e altura</strong>
+    <p>Tamanho base da forma em pixels.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Arredondamento</strong>
+    <p>Raio dos cantos do retângulo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Cor e opacidade do preenchimento</strong>
+    <p>Aparência da parte interna da forma.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Borda</strong>
+    <p>Ativa ou desativa o contorno.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Cor, largura e opacidade da borda</strong>
+    <p>Aparência do contorno quando ele estiver ativado.</p>
+  </div>
+</div>
 
 ## Exemplo
 

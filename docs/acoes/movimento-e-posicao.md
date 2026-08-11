@@ -1,8 +1,8 @@
-# Movimento e posição
+# <DocHeadingIcon icon="navigate-circle-outline" color="#60A5FA" :size="22" /> Movimento e posição
 
 Estas ações mudam a posição, o tamanho, a rotação ou o movimento de um objeto.
 
-## Transicionar propriedade
+## <DocHeadingIcon icon="pulse-outline" color="#A78BFA" /> Transicionar propriedade
 
 Anima uma propriedade partindo do valor atual até o valor final escolhido.
 
@@ -28,7 +28,7 @@ Anima uma propriedade partindo do valor atual até o valor final escolhido.
 | **Quicar** | Chega ao destino com pequenas quicadas. |
 | **Elástico** | Oscila como uma mola antes de parar. |
 
-## Chacoalhar objeto
+## <DocHeadingIcon type="action-shake-object" icon="cube-outline" color="#FB923C" /> Chacoalhar objeto
 
 Sacode o objeto visualmente sem alterar sua posição real. Isso permite centralizar a câmera no objeto sem fazer o centro da câmera tremer junto.
 
@@ -36,7 +36,7 @@ Sacode o objeto visualmente sem alterar sua posição real. Isso permite central
 - **Tempo do tremor:** duração de cada execução.
 - **Modo de execução:** controla se o efeito acontece uma vez, sempre, por quantidade ou por tempo.
 
-## Orbitar objeto
+## <DocHeadingIcon icon="planet-outline" color="#38BDF8" /> Orbitar objeto
 
 Faz o objeto escolhido girar continuamente ao redor de outro.
 
@@ -46,7 +46,7 @@ Faz o objeto escolhido girar continuamente ao redor de outro.
 - **Velocidade angular:** velocidade da órbita em graus por segundo.
 - **Direção:** horário ou anti-horário.
 
-## Seguir objeto
+## <DocHeadingIcon icon="navigate-circle-outline" color="#34D399" /> Seguir objeto
 
 Move um objeto em direção a outro mantendo a distância escolhida.
 
@@ -57,21 +57,21 @@ Move um objeto em direção a outro mantendo a distância escolhida.
 - **Aceleração:** rapidez com que começa a se mover.
 - **Desaceleração:** suavidade ao chegar perto do destino.
 
-## Mudar posição X e Y
+## <DocHeadingIcon type="action-set-object-x" icon="swap-horizontal-outline" color="#60A5FA" /> Mudar posição X e Y
 
 - **Mudar posição X:** altera apenas a posição horizontal.
 - **Mudar posição Y:** altera apenas a posição vertical.
 
 Essas ações aceitam valores fixos ou expressões, além das operações definir, somar, subtrair, multiplicar e dividir.
 
-## Mudar largura e altura
+## <DocHeadingIcon icon="resize-outline" color="#A78BFA" /> Mudar largura e altura
 
 - **Mudar largura:** altera somente a largura em pixels.
 - **Mudar altura:** altera somente a altura em pixels.
 
 Use as duas quando quiser redimensionar cada eixo de forma independente.
 
-## Mover em X e Y
+## <DocHeadingIcon type="action-move-object-x" icon="speedometer-outline" color="#60A5FA" /> Mover em X e Y
 
 Movem o objeto continuamente em um único eixo.
 
@@ -81,7 +81,7 @@ Movem o objeto continuamente em um único eixo.
 
 Valores positivos e negativos mudam o sentido do deslocamento.
 
-## Mover em graus
+## <DocHeadingIcon icon="compass-outline" color="#2DD4BF" /> Mover em graus
 
 Move o objeto na direção do ângulo informado, usando velocidade, aceleração e desaceleração.
 
@@ -92,18 +92,18 @@ Exemplos comuns:
 - `180°`: esquerda.
 - `270°`: cima.
 
-## Pular objeto
+## <DocHeadingIcon icon="arrow-up-circle-outline" color="#4ADE80" /> Pular objeto
 
 Aplica uma força de pulo em um objeto que usa gravidade e colisão. O pulo funciona quando o objeto está no chão.
 
-## Rotacionar objeto
+## <DocHeadingIcon icon="refresh-outline" color="#F59E0B" /> Rotacionar objeto
 
 Altera a rotação do objeto e da colisão usando graus.
 
-## Rotacionar sprite
+## <DocHeadingIcon icon="sync-outline" color="#FB7185" /> Rotacionar sprite
 
 Gira somente a parte visual. A rotação principal do objeto e da colisão não é substituída.
 
-## Alterar escala
+## <DocHeadingIcon icon="expand-outline" color="#FB923C" /> Alterar escala
 
 Aumenta ou diminui o objeto proporcionalmente nos dois eixos. Para alterar os eixos separadamente, use **Mudar largura** e **Mudar altura**.

@@ -23,14 +23,32 @@ Adiciona cópias de um objeto à cena em uma posição, camada e ordem Z escolhi
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objeto** | Tipo de objeto que será criado. |
-| **Camada** | Camada onde a nova instância será colocada. |
-| **Posição X e Y** | Centro da nova instância. |
-| **Ordem Z** | Ordem de desenho inicial. |
-| **Quantidade** | Número de instâncias criadas. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #4ADE80">
+  <div class="doc-field-item">
+    <strong>Objeto</strong>
+    <p>Tipo de objeto que será criado.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Camada</strong>
+    <p>Camada onde a nova instância será colocada.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Posição X e Y</strong>
+    <p>Centro da nova instância.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Ordem Z</strong>
+    <p>Ordem de desenho inicial.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Quantidade</strong>
+    <p>Número de instâncias criadas.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

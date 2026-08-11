@@ -1,26 +1,36 @@
 export const behaviorCategories = [
   {
     key: 'visual-e-animacao',
+    icon: 'images',
+    color: '#A78BFA',
     label: 'Visual e animação',
     description: 'Imagem, forma, resposta visual e animações do objeto.',
   },
   {
     key: 'iluminacao',
+    icon: 'bulb',
+    color: '#FDE047',
     label: 'Iluminação',
     description: 'Luzes, sombras e objetos que bloqueiam ou recebem luz.',
   },
   {
     key: 'fisica-e-colisao',
+    icon: 'body',
+    color: '#60A5FA',
     label: 'Física e colisão',
     description: 'Gravidade, áreas de colisão e exceções entre objetos.',
   },
   {
     key: 'interacao',
+    icon: 'hand-left-outline',
+    color: '#38BDF8',
     label: 'Interação',
     description: 'Movimento controlado diretamente pelo toque da pessoa.',
   },
   {
     key: 'dados-do-objeto',
+    icon: 'calculator-outline',
+    color: '#60A5FA',
     label: 'Dados do objeto',
     description: 'Valores próprios guardados separadamente em cada instância.',
   },

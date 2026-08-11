@@ -1,14 +1,14 @@
-# Ações da câmera
+# <DocHeadingIcon icon="videocam-outline" color="#22D3EE" :size="22" /> Ações da câmera
 
 A posição X e Y da câmera representa sempre o centro da área visível. Um objeto colocado em `camera.x` e `camera.y` fica centralizado na tela.
 
-## Centralizar câmera
+## <DocHeadingIcon type="action-center-camera-on-object" icon="videocam" color="#60A5FA" /> Centralizar câmera
 
 Move a câmera imediatamente para o centro real do objeto escolhido.
 
 Use para trocar o foco sem transição ou para definir a posição inicial da câmera.
 
-## Câmera suave
+## <DocHeadingIcon type="action-follow-camera-on-object" icon="navigate-circle-outline" color="#22D3EE" /> Câmera suave
 
 Faz a câmera seguir o objeto de forma contínua e suave.
 
@@ -17,15 +17,15 @@ Faz a câmera seguir o objeto de forma contínua e suave.
 
 Valores maiores deixam a câmera chegar mais rápido. Valores menores criam um acompanhamento mais suave.
 
-## Mudar posição X da câmera
+## <DocHeadingIcon type="action-set-camera-x" icon="arrow-forward-circle-outline" color="#60A5FA" /> Mudar posição X da câmera
 
 Altera somente o centro horizontal da câmera. Aceita um número ou uma expressão.
 
-## Mudar posição Y da câmera
+## <DocHeadingIcon type="action-set-camera-y" icon="arrow-down-circle-outline" color="#38BDF8" /> Mudar posição Y da câmera
 
 Altera somente o centro vertical da câmera. Aceita um número ou uma expressão.
 
-## Chacoalhar câmera
+## <DocHeadingIcon type="action-shake-camera" icon="videocam-outline" color="#F59E0B" /> Chacoalhar câmera
 
 Aplica um tremor temporário na visualização.
 
@@ -35,7 +35,7 @@ Aplica um tremor temporário na visualização.
 - **Quantidade:** usa a quantidade e o intervalo configurados.
 - **Por tempo:** continua pelo tempo escolhido.
 
-## Dar zoom na câmera
+## <DocHeadingIcon icon="search-outline" color="#A78BFA" /> Dar zoom na câmera
 
 Altera o nível de aproximação.
 

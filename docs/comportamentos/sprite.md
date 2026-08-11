@@ -23,11 +23,20 @@ Guarda as imagens que podem ser exibidas pelo objeto. Os sprites também servem 
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Sprites** | Lista das imagens disponíveis para o objeto. |
-| **Nome** | Nome usado para identificar a imagem no editor, nas animações e nos scripts. |
-| **Imagem** | Arquivo visual escolhido para aquele sprite. |
+<div class="doc-field-list" style="--doc-field-color: #A78BFA">
+  <div class="doc-field-item">
+    <strong>Sprites</strong>
+    <p>Lista das imagens disponíveis para o objeto.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Nome</strong>
+    <p>Nome usado para identificar a imagem no editor, nas animações e nos scripts.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Imagem</strong>
+    <p>Arquivo visual escolhido para aquele sprite.</p>
+  </div>
+</div>
 
 ## Exemplo
 

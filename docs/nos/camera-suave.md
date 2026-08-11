@@ -23,12 +23,24 @@ Move o centro da câmera em direção ao centro real do objeto usando velocidade
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objeto** | Objeto que a câmera deve seguir. |
-| **Velocidade X** | Rapidez do acompanhamento horizontal. |
-| **Velocidade Y** | Rapidez do acompanhamento vertical. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #22D3EE">
+  <div class="doc-field-item">
+    <strong>Objeto</strong>
+    <p>Objeto que a câmera deve seguir.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Velocidade X</strong>
+    <p>Rapidez do acompanhamento horizontal.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Velocidade Y</strong>
+    <p>Rapidez do acompanhamento vertical.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

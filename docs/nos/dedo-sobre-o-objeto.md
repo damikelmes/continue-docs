@@ -23,11 +23,20 @@ Detecta a sobreposição do toque com o objeto para arrastar, destacar ou mostra
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objeto** | Objeto que será verificado. |
-| **Instâncias** | Todas as instâncias ou uma instância específica. |
-| **Resultado esperado** | Ativado verifica a condição normal; desativado verifica o contrário. |
+<div class="doc-field-list" style="--doc-field-color: #FACC15">
+  <div class="doc-field-item">
+    <strong>Objeto</strong>
+    <p>Objeto que será verificado.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Instâncias</strong>
+    <p>Todas as instâncias ou uma instância específica.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Resultado esperado</strong>
+    <p>Ativado verifica a condição normal; desativado verifica o contrário.</p>
+  </div>
+</div>
 
 ## Exemplo
 

@@ -23,9 +23,12 @@ Adiciona arraste pronto para itens, peças, cartões e objetos de interface. O p
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Configuração** | Não possui campos: basta ativar o comportamento e tocar no objeto. |
+<div class="doc-field-list" style="--doc-field-color: #38BDF8">
+  <div class="doc-field-item">
+    <strong>Configuração</strong>
+    <p>Não possui campos: basta ativar o comportamento e tocar no objeto.</p>
+  </div>
+</div>
 
 ## Exemplo
 

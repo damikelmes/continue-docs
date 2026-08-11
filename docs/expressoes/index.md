@@ -1,4 +1,4 @@
-# Expressões numéricas
+# <DocHeadingIcon icon="calculator-outline" color="#FB923C" :size="22" /> Expressões numéricas
 
 Expressões permitem usar informações do jogo no lugar de um número fixo. Com elas, uma ação pode usar a posição de um objeto, o centro da câmera, o tempo da cena, o toque na tela, a velocidade ou o resultado de um cálculo.
 
@@ -9,7 +9,7 @@ Expressões permitem usar informações do jogo no lugar de um número fixo. Com
   <GuideCard href="#funcoes-matematicas" icon="calculator-outline" color="#fb923c" title="Matemática" description="Arredondamento, limites, ângulos e valores aleatórios." />
 </div>
 
-## Como inserir uma expressão
+## <DocHeadingIcon icon="calculator-outline" color="#2DD4BF" /> Como inserir uma expressão
 
 1. Abra um campo numérico de uma ação, condição ou repetição.
 2. Toque no botão de procurar expressão.
@@ -27,7 +27,7 @@ camera.x + 120
 
 O resultado é uma posição 120 pixels à direita do centro da câmera.
 
-## Operações básicas
+## <DocHeadingIcon icon="calculator-outline" color="#A78BFA" /> Operações básicas
 
 | Símbolo | Operação | Exemplo |
 | --- | --- | --- |
@@ -55,7 +55,7 @@ O resultado é `28`.
 Uma expressão que divide por zero é inválida. Corrija o divisor ou, quando ele sempre deveria ser positivo, use algo como `math.max(divisor, 0.0001)` para manter um valor mínimo seguro.
 :::
 
-## Objetos e instâncias
+## <DocHeadingIcon icon="cube-outline" color="#A78BFA" /> Objetos e instâncias
 
 Quando você escolhe uma propriedade de objeto, a expressão usa o nome do objeto seguido da propriedade.
 
@@ -75,7 +75,7 @@ Esse exemplo lê o centro X da segunda instância de Jogador. A numeração come
 
 Se o objeto ou a instância indicada não existir naquele momento, o valor retornado será `0`.
 
-### Posição e limites
+### <DocHeadingIcon icon="locate-outline" color="#60A5FA" :size="17" /> Posição e limites
 
 | Propriedade | O que retorna |
 | --- | --- |
@@ -102,7 +102,7 @@ jogador.center_x
 
 Use essa expressão como posição X de outro objeto para colocá-lo no mesmo centro horizontal do jogador.
 
-### Aparência e ordem
+### <DocHeadingIcon icon="color-palette-outline" color="#F472B6" :size="17" /> Aparência e ordem
 
 | Propriedade | O que retorna |
 | --- | --- |
@@ -112,7 +112,7 @@ Use essa expressão como posição X de outro objeto para colocá-lo no mesmo ce
 | `.transparency` | Transparência entre `0` e `100`. |
 | `.z` | Ordem Z usada no desenho. |
 
-### Quantidade de instâncias
+### <DocHeadingIcon icon="layers-outline" color="#FACC15" :size="17" /> Quantidade de instâncias
 
 ```text
 inimigo.instances
@@ -120,7 +120,7 @@ inimigo.instances
 
 Retorna quantas instâncias de Inimigo existem na cena. Essa expressão conta o grupo inteiro e, por isso, não usa `.instance_2`.
 
-### Velocidade e direção
+### <DocHeadingIcon icon="speedometer-outline" color="#2DD4BF" :size="17" /> Velocidade e direção
 
 | Propriedade | O que retorna |
 | --- | --- |
@@ -141,7 +141,7 @@ Na direção do movimento:
 A velocidade representa a mudança real de posição concluída na atualização anterior. Assim, ela também reconhece movimentos causados por gravidade, órbita, seguir objeto, toque, transições e outras ações.
 :::
 
-### Variáveis numéricas do objeto
+### <DocHeadingIcon icon="calculator-outline" color="#60A5FA" :size="17" /> Variáveis numéricas do objeto
 
 Somente variáveis do tipo número aparecem no seletor de expressões.
 
@@ -157,7 +157,7 @@ jogador.instance_2.variable.vida
 
 Se a variável não existir na instância escolhida, o resultado será `0`.
 
-## Câmera
+## <DocHeadingIcon icon="videocam-outline" color="#60A5FA" /> Câmera
 
 | Expressão | Valor |
 | --- | --- |
@@ -189,7 +189,7 @@ Posição Y: camera.bottom - 24
 `camera.x` e `camera.y` sempre representam o centro lógico. Para trabalhar com as extremidades visíveis, use `left`, `right`, `top` e `bottom`.
 :::
 
-## Tempo e desempenho
+## <DocHeadingIcon icon="timer-outline" color="#2DD4BF" /> Tempo e desempenho
 
 | Expressão | O que retorna |
 | --- | --- |
@@ -211,7 +211,7 @@ math.sin(time.elapsed * 180) * 20
 
 Esse exemplo oscila entre `-20` e `20`.
 
-## Toque
+## <DocHeadingIcon icon="hand-left-outline" color="#FB923C" /> Toque
 
 | Expressão | O que retorna |
 | --- | --- |
@@ -227,7 +227,7 @@ Esse exemplo oscila entre `-20` e `20`.
 
 Depois que o dedo é solto, as posições continuam guardando o último ponto tocado. Consulte `touch.is_down` quando precisar saber se o toque ainda está ativo.
 
-## Funções matemáticas
+## <DocHeadingIcon icon="calculator-outline" color="#FB923C" /> Funções matemáticas
 
 Funções recebem valores entre parênteses. Quando houver mais de um valor, separe-os com vírgulas.
 
@@ -265,7 +265,7 @@ math.trunc(math.lerp(jogador.x, camera.x, 0.5))
 Dentro de uma função, a vírgula separa os valores. Use ponto para escrever casas decimais: `math.lerp(0, 10, 0.5)`. Fora de funções, números como `1,5` continuam sendo aceitos.
 :::
 
-## Valores aleatórios
+## <DocHeadingIcon icon="shuffle-outline" color="#A78BFA" /> Valores aleatórios
 
 | Função | Resultado |
 | --- | --- |
@@ -292,7 +292,7 @@ Os limites podem ser informados em qualquer ordem. `random.int(10, 1)` funciona 
 Uma função aleatória é sorteada novamente toda vez que a expressão é calculada. Em uma ação configurada como **Sempre**, o resultado pode mudar a cada atualização. Use **Uma única vez** quando quiser sortear e manter apenas um resultado.
 :::
 
-## Ordem e valores atualizados
+## <DocHeadingIcon icon="git-branch" color="#FACC15" /> Ordem e valores atualizados
 
 A expressão usa o valor disponível no instante em que o nó é executado. Se um fluxo move o personagem e outro centraliza a câmera, deixe o movimento acima para que a câmera leia a posição nova.
 

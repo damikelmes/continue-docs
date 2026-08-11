@@ -1,6 +1,6 @@
-# Repetições e execução
+# <DocHeadingIcon icon="repeat-outline" color="#22D3EE" :size="22" /> Repetições e execução
 
-## Quantidade de vezes
+## <DocHeadingIcon type="repeat-count" icon="sync-outline" color="#22D3EE" /> Quantidade de vezes
 
 O nó de repetição executa os próximos nós pela quantidade escolhida.
 
@@ -12,7 +12,7 @@ A quantidade pode ser:
 - A largura da câmera.
 - A quantidade de instâncias de um objeto.
 
-## Repetição das ações
+## <DocHeadingIcon icon="repeat-outline" color="#22D3EE" /> Repetição das ações
 
 Cada ação também pode controlar sua própria execução.
 

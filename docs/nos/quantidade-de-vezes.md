@@ -23,11 +23,20 @@ Executa um trecho do fluxo várias vezes usando um número fixo ou um valor obti
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Origem do valor** | Número fixo, largura do objeto, altura do objeto, largura da câmera ou quantidade de instâncias. |
-| **Quantidade ou expressão** | Número de repetições ou expressão numérica. |
-| **Objeto** | Aparece quando a origem depende de um objeto. |
+<div class="doc-field-list" style="--doc-field-color: #22D3EE">
+  <div class="doc-field-item">
+    <strong>Origem do valor</strong>
+    <p>Número fixo, largura do objeto, altura do objeto, largura da câmera ou quantidade de instâncias.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Quantidade ou expressão</strong>
+    <p>Número de repetições ou expressão numérica.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Objeto</strong>
+    <p>Aparece quando a origem depende de um objeto.</p>
+  </div>
+</div>
 
 ## Exemplo
 

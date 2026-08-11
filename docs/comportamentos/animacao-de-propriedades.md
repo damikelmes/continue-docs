@@ -23,13 +23,28 @@ Permite criar várias animações com keyframes para posição, tamanho, escala,
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Nome da animação** | Identificador usado para ativar a animação pelos nós do script. |
-| **Duração** | Tempo total da linha do tempo. |
-| **Repetição** | Executar uma vez, repetir ou repetir voltando. |
-| **Faixas** | Propriedades que serão animadas, como X, Y, escala, rotação ou transparência. |
-| **Keyframes** | Momento, valor e tipo de transição de cada ponto da animação. |
+<div class="doc-field-list" style="--doc-field-color: #2DD4BF">
+  <div class="doc-field-item">
+    <strong>Nome da animação</strong>
+    <p>Identificador usado para ativar a animação pelos nós do script.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Duração</strong>
+    <p>Tempo total da linha do tempo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Repetição</strong>
+    <p>Executar uma vez, repetir ou repetir voltando.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Faixas</strong>
+    <p>Propriedades que serão animadas, como X, Y, escala, rotação ou transparência.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Keyframes</strong>
+    <p>Momento, valor e tipo de transição de cada ponto da animação.</p>
+  </div>
+</div>
 
 ## Exemplo
 

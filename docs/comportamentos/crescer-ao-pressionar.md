@@ -23,12 +23,24 @@ Adiciona uma resposta visual pronta para botões e objetos interativos, sem prec
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Multiplicador de escala** | Valor aplicado ao tamanho: abaixo de 1 diminui e acima de 1 aumenta. |
-| **Um toque** | Faz um pulso e volta sozinho; outro toque reproduz o efeito novamente. |
-| **Alternar ao tocar** | Um toque aplica a escala e o próximo volta ao tamanho normal. |
-| **Enquanto pressionado** | Aplica a escala ao encostar e volta ao soltar. |
+<div class="doc-field-list" style="--doc-field-color: #F472B6">
+  <div class="doc-field-item">
+    <strong>Multiplicador de escala</strong>
+    <p>Valor aplicado ao tamanho: abaixo de 1 diminui e acima de 1 aumenta.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Um toque</strong>
+    <p>Faz um pulso e volta sozinho; outro toque reproduz o efeito novamente.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Alternar ao tocar</strong>
+    <p>Um toque aplica a escala e o próximo volta ao tamanho normal.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Enquanto pressionado</strong>
+    <p>Aplica a escala ao encostar e volta ao soltar.</p>
+  </div>
+</div>
 
 ## Exemplo
 

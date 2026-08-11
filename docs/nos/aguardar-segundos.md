@@ -23,9 +23,12 @@ Cria atrasos entre ações sem travar a atualização do restante do jogo.
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Tempo de espera** | Duração em segundos; aceita valor decimal ou expressão. |
+<div class="doc-field-list" style="--doc-field-color: #A78BFA">
+  <div class="doc-field-item">
+    <strong>Tempo de espera</strong>
+    <p>Duração em segundos; aceita valor decimal ou expressão.</p>
+  </div>
+</div>
 
 ## Exemplo
 

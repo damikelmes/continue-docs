@@ -8,7 +8,6 @@ const projectRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const nodesDirectory = join(projectRoot, 'docs', 'nos');
 const categoryByKey = new Map(nodeCategories.map((category) => [category.key, category]));
 
-const escapeMarkdownCell = (value) => value.replaceAll('|', '\\|').replaceAll('\n', ' ');
 const escapeHtml = (value) => value
   .replaceAll('&', '&amp;')
   .replaceAll('<', '&lt;')
@@ -30,7 +29,10 @@ function renderNodePage(node) {
   const category = categoryByKey.get(node.category);
   const relatedNodes = nodesByCategory[node.category].filter((item) => item.type !== node.type).slice(0, 4);
   const fields = node.fields
-    .map(([label, description]) => `| **${escapeMarkdownCell(label)}** | ${escapeMarkdownCell(description)} |`)
+    .map(([label, description]) => `  <div class="doc-field-item">
+    <strong>${escapeHtml(label)}</strong>
+    <p>${escapeHtml(description)}</p>
+  </div>`)
     .join('\n');
   const exampleItems = node.example
     .map((step) => `    <li>${escapeHtml(step)}</li>`)
@@ -65,9 +67,9 @@ ${node.purpose}
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
+<div class="doc-field-list" style="--doc-field-color: ${node.color}">
 ${fields}
+</div>
 
 ## Exemplo
 
@@ -93,7 +95,7 @@ ${related || '- Nenhum nó relacionado nesta categoria.'}
 function renderIndex() {
   const sections = nodeCategories.map((category) => {
     const cards = nodesByCategory[category.key].map(renderCard).join('\n');
-    return `## ${category.label}
+    return `## <DocHeadingIcon icon="${category.icon}" color="${category.color}" /> ${category.label}
 
 <p class="node-category-copy">${escapeHtml(category.description)}</p>
 
@@ -107,7 +109,7 @@ title: Todos os nós
 description: Lista completa dos nós disponíveis no editor da Continue.
 ---
 
-# Todos os nós
+# <DocHeadingIcon icon="grid-outline" color="#A78BFA" :size="22" /> Todos os nós
 
 Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no seletor de nós do editor. Toque em um nó para abrir sua explicação completa.
 

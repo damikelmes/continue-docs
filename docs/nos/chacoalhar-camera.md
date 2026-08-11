@@ -23,11 +23,20 @@ Cria impacto visual para explosões, dano, quedas e eventos importantes.
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Intensidade** | Distância máxima do tremor em pixels. |
-| **Tempo do tremor** | Duração quando o modo é Uma única vez. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #F59E0B">
+  <div class="doc-field-item">
+    <strong>Intensidade</strong>
+    <p>Distância máxima do tremor em pixels.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Tempo do tremor</strong>
+    <p>Duração quando o modo é Uma única vez.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

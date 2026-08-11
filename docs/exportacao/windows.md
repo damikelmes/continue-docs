@@ -1,8 +1,8 @@
-# Exportar o jogo para Windows
+# <DocHeadingIcon icon="desktop-outline" color="#60A5FA" :size="22" /> Exportar o jogo para Windows
 
 Nas configurações do projeto, escolha **Jogo para Windows**.
 
-## Revisar exportação
+## <DocHeadingIcon icon="document-text-outline" color="#C4B5FD" /> Revisar exportação
 
 Antes de gerar, a Continue mostra:
 
@@ -16,7 +16,7 @@ Antes de gerar, a Continue mostra:
 
 Confira os dados e toque em **Gerar jogo para Windows**.
 
-## Conteúdo do ZIP
+## <DocHeadingIcon icon="archive-outline" color="#93C5FD" /> Conteúdo do ZIP
 
 O arquivo exportado contém:
 
@@ -25,11 +25,11 @@ O arquivo exportado contém:
 
 Mantenha os dois arquivos juntos na mesma pasta.
 
-## Exportações salvas
+## <DocHeadingIcon icon="archive-outline" color="#93C5FD" /> Exportações salvas
 
 As versões geradas ficam listadas nas configurações do projeto. Você pode compartilhar novamente ou excluir versões antigas para liberar espaço.
 
-## Ajuste da janela
+## <DocHeadingIcon icon="resize-outline" color="#34D399" /> Ajuste da janela
 
 Ao redimensionar a janela, o jogo mostra mais ou menos da cena conforme a opção escolhida no projeto. A imagem não é esticada.
 

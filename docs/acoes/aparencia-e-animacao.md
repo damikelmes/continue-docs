@@ -1,30 +1,30 @@
-# Aparência e animação
+# <DocHeadingIcon icon="color-palette-outline" color="#C084FC" :size="22" /> Aparência e animação
 
-## Trocar sprite
+## <DocHeadingIcon icon="images" color="#C084FC" /> Trocar sprite
 
 Troca a imagem do objeto pelo sprite escolhido. Selecione o objeto, as instâncias e o nome do sprite de destino.
 
-## Trocar animação
+## <DocHeadingIcon icon="film" color="#4ADE80" /> Trocar animação
 
 Inicia uma animação com sprites pelo nome. O objeto precisa ter essa animação cadastrada.
 
-## Animações de propriedades
+## <DocHeadingIcon icon="analytics" color="#2DD4BF" /> Animações de propriedades
 
 O comportamento **Animação de propriedades** permite criar várias animações nomeadas usando quadros-chave.
 
-### Reproduzir animação de propriedades
+### <DocHeadingIcon icon="play-circle-outline" color="#2DD4BF" :size="17" /> Reproduzir animação de propriedades
 
 Ativa a animação escolhida. Se ela estiver pausada, continua da posição atual.
 
-### Recomeçar animação de propriedades
+### <DocHeadingIcon icon="refresh-circle-outline" color="#38BDF8" :size="17" /> Recomeçar animação de propriedades
 
 Ativa a animação desde o primeiro quadro, mesmo que ela já estivesse em andamento.
 
-### Pausar animação de propriedades
+### <DocHeadingIcon icon="pause-circle-outline" color="#FBBF24" :size="17" /> Pausar animação de propriedades
 
 Pausa a animação atual sem apagar seu progresso. Use **Reproduzir** para continuar.
 
-## Alterar transparência
+## <DocHeadingIcon icon="water-outline" color="#2DD4BF" /> Alterar transparência
 
 Muda o quanto o objeto fica transparente.
 
@@ -33,15 +33,15 @@ Muda o quanto o objeto fica transparente.
 
 Pixels totalmente transparentes do sprite não recebem luz nem aparecem no jogo.
 
-## Alterar tonalidade
+## <DocHeadingIcon icon="color-palette-outline" color="#F472B6" /> Alterar tonalidade
 
 Aplica uma cor sobre o visual do objeto. Escolha a cor pelo seletor ou informe os valores de vermelho, verde e azul.
 
-## Inverter objeto
+## <DocHeadingIcon type="action-flip-object" icon="swap-horizontal-outline" color="#34D399" /> Inverter objeto
 
 Espelha o objeto instantaneamente na horizontal ou vertical.
 
-## Flipar objeto
+## <DocHeadingIcon type="action-flip-object-animated" icon="swap-horizontal-outline" color="#2DD4BF" /> Flipar objeto
 
 Faz o espelhamento com animação. Escolha:
 
@@ -49,7 +49,7 @@ Faz o espelhamento com animação. Escolha:
 - Lado ou sentido de destino.
 - Tempo da animação.
 
-## Alterar ordem Z
+## <DocHeadingIcon type="action-set-object-z-index" icon="layers-outline" color="#818CF8" /> Alterar ordem Z
 
 Muda a ordem em que o objeto é desenhado. Valores maiores aparecem na frente de valores menores.
 

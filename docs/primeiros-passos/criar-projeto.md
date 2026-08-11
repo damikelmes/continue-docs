@@ -1,31 +1,31 @@
-# Criar um projeto
+# <DocHeadingIcon icon="rocket-outline" color="#34D399" :size="22" /> Criar um projeto
 
 Na tela inicial, use o botão para criar um projeto e preencha as configurações principais.
 
-## Nome
+## <DocHeadingIcon icon="game-controller" color="#60A5FA" /> Nome
 
 Escolha um nome curto e fácil de identificar. O nome também é usado como base para o arquivo exportado.
 
-## Orientação
+## <DocHeadingIcon icon="phone-portrait-outline" color="#C4B5FD" /> Orientação
 
 - **Retrato:** indicado para jogos com o celular em pé.
 - **Paisagem:** indicado para jogos com o celular deitado.
 
-## Resolução do jogo
+## <DocHeadingIcon icon="grid-outline" color="#60A5FA" /> Resolução do jogo
 
 A resolução define o tamanho lógico da câmera. Ela não limita a qualidade final da imagem e não estica o jogo.
 
 Por exemplo, uma resolução de `1280 × 720` cria uma câmera base em formato de paisagem.
 
-## Ajuste em outras telas
+## <DocHeadingIcon icon="resize-outline" color="#C4B5FD" /> Ajuste em outras telas
 
-### Ajustar a largura
+### <DocHeadingIcon icon="swap-horizontal-outline" color="#C4B5FD" :size="17" /> Ajustar a largura
 
 A altura definida na resolução fica fixa. Em telas com outro formato, a câmera mostra mais ou menos espaço nas laterais.
 
 Use quando o jogo precisa manter sempre a mesma área vertical.
 
-### Ajustar a altura
+### <DocHeadingIcon icon="swap-vertical-outline" color="#C4B5FD" :size="17" /> Ajustar a altura
 
 A largura definida na resolução fica fixa. Em telas com outro formato, a câmera mostra mais ou menos espaço em cima e embaixo.
 

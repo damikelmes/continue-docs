@@ -23,14 +23,32 @@ Detecta se a instância está se deslocando e permite filtrar direção e sinal 
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objeto** | Objeto que será verificado. |
-| **Instâncias** | Todas as instâncias ou uma instância específica. |
-| **Modo** | Qualquer direção, eixo X, eixo Y ou ângulo. |
-| **Sinal** | Qualquer, positivo ou negativo. |
-| **Ângulo** | Direção usada quando o modo por ângulo estiver selecionado. |
-| **Resultado esperado** | Ativado verifica a condição normal; desativado verifica o contrário. |
+<div class="doc-field-list" style="--doc-field-color: #2DD4BF">
+  <div class="doc-field-item">
+    <strong>Objeto</strong>
+    <p>Objeto que será verificado.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Instâncias</strong>
+    <p>Todas as instâncias ou uma instância específica.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo</strong>
+    <p>Qualquer direção, eixo X, eixo Y ou ângulo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Sinal</strong>
+    <p>Qualquer, positivo ou negativo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Ângulo</strong>
+    <p>Direção usada quando o modo por ângulo estiver selecionado.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Resultado esperado</strong>
+    <p>Ativado verifica a condição normal; desativado verifica o contrário.</p>
+  </div>
+</div>
 
 ## Exemplo
 

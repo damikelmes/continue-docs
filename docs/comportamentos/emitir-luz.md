@@ -23,16 +23,40 @@ Adiciona uma luz 2D configurável ao objeto. A luz acompanha a instância e pode
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Raio** | Alcance total da iluminação. |
-| **Raio interno** | Área central que mantém a luz mais intensa. |
-| **Cor, intensidade e opacidade** | Aparência e força da luz. |
-| **Suavidade** | Transição entre a área iluminada e a escuridão. |
-| **Posição da luz** | Desenha a iluminação por baixo ou por cima dos objetos. |
-| **Projetar sombras** | Ativa as sombras criadas por objetos com Barrar luz. |
-| **Qualidade e suavidade da sombra** | Equilíbrio entre detalhe visual e desempenho. |
-| **Pulso** | Varia o tamanho da luz usando escala e velocidade. |
+<div class="doc-field-list" style="--doc-field-color: #FDE047">
+  <div class="doc-field-item">
+    <strong>Raio</strong>
+    <p>Alcance total da iluminação.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Raio interno</strong>
+    <p>Área central que mantém a luz mais intensa.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Cor, intensidade e opacidade</strong>
+    <p>Aparência e força da luz.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Suavidade</strong>
+    <p>Transição entre a área iluminada e a escuridão.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Posição da luz</strong>
+    <p>Desenha a iluminação por baixo ou por cima dos objetos.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Projetar sombras</strong>
+    <p>Ativa as sombras criadas por objetos com Barrar luz.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Qualidade e suavidade da sombra</strong>
+    <p>Equilíbrio entre detalhe visual e desempenho.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Pulso</strong>
+    <p>Varia o tamanho da luz usando escala e velocidade.</p>
+  </div>
+</div>
 
 ## Exemplo
 

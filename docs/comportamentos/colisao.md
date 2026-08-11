@@ -23,9 +23,12 @@ Permite que o objeto participe das verificações de colisão e das respostas f�
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Configuração** | Não possui campos próprios; usa a largura, a altura, o centro e a rotação da instância. |
+<div class="doc-field-list" style="--doc-field-color: #FBBF24">
+  <div class="doc-field-item">
+    <strong>Configuração</strong>
+    <p>Não possui campos próprios; usa a largura, a altura, o centro e a rotação da instância.</p>
+  </div>
+</div>
 
 ## Exemplo
 

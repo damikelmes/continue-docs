@@ -23,16 +23,40 @@ Cria uma mudança gradual sem precisar atualizar a propriedade em vários nós. 
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
-| **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
-| **Propriedade** | Posição X, Posição Y, rotação, rotação do sprite, escala, largura, altura, transparência, ordem Z ou cor. |
-| **Valor final** | Valor que a propriedade deve alcançar. A cor usa um seletor próprio. |
-| **Animação** | Linear, Acelerar, Desacelerar, Suave, Antecipar, Ultrapassar, Quicar ou Elástico. |
-| **Velocidade** | Rapidez usada para chegar ao valor final. |
-| **Aceleração** | Quanto a velocidade pode aumentar durante a transição. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #A78BFA">
+  <div class="doc-field-item">
+    <strong>Objeto de destino</strong>
+    <p>Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Instâncias</strong>
+    <p>Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Propriedade</strong>
+    <p>Posição X, Posição Y, rotação, rotação do sprite, escala, largura, altura, transparência, ordem Z ou cor.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Valor final</strong>
+    <p>Valor que a propriedade deve alcançar. A cor usa um seletor próprio.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Animação</strong>
+    <p>Linear, Acelerar, Desacelerar, Suave, Antecipar, Ultrapassar, Quicar ou Elástico.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Velocidade</strong>
+    <p>Rapidez usada para chegar ao valor final.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Aceleração</strong>
+    <p>Quanto a velocidade pode aumentar durante a transição.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

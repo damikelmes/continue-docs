@@ -23,12 +23,24 @@ Cria decisões usando igualdade, diferença, maior, menor e suas variações.
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Primeiro valor** | Número ou expressão do lado esquerdo. |
-| **Comparação** | Igual, Maior, Menor, Igual ou maior, Igual ou menor ou Diferente. |
-| **Segundo valor** | Número ou expressão do lado direito. |
-| **Resultado esperado** | Ativado verifica a condição normal; desativado verifica o contrário. |
+<div class="doc-field-list" style="--doc-field-color: #60A5FA">
+  <div class="doc-field-item">
+    <strong>Primeiro valor</strong>
+    <p>Número ou expressão do lado esquerdo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Comparação</strong>
+    <p>Igual, Maior, Menor, Igual ou maior, Igual ou menor ou Diferente.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Segundo valor</strong>
+    <p>Número ou expressão do lado direito.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Resultado esperado</strong>
+    <p>Ativado verifica a condição normal; desativado verifica o contrário.</p>
+  </div>
+</div>
 
 ## Exemplo
 

@@ -1,6 +1,6 @@
-# Objetos e comportamentos
+# <DocHeadingIcon icon="cube-outline" color="#34D399" :size="22" /> Objetos e comportamentos
 
-## Criar objeto
+## <DocHeadingIcon icon="cube" color="#4ADE80" /> Criar objeto
 
 Cria uma nova instância durante o jogo.
 
@@ -12,11 +12,11 @@ Escolha:
 
 Você pode usar valores fixos ou expressões, como a posição da câmera ou de outro objeto.
 
-## Excluir objeto
+## <DocHeadingIcon icon="trash-outline" color="#FB7185" /> Excluir objeto
 
 Remove as instâncias escolhidas durante o jogo. O objeto continua existindo na lista do projeto e pode ser criado novamente depois.
 
-## Ativar comportamento
+## <DocHeadingIcon icon="power-outline" color="#60A5FA" /> Ativar comportamento
 
 Ativa ou desativa um comportamento existente no objeto.
 

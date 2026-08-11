@@ -23,17 +23,44 @@ Cria personagens e objetos que caem e reagem a superfícies. Pode controlar acel
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Escala da gravidade** | Multiplica a força de queda aplicada ao corpo. |
-| **Velocidade máxima de queda** | Limita a velocidade vertical durante a queda. |
-| **Resistência do ar** | Reduz o movimento com o passar do tempo. |
-| **Restituição** | Controla quanto o objeto quica ao colidir. |
-| **Massa** | Peso usado nos cálculos físicos. |
-| **Atrito** | Resistência ao deslizar sobre superfícies. |
-| **Permitir rotação** | Deixa impactos e movimento girarem o corpo. |
-| **Resistência angular** | Reduz a velocidade da rotação. |
-| **Colisão precisa** | Usa verificações mais detalhadas quando necessário. |
+<div class="doc-field-list" style="--doc-field-color: #60A5FA">
+  <div class="doc-field-item">
+    <strong>Escala da gravidade</strong>
+    <p>Multiplica a força de queda aplicada ao corpo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Velocidade máxima de queda</strong>
+    <p>Limita a velocidade vertical durante a queda.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Resistência do ar</strong>
+    <p>Reduz o movimento com o passar do tempo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Restituição</strong>
+    <p>Controla quanto o objeto quica ao colidir.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Massa</strong>
+    <p>Peso usado nos cálculos físicos.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Atrito</strong>
+    <p>Resistência ao deslizar sobre superfícies.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Permitir rotação</strong>
+    <p>Deixa impactos e movimento girarem o corpo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Resistência angular</strong>
+    <p>Reduz a velocidade da rotação.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Colisão precisa</strong>
+    <p>Usa verificações mais detalhadas quando necessário.</p>
+  </div>
+</div>
 
 ## Exemplo
 

@@ -23,9 +23,12 @@ Cria exceções de colisão sem remover o comportamento Colisão. É útil para 
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objetos ignorados** | Um ou mais objetos cujas colisões serão desconsideradas. |
+<div class="doc-field-list" style="--doc-field-color: #22D3EE">
+  <div class="doc-field-item">
+    <strong>Objetos ignorados</strong>
+    <p>Um ou mais objetos cujas colisões serão desconsideradas.</p>
+  </div>
+</div>
 
 ## Exemplo
 

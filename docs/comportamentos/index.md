@@ -3,7 +3,7 @@ title: Todos os comportamentos
 description: Lista completa dos comportamentos disponíveis para os objetos da Continue.
 ---
 
-# Todos os comportamentos
+# <DocHeadingIcon icon="extension-puzzle-outline" color="#F59E0B" :size="22" /> Todos os comportamentos
 
 Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque em um comportamento para abrir sua página com campos, exemplo e regras.
 
@@ -12,7 +12,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   <span>comportamentos documentados individualmente para você encontrar rapidamente o que cada um faz.</span>
 </div>
 
-## Visual e animação
+## <DocHeadingIcon icon="images" color="#A78BFA" /> Visual e animação
 
 <p class="behavior-category-copy">Imagem, forma, resposta visual e animações do objeto.</p>
 
@@ -59,7 +59,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## Iluminação
+## <DocHeadingIcon icon="bulb" color="#FDE047" /> Iluminação
 
 <p class="behavior-category-copy">Luzes, sombras e objetos que bloqueiam ou recebem luz.</p>
 
@@ -82,7 +82,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## Física e colisão
+## <DocHeadingIcon icon="body" color="#60A5FA" /> Física e colisão
 
 <p class="behavior-category-copy">Gravidade, áreas de colisão e exceções entre objetos.</p>
 
@@ -113,7 +113,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## Interação
+## <DocHeadingIcon icon="hand-left-outline" color="#38BDF8" /> Interação
 
 <p class="behavior-category-copy">Movimento controlado diretamente pelo toque da pessoa.</p>
 
@@ -136,7 +136,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## Dados do objeto
+## <DocHeadingIcon icon="calculator-outline" color="#60A5FA" /> Dados do objeto
 
 <p class="behavior-category-copy">Valores próprios guardados separadamente em cada instância.</p>
 

@@ -1,4 +1,4 @@
-# Scripts visuais
+# <DocHeadingIcon icon="code-slash-outline" color="#4ADE80" :size="22" /> Scripts visuais
 
 Os scripts visuais são formados por nós. Cada nó pode verificar uma condição, executar uma ação, repetir uma parte do script ou chamar outro script. As conexões mostram quais nós pertencem ao mesmo fluxo.
 
@@ -9,21 +9,21 @@ Os scripts visuais são formados por nós. Cada nó pode verificar uma condiçã
   <GuideCard href="/condicoes/repeticoes-e-execucao" icon="repeat-outline" color="#fb923c" title="Execução" description="Escolha entre Sempre, Uma única vez, Quantidade e Por tempo." />
 </div>
 
-## Como ler um fluxo
+## <DocHeadingIcon icon="git-branch" color="#A78BFA" /> Como ler um fluxo
 
-### Nó conectado
+### <DocHeadingIcon icon="git-branch" color="#A78BFA" :size="17" /> Nó conectado
 
 Um nó conectado continua a sequência iniciada pelo nó anterior. A linha colorida entre os cards mostra essa ligação.
 
 Se o primeiro nó for uma condição, os nós conectados abaixo somente serão executados quando ela tiver o resultado esperado. Quando a condição for falsa, a engine pula aquela continuação e procura o próximo fluxo independente.
 
-### Novo fluxo
+### <DocHeadingIcon icon="add-circle-outline" color="#34D399" :size="17" /> Novo fluxo
 
 O texto **Novo fluxo** marca o começo de outra sequência. Esse fluxo não depende do fluxo que aparece acima, mas sua posição na lista ainda define quando ele será processado.
 
 Ao adicionar um nó acima ou abaixo, escolha primeiro entre **Conectado** e **Novo fluxo** quando as duas opções estiverem disponíveis. A opção de novo fluxo aparece somente onde uma sequência independente pode ser criada sem quebrar uma conexão existente.
 
-## Ordem de execução
+## <DocHeadingIcon icon="git-branch" color="#A78BFA" /> Ordem de execução
 
 A engine lê o **Script da cena de cima para baixo** em cada atualização do jogo.
 
@@ -61,7 +61,7 @@ Para corrigir, coloque primeiro o fluxo que **produz ou altera o valor** e depoi
 | Redimensionar um objeto e depois usar sua largura | A ação que muda o tamanho |
 | Atualizar uma posição e depois copiar essa posição | A ação que atualiza a posição |
 
-## Quando uma expressão lê o valor
+## <DocHeadingIcon icon="calculator-outline" color="#2DD4BF" /> Quando uma expressão lê o valor
 
 Uma expressão é calculada no momento em que o nó é executado. Ela não fica ligada permanentemente à propriedade usada.
 
@@ -76,14 +76,14 @@ O segundo nó recebe a posição já alterada porque está abaixo do primeiro. S
 Expressões como `jogador.velocity_x`, `jogador.velocity_y` e `jogador.speed` representam o movimento medido na atualização concluída anteriormente. Elas são ideais para saber como o objeto realmente estava se movendo, mas não representam uma mudança de posição que ainda será executada mais abaixo no mesmo fluxo.
 :::
 
-## Tipos de nó
+## <DocHeadingIcon icon="grid-outline" color="#60A5FA" /> Tipos de nó
 
 - **Ação:** altera o jogo, um ou mais objetos ou a câmera.
 - **Condição:** permite que os nós conectados continuem somente quando algo for verdadeiro.
 - **Repetição:** executa os próximos nós mais de uma vez.
 - **Script:** chama um script salvo na biblioteca.
 
-## Organize a lógica
+## <DocHeadingIcon icon="layers-outline" color="#FACC15" /> Organize a lógica
 
 - Coloque ações de entrada e movimento antes dos fluxos que acompanham esses valores.
 - Mantenha condições e suas ações conectadas no mesmo fluxo.

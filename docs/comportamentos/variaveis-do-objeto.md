@@ -23,11 +23,20 @@ Permite que cada cópia de um objeto mantenha seus próprios dados, como vida, d
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Nome** | Identificador usado para encontrar a variável em expressões e scripts. |
-| **Tipo** | Forma do valor, como número, texto ou verdadeiro/falso. |
-| **Valor inicial** | Valor que cada nova instância recebe quando é criada. |
+<div class="doc-field-list" style="--doc-field-color: #60A5FA">
+  <div class="doc-field-item">
+    <strong>Nome</strong>
+    <p>Identificador usado para encontrar a variável em expressões e scripts.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Tipo</strong>
+    <p>Forma do valor, como número, texto ou verdadeiro/falso.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Valor inicial</strong>
+    <p>Valor que cada nova instância recebe quando é criada.</p>
+  </div>
+</div>
 
 ## Exemplo
 

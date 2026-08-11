@@ -23,10 +23,16 @@ Mostra uma área maior ou menor da cena mantendo o centro lógico da câmera.
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Zoom da câmera** | Multiplicador do zoom; 1 é o tamanho normal. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #A78BFA">
+  <div class="doc-field-item">
+    <strong>Zoom da câmera</strong>
+    <p>Multiplicador do zoom; 1 é o tamanho normal.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

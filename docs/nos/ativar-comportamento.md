@@ -23,13 +23,28 @@ Liga e desliga comportamentos durante o jogo sem removê-los da configuração d
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
-| **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
-| **Comportamento** | Comportamento do objeto que será alterado. |
-| **Estado** | Ativado ou desativado. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #60A5FA">
+  <div class="doc-field-item">
+    <strong>Objeto de destino</strong>
+    <p>Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Instâncias</strong>
+    <p>Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Comportamento</strong>
+    <p>Comportamento do objeto que será alterado.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Estado</strong>
+    <p>Ativado ou desativado.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

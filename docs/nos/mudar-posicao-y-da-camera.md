@@ -23,11 +23,20 @@ Define ou ajusta a coordenada Y lógica da câmera sem mudar seu X.
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Operação** | Definir como, Somar, Subtrair, Multiplicar ou Dividir. |
-| **Posição Y** | Coordenada ou expressão aplicada ao centro Y da câmera. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #38BDF8">
+  <div class="doc-field-item">
+    <strong>Operação</strong>
+    <p>Definir como, Somar, Subtrair, Multiplicar ou Dividir.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Posição Y</strong>
+    <p>Coordenada ou expressão aplicada ao centro Y da câmera.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

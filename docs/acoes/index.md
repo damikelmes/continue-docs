@@ -1,4 +1,4 @@
-# Ações
+# <DocHeadingIcon icon="play-outline" color="#4ADE80" :size="22" /> Ações
 
 ::: tip Documentação nova
 Agora cada ação, condição, repetição e script possui sua própria página na seção [Todos os nós](/nos/).
@@ -25,7 +25,7 @@ As ações alteram alguma parte do jogo quando o fluxo chega até elas. Elas est
   </a>
 </div>
 
-## Escolha de objetos
+## <DocHeadingIcon icon="cube-outline" color="#60A5FA" /> Escolha de objetos
 
 Nas ações que oferecem seleção múltipla, o campo **Objeto** permite marcar vários objetos de uma vez. Todos os objetos marcados recebem a mesma ação, com os mesmos valores e o mesmo modo de execução.
 
@@ -39,7 +39,7 @@ Use a seleção múltipla quando todos devem receber exatamente a mesma mudança
 
 Nem toda ação precisa ou permite vários destinos. Quando o seletor mostrar círculos de marcação, você pode escolher mais de um; confirme a seleção depois de marcar todos os objetos desejados.
 
-## Objeto e instância são escolhas diferentes
+## <DocHeadingIcon icon="layers-outline" color="#FACC15" /> Objeto e instância são escolhas diferentes
 
 O campo **Objeto** escolhe o tipo, como Jogador, Inimigo ou Caixa. O campo **Instâncias** escolhe quais cópias desses objetos, já colocadas na cena, serão afetadas.
 
@@ -48,7 +48,7 @@ O campo **Objeto** escolhe o tipo, como Jogador, Inimigo ou Caixa. O campo **Ins
 
 Se você selecionar três tipos de objeto e usar **Todas as instâncias**, a ação percorre todas as instâncias existentes dos três tipos.
 
-## Operação numérica
+## <DocHeadingIcon icon="calculator-outline" color="#A78BFA" /> Operação numérica
 
 Campos numéricos podem usar uma operação para definir como o valor será aplicado.
 
@@ -60,7 +60,7 @@ Campos numéricos podem usar uma operação para definir como o valor será apli
 | **Multiplicar** | Multiplica o valor atual. |
 | **Dividir** | Divide o valor atual. |
 
-## Modo de execução
+## <DocHeadingIcon icon="repeat-outline" color="#22D3EE" /> Modo de execução
 
 | Modo | Quando a ação funciona |
 | --- | --- |

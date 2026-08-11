@@ -4,7 +4,7 @@ description: Nós que verificam uma situação antes de continuar o fluxo.
 pageClass: guide-page
 ---
 
-# Condições
+# <DocHeadingIcon icon="git-branch" color="#FACC15" :size="22" /> Condições
 
 Uma condição deixa os próximos nós continuarem somente quando o resultado for verdadeiro. Escolha um grupo para abrir os nós correspondentes.
 
@@ -15,7 +15,7 @@ Uma condição deixa os próximos nós continuarem somente quando o resultado fo
   <GuideCard href="/nos/" icon="grid-outline" color="#a78bfa" title="Ver todos os nós" description="Abra a lista completa igual à do editor." />
 </div>
 
-## Como uma condição funciona
+## <DocHeadingIcon icon="git-compare-outline" color="#FACC15" /> Como uma condição funciona
 
 Coloque a condição antes das ações que ela deve controlar. Quando a condição for verdadeira, o fluxo segue; quando for falsa, as ações conectadas abaixo não são executadas.
 

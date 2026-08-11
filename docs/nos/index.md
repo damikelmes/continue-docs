@@ -3,7 +3,7 @@ title: Todos os nós
 description: Lista completa dos nós disponíveis no editor da Continue.
 ---
 
-# Todos os nós
+# <DocHeadingIcon icon="grid-outline" color="#A78BFA" :size="22" /> Todos os nós
 
 Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no seletor de nós do editor. Toque em um nó para abrir sua explicação completa.
 
@@ -12,7 +12,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   <span>nós documentados individualmente, cada um com campos, exemplo e regras de uso.</span>
 </div>
 
-## Movimento e posição
+## <DocHeadingIcon icon="navigate-circle-outline" color="#60A5FA" /> Movimento e posição
 
 <p class="node-category-copy">Mover, redimensionar, girar e fazer objetos seguirem outros objetos.</p>
 
@@ -139,7 +139,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Aparência
+## <DocHeadingIcon icon="color-palette-outline" color="#C084FC" /> Aparência
 
 <p class="node-category-copy">Sprites, animações, cor, transparência e ordem de desenho.</p>
 
@@ -226,7 +226,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Câmera
+## <DocHeadingIcon icon="videocam-outline" color="#22D3EE" /> Câmera
 
 <p class="node-category-copy">Posição, acompanhamento, zoom e tremor da câmera.</p>
 
@@ -281,7 +281,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Objetos e instâncias
+## <DocHeadingIcon icon="cube-outline" color="#34D399" /> Objetos e instâncias
 
 <p class="node-category-copy">Criar e remover instâncias durante o jogo.</p>
 
@@ -304,7 +304,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Comportamentos
+## <DocHeadingIcon icon="extension-puzzle-outline" color="#F59E0B" /> Comportamentos
 
 <p class="node-category-copy">Ativar ou desativar comportamentos de um objeto.</p>
 
@@ -319,7 +319,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Interação e toque
+## <DocHeadingIcon icon="hand-left-outline" color="#FB7185" /> Interação e toque
 
 <p class="node-category-copy">Detectar clique, pressão e posição do dedo.</p>
 
@@ -350,7 +350,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Estado do objeto
+## <DocHeadingIcon icon="pulse-outline" color="#4ADE80" /> Estado do objeto
 
 <p class="node-category-copy">Verificar existência, movimento, chão, pulo e outros estados.</p>
 
@@ -421,7 +421,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Lógica e tempo
+## <DocHeadingIcon icon="git-compare-outline" color="#FACC15" /> Lógica e tempo
 
 <p class="node-category-copy">Comparar valores e controlar quando o fluxo continua.</p>
 
@@ -444,7 +444,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Repetições
+## <DocHeadingIcon icon="repeat-outline" color="#22D3EE" /> Repetições
 
 <p class="node-category-copy">Executar um trecho do fluxo várias vezes.</p>
 
@@ -459,7 +459,7 @@ Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no sel
   </a>
 </div>
 
-## Scripts da biblioteca
+## <DocHeadingIcon icon="code-slash-outline" color="#A78BFA" /> Scripts da biblioteca
 
 <p class="node-category-copy">Reaproveitar um script visual salvo na biblioteca.</p>
 

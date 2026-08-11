@@ -12,7 +12,6 @@ const projectRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const behaviorsDirectory = join(projectRoot, 'docs', 'comportamentos');
 const categoryByKey = new Map(behaviorCategories.map((category) => [category.key, category]));
 
-const escapeMarkdownCell = (value) => value.replaceAll('|', '\\|').replaceAll('\n', ' ');
 const escapeHtml = (value) => value
   .replaceAll('&', '&amp;')
   .replaceAll('<', '&lt;')
@@ -36,7 +35,10 @@ function renderBehaviorPage(behavior) {
     .filter((item) => item.type !== behavior.type)
     .slice(0, 4);
   const fields = behavior.fields
-    .map(([label, description]) => `| **${escapeMarkdownCell(label)}** | ${escapeMarkdownCell(description)} |`)
+    .map(([label, description]) => `  <div class="doc-field-item">
+    <strong>${escapeHtml(label)}</strong>
+    <p>${escapeHtml(description)}</p>
+  </div>`)
     .join('\n');
   const exampleItems = behavior.example
     .map((step) => `    <li>${escapeHtml(step)}</li>`)
@@ -71,9 +73,9 @@ ${behavior.purpose}
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
+<div class="doc-field-list" style="--doc-field-color: ${behavior.color}">
 ${fields}
+</div>
 
 ## Exemplo
 
@@ -99,7 +101,7 @@ ${related || '- Nenhum outro comportamento nesta categoria.'}
 function renderIndex() {
   const sections = behaviorCategories.map((category) => {
     const cards = behaviorsByCategory[category.key].map(renderCard).join('\n');
-    return `## ${category.label}
+    return `## <DocHeadingIcon icon="${category.icon}" color="${category.color}" /> ${category.label}
 
 <p class="behavior-category-copy">${escapeHtml(category.description)}</p>
 
@@ -113,7 +115,7 @@ title: Todos os comportamentos
 description: Lista completa dos comportamentos disponíveis para os objetos da Continue.
 ---
 
-# Todos os comportamentos
+# <DocHeadingIcon icon="extension-puzzle-outline" color="#F59E0B" :size="22" /> Todos os comportamentos
 
 Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque em um comportamento para abrir sua página com campos, exemplo e regras.
 

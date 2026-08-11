@@ -23,11 +23,20 @@ Apaga todas as instâncias selecionadas ou uma instância específica.
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objeto** | Objeto cujas instâncias serão removidas. |
-| **Instâncias** | Todas as instâncias ou uma instância específica. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #FB7185">
+  <div class="doc-field-item">
+    <strong>Objeto</strong>
+    <p>Objeto cujas instâncias serão removidas.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Instâncias</strong>
+    <p>Todas as instâncias ou uma instância específica.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

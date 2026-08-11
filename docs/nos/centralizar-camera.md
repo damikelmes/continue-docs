@@ -23,10 +23,16 @@ Faz a câmera usar a posição X e Y central do objeto como alvo, como o acompan
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Objeto** | Objeto usado como centro da câmera. |
-| **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |
+<div class="doc-field-list" style="--doc-field-color: #60A5FA">
+  <div class="doc-field-item">
+    <strong>Objeto</strong>
+    <p>Objeto usado como centro da câmera.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Modo de execução</strong>
+    <p>Sempre, Uma única vez, Quantidade ou Por tempo.</p>
+  </div>
+</div>
 
 ## Exemplo
 

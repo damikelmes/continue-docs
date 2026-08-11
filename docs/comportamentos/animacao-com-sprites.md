@@ -23,12 +23,24 @@ Cria animações quadro a quadro usando as imagens cadastradas no comportamento 
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Animações** | Lista de animações nomeadas disponíveis para o objeto. |
-| **Quadros** | Sprites reproduzidos na ordem em que aparecem na lista. |
-| **FPS** | Quantidade de quadros mostrados por segundo. |
-| **Repetir** | Quando ativado, volta ao primeiro quadro depois do último. |
+<div class="doc-field-list" style="--doc-field-color: #4ADE80">
+  <div class="doc-field-item">
+    <strong>Animações</strong>
+    <p>Lista de animações nomeadas disponíveis para o objeto.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Quadros</strong>
+    <p>Sprites reproduzidos na ordem em que aparecem na lista.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>FPS</strong>
+    <p>Quantidade de quadros mostrados por segundo.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Repetir</strong>
+    <p>Quando ativado, volta ao primeiro quadro depois do último.</p>
+  </div>
+</div>
 
 ## Exemplo
 

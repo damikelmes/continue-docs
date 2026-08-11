@@ -23,9 +23,12 @@ Reaproveita o mesmo fluxo em diferentes pontos do Script da cena sem duplicar to
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Script** | Nome do script salvo na biblioteca que será executado. |
+<div class="doc-field-list" style="--doc-field-color: #4ADE80">
+  <div class="doc-field-item">
+    <strong>Script</strong>
+    <p>Nome do script salvo na biblioteca que será executado.</p>
+  </div>
+</div>
 
 ## Exemplo
 

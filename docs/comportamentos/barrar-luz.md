@@ -23,12 +23,24 @@ Transforma o objeto em um obstáculo para luzes que projetam sombra. Também per
 
 ## Campos
 
-| Campo | O que configurar |
-| --- | --- |
-| **Bloqueio de luz** | Porcentagem bloqueada; 100% impede toda a luz de atravessar. |
-| **Entrada de luz** | Quantidade de luz que pode alcançar o interior do objeto. |
-| **Receber luz** | Define se a aparência do próprio objeto é afetada pelas luzes da cena. |
-| **Comprimento da sombra** | Distância da projeção; 0 usa o cálculo automático. |
+<div class="doc-field-list" style="--doc-field-color: #94A3B8">
+  <div class="doc-field-item">
+    <strong>Bloqueio de luz</strong>
+    <p>Porcentagem bloqueada; 100% impede toda a luz de atravessar.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Entrada de luz</strong>
+    <p>Quantidade de luz que pode alcançar o interior do objeto.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Receber luz</strong>
+    <p>Define se a aparência do próprio objeto é afetada pelas luzes da cena.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Comprimento da sombra</strong>
+    <p>Distância da projeção; 0 usa o cálculo automático.</p>
+  </div>
+</div>
 
 ## Exemplo
 
