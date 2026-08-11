@@ -151,9 +151,11 @@ const example = computed(() => examples[props.variant]);
           <span>NOVO FLUXO</span>
           <i />
         </div>
-        <div v-else class="flow-example-connector" :style="{ '--flow-node-color': node.color }">
-          <i />
-          <span>+</span>
+        <div
+          v-else
+          aria-hidden="true"
+          class="flow-example-connector"
+          :style="{ '--flow-node-color': node.color }">
           <i />
         </div>
 
@@ -284,33 +286,16 @@ const example = computed(() => examples[props.variant]);
 
 .flow-example-connector {
   display: flex;
-  height: 52px;
-  align-items: center;
-  flex-direction: column;
-  margin: -10px 0;
+  height: 30px;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .flow-example-connector i {
   width: 3px;
-  min-height: 12px;
+  height: 100%;
   border-radius: 2px;
   background: var(--flow-node-color);
-  flex: 1;
-}
-
-.flow-example-connector span {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--flow-node-color);
-  border-radius: 50%;
-  background: #111113;
-  color: var(--flow-node-color);
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1;
 }
 
 .flow-example-node {
@@ -458,7 +443,13 @@ const example = computed(() => examples[props.variant]);
 }
 
 @media (max-width: 520px) {
+  .flow-example {
+    margin: 18px 0 24px;
+    border-radius: 18px;
+  }
+
   .flow-example-bar {
+    min-height: 44px;
     padding: 0 12px;
   }
 
@@ -467,7 +458,20 @@ const example = computed(() => examples[props.variant]);
   }
 
   .flow-example-canvas {
-    padding: 14px 10px 20px;
+    padding: 12px 8px 18px;
+  }
+
+  .flow-example-break {
+    height: 30px;
+  }
+
+  .flow-example-connector {
+    height: 24px;
+  }
+
+  .flow-example-node {
+    border-radius: 15px;
+    padding: 10px;
   }
 
   .flow-example-node-header {
@@ -476,11 +480,39 @@ const example = computed(() => examples[props.variant]);
 
   .flow-example-fields {
     grid-template-columns: 1fr;
+    gap: 7px;
+    margin-top: 10px;
   }
 
   .flow-example-field,
   .flow-example-field:has(.flow-example-chips) {
     grid-column: auto;
+  }
+
+  .flow-example-description {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .flow-example-status {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .flow-example-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .flow-example-copy strong {
+    font-size: 14px;
+  }
+
+  .flow-example-true {
+    font-size: 9px;
   }
 }
 </style>
