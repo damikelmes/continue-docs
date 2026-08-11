@@ -32,13 +32,13 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 <div class="expression-example-list" style="--expression-color: #FB923C">
   <section class="expression-example">
     <strong>1. Verificar o toque</strong>
-    <pre><code>touch.is_down == 1</code></pre>
-    <p>Pode ser usado em uma condição para executar apenas enquanto o dedo estiver pressionando.</p>
+    <pre><code>touch.is_down</code></pre>
+    <p>No nó Comparar valores, compare esta expressão com 1 para executar enquanto o dedo estiver pressionando.</p>
   </section>
   <section class="expression-example">
     <strong>2. Bloquear quando soltar</strong>
-    <pre><code>touch.is_down == 0</code></pre>
-    <p>Reconhece o momento em que não há toque ativo.</p>
+    <pre><code>touch.is_down</code></pre>
+    <p>No nó Comparar valores, compare esta expressão com 0 para reconhecer quando não há toque ativo.</p>
   </section>
   <section class="expression-example">
     <strong>3. Controlar uma intensidade</strong>

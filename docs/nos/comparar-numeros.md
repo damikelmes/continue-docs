@@ -46,7 +46,7 @@ Cria decisões usando igualdade, diferença, maior, menor e suas variações.
 
 <div class="node-example" style="--node-page-color: #60A5FA">
   <ol>
-    <li>Use Score() como primeiro valor.</li>
+    <li>Use placar.variable.pontos como primeiro valor.</li>
     <li>Escolha Igual ou maior e use 100 como segundo valor.</li>
     <li>Conecte a ação que abre a próxima fase.</li>
   </ol>

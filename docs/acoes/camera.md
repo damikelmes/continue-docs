@@ -1,6 +1,6 @@
 # <DocHeadingIcon icon="videocam-outline" color="#22D3EE" :size="22" /> Ações da câmera
 
-A posição X e Y da câmera representa sempre o centro da área visível. Um objeto colocado em `camera.x` e `camera.y` fica centralizado na tela.
+As posições X e Y da câmera representam sempre o centro da área visível. Um objeto colocado em `camera.x` e `camera.y` fica centralizado na tela.
 
 ## <DocHeadingIcon type="action-center-camera-on-object" icon="videocam" color="#60A5FA" /> Centralizar câmera
 

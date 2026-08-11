@@ -42,8 +42,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>3. Detectar saída da tela</strong>
-    <pre><code>inimigo.right &lt; camera.left</code></pre>
-    <p>Verifica se a borda direita de Inimigo já passou da borda esquerda visível.</p>
+    <pre><code>camera.left</code></pre>
+    <p>No nó Comparar valores, compare inimigo.right com esta expressão usando a opção Menor que.</p>
   </section>
 </div>
 

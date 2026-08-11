@@ -42,8 +42,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>3. Detectar uma queda para fora</strong>
-    <pre><code>jogador.top &gt; camera.bottom</code></pre>
-    <p>Verifica se Jogador caiu completamente abaixo da área visível.</p>
+    <pre><code>camera.bottom</code></pre>
+    <p>No nó Comparar valores, compare jogador.top com esta expressão usando a opção Maior que.</p>
   </section>
 </div>
 

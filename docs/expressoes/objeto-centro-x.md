@@ -36,9 +36,9 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
     <p>Lê centro x do objeto da primeira instância de Jogador que existe na cena.</p>
   </section>
   <section class="expression-example">
-    <strong>2. Alinhar outro objeto</strong>
+    <strong>2. Centralizar a câmera no objeto</strong>
     <pre><code>jogador.center_x</code></pre>
-    <p>Use como posição X de outro objeto para deixar os dois centros na mesma linha vertical.</p>
+    <p>Use no campo X de Mudar posição X da câmera para levar o centro horizontal da câmera até Jogador.</p>
   </section>
   <section class="expression-example">
     <strong>3. Centralizar na câmera</strong>

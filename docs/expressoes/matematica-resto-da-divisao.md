@@ -37,7 +37,7 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>2. Alternar par e ímpar</strong>
-    <pre><code>math.mod(indice, 2)</code></pre>
+    <pre><code>math.mod(contador.variable.indice, 2)</code></pre>
     <p>Retorna 0 para índices pares e 1 para índices ímpares.</p>
   </section>
   <section class="expression-example">

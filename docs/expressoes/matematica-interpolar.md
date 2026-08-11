@@ -42,8 +42,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>3. Aproximação suave</strong>
-    <pre><code>math.lerp(objeto.x, destino_x, 0.1)</code></pre>
-    <p>Retorna uma posição 10% mais próxima do destino.</p>
+    <pre><code>math.lerp(objeto.x, alvo.x, 0.1)</code></pre>
+    <p>Retorna uma posição 10% mais próxima da posição X de Alvo.</p>
   </section>
 </div>
 

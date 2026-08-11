@@ -42,8 +42,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>3. Calcular subida por distância</strong>
-    <pre><code>math.tan(angulo) * distancia_x</code></pre>
-    <p>Calcula a variação vertical de uma inclinação conhecida.</p>
+    <pre><code>math.tan(rampa.variable.angulo) * rampa.variable.distancia_x</code></pre>
+    <p>Calcula a variação vertical usando as variáveis numéricas Ângulo e Distância X de Rampa.</p>
   </section>
 </div>
 

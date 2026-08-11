@@ -41,9 +41,9 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
     <p>Sorteia 0 ou 1 para tomar uma decisão simples.</p>
   </section>
   <section class="expression-example">
-    <strong>3. Escolher uma instância</strong>
-    <pre><code>random.int(1, inimigo.instances)</code></pre>
-    <p>Sorteia um índice entre a primeira e a última instância de Inimigo.</p>
+    <strong>3. Escolher uma animação numerada</strong>
+    <pre><code>random.int(1, 4)</code></pre>
+    <p>Sorteia um número inteiro para escolher uma entre quatro opções.</p>
   </section>
 </div>
 

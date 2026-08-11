@@ -42,29 +42,29 @@ const objectExpressions = [
     example('Ler uma instância específica', 'inimigo.instance_3.y', 'Lê a posição Y armazenada pela terceira instância de Inimigo.'),
   ], rules: ['Para alinhar pelo centro visual do objeto, prefira `.center_y`.'] }),
   objectExpression({ property: 'center_x', slug: 'objeto-centro-x', title: 'Centro X do objeto', icon: 'contract-outline', type: 'expression-object-x', summary: 'Retorna o centro horizontal real da instância, considerando seu tamanho.', uses: [
-    example('Alinhar outro objeto', 'jogador.center_x', 'Use como posição X de outro objeto para deixar os dois centros na mesma linha vertical.'),
+    example('Centralizar a câmera no objeto', 'jogador.center_x', 'Use no campo X de Mudar posição X da câmera para levar o centro horizontal da câmera até Jogador.'),
     example('Centralizar na câmera', 'camera.x - jogador.center_x', 'Mostra a diferença horizontal entre o centro da câmera e o centro do jogador.'),
   ], rules: ['É a escolha mais segura quando você quer centralizar objetos de larguras diferentes.'] }),
   objectExpression({ property: 'center_y', slug: 'objeto-centro-y', title: 'Centro Y do objeto', icon: 'contract-outline', type: 'expression-object-y', summary: 'Retorna o centro vertical real da instância, considerando sua altura.', uses: [
-    example('Alinhar outro objeto', 'jogador.center_y', 'Use como posição Y de outro objeto para deixar os dois centros na mesma linha horizontal.'),
+    example('Centralizar a câmera no objeto', 'jogador.center_y', 'Use no campo Y de Mudar posição Y da câmera para levar o centro vertical da câmera até Jogador.'),
     example('Medir distância até a câmera', 'camera.y - jogador.center_y', 'Mostra a diferença vertical entre o centro da câmera e o centro do jogador.'),
   ], rules: ['É a escolha mais segura quando você quer centralizar objetos de alturas diferentes.'] }),
   objectExpression({ property: 'left', slug: 'objeto-borda-esquerda', title: 'Borda esquerda do objeto', icon: 'arrow-back-outline', summary: 'Retorna a coordenada da extremidade esquerda atual da instância.', uses: [
     example('Criar antes da borda', 'plataforma.left - 16', 'Coloca algo 16 pixels antes da borda esquerda de Plataforma.'),
-    example('Comparar com a câmera', 'inimigo.left < camera.left', 'Ajuda a verificar se Inimigo já saiu pelo lado esquerdo da área visível.'),
-  ] }),
+    example('Comparar com a câmera', 'inimigo.left', 'No nó Comparar valores, compare esta expressão com camera.left usando a opção Menor que.'),
+  ], rules: ['A rotação não altera esse valor; a borda acompanha a posição e a largura do objeto.'] }),
   objectExpression({ property: 'right', slug: 'objeto-borda-direita', title: 'Borda direita do objeto', icon: 'arrow-forward-outline', summary: 'Retorna a coordenada da extremidade direita atual da instância.', uses: [
     example('Criar depois da borda', 'plataforma.right + 16', 'Coloca algo 16 pixels depois da borda direita de Plataforma.'),
-    example('Comparar com a câmera', 'inimigo.right > camera.right', 'Ajuda a verificar se Inimigo já saiu pelo lado direito da área visível.'),
-  ] }),
+    example('Comparar com a câmera', 'inimigo.right', 'No nó Comparar valores, compare esta expressão com camera.right usando a opção Maior que.'),
+  ], rules: ['A rotação não altera esse valor; a borda acompanha a posição e a largura do objeto.'] }),
   objectExpression({ property: 'top', slug: 'objeto-borda-superior', title: 'Borda superior do objeto', icon: 'arrow-up-outline', summary: 'Retorna a coordenada da extremidade superior atual da instância.', uses: [
     example('Colocar uma barra acima', 'jogador.top - 12', 'Use como Y para manter uma barra 12 pixels acima de Jogador.'),
-    example('Comparar com a câmera', 'inimigo.top < camera.top', 'Ajuda a saber se Inimigo saiu pela parte de cima da câmera.'),
-  ] }),
+    example('Comparar com a câmera', 'inimigo.top', 'No nó Comparar valores, compare esta expressão com camera.top usando a opção Menor que.'),
+  ], rules: ['A rotação não altera esse valor; a borda acompanha a posição e a altura do objeto.'] }),
   objectExpression({ property: 'bottom', slug: 'objeto-borda-inferior', title: 'Borda inferior do objeto', icon: 'arrow-down-outline', summary: 'Retorna a coordenada da extremidade inferior atual da instância.', uses: [
     example('Colocar um efeito abaixo', 'jogador.bottom + 8', 'Use como Y para posicionar um efeito 8 pixels abaixo de Jogador.'),
-    example('Comparar com a câmera', 'inimigo.bottom > camera.bottom', 'Ajuda a saber se Inimigo saiu pela parte de baixo da câmera.'),
-  ] }),
+    example('Comparar com a câmera', 'inimigo.bottom', 'No nó Comparar valores, compare esta expressão com camera.bottom usando a opção Maior que.'),
+  ], rules: ['A rotação não altera esse valor; a borda acompanha a posição e a altura do objeto.'] }),
   objectExpression({ property: 'rotation', slug: 'objeto-rotacao', title: 'Rotação do objeto', icon: 'refresh-outline', summary: 'Retorna a rotação atual do objeto e da colisão, em graus.', uses: [
     example('Copiar a direção visual', 'nave.rotation', 'Use como rotação de um projétil para lançá-lo com o mesmo ângulo de Nave.'),
     example('Somar um ajuste', 'ponte.rotation + 90', 'Gera um ângulo perpendicular à rotação atual de Ponte.'),
@@ -94,7 +94,7 @@ const objectExpressions = [
     summary: 'Retorna quantas instâncias de um objeto existem na cena.', returns: 'Um número inteiro com a quantidade atual de instâncias do objeto escolhido.',
     examples: [
       example('Contar inimigos', 'inimigo.instances', 'Retorna o total de instâncias de Inimigo existentes neste momento.'),
-      example('Verificar se todos foram derrotados', 'inimigo.instances <= 0', 'Pode ser usado em uma condição para continuar quando não restar nenhum inimigo.'),
+      example('Verificar se todos foram derrotados', 'inimigo.instances', 'No nó Comparar valores, compare esta expressão com 0 usando a opção Igual a.'),
       example('Calcular quantos ainda podem nascer', 'math.max(0, 10 - inimigo.instances)', 'Retorna quantas vagas faltam para alcançar um limite de 10 inimigos.'),
     ],
     rules: ['Troque `inimigo` pelo identificador do objeto escolhido.', 'Essa expressão conta o grupo inteiro e não aceita `.instance_2`.', 'A contagem muda quando instâncias são criadas ou excluídas.'],
@@ -109,7 +109,7 @@ const objectExpressions = [
   ], rules: ['Valor positivo indica movimento para a direita; negativo indica movimento para a esquerda.'] }),
   objectExpression({ property: 'velocity_y', slug: 'objeto-velocidade-y', title: 'Velocidade Y do objeto', icon: 'speedometer-outline', type: 'expression-object-y', summary: 'Retorna a velocidade vertical medida, em pixels por segundo.', uses: [
     example('Copiar o impulso vertical', 'jogador.velocity_y', 'Use para dar a outro objeto a mesma velocidade vertical de Jogador.'),
-    example('Detectar queda rápida', 'jogador.velocity_y > 500', 'Pode ser usado em uma condição para reconhecer uma queda acima de 500 pixels por segundo.'),
+    example('Detectar queda rápida', 'jogador.velocity_y', 'No nó Comparar valores, compare esta expressão com 500 usando a opção Maior que.'),
   ], rules: ['No sistema de coordenadas da cena, valor positivo normalmente indica movimento para baixo.'] }),
   objectExpression({ property: 'speed', slug: 'objeto-velocidade-total', title: 'Velocidade total do objeto', icon: 'speedometer-outline', summary: 'Retorna a velocidade total medida, sem separar os eixos, em pixels por segundo.', uses: [
     example('Controlar uma animação', 'jogador.speed', 'Use para escolher uma animação ou intensidade de efeito conforme a velocidade real.'),
@@ -148,11 +148,11 @@ const cameraExpressions = [
   ], rules: ['O tremor visual não altera esse centro lógico.'] }),
   cameraExpression({ property: 'left', slug: 'camera-borda-esquerda', title: 'Borda esquerda da câmera', icon: 'arrow-back-outline', summary: 'Retorna a coordenada da extremidade esquerda visível.', examples: [
     example('Manter uma margem', 'camera.left + 24', 'Posiciona algo 24 pixels para dentro da borda esquerda.'),
-    example('Detectar saída da tela', 'inimigo.right < camera.left', 'Verifica se a borda direita de Inimigo já passou da borda esquerda visível.'),
+    example('Detectar saída da tela', 'camera.left', 'No nó Comparar valores, compare inimigo.right com esta expressão usando a opção Menor que.'),
   ] }),
   cameraExpression({ property: 'right', slug: 'camera-borda-direita', title: 'Borda direita da câmera', icon: 'arrow-forward-outline', summary: 'Retorna a coordenada da extremidade direita visível.', examples: [
     example('Manter uma margem', 'camera.right - 24', 'Posiciona algo 24 pixels para dentro da borda direita.'),
-    example('Detectar saída da tela', 'inimigo.left > camera.right', 'Verifica se a borda esquerda de Inimigo já passou da borda direita visível.'),
+    example('Detectar saída da tela', 'camera.right', 'No nó Comparar valores, compare inimigo.left com esta expressão usando a opção Maior que.'),
   ] }),
   cameraExpression({ property: 'top', slug: 'camera-borda-superior', title: 'Borda superior da câmera', icon: 'arrow-up-outline', summary: 'Retorna a coordenada da extremidade superior visível.', examples: [
     example('Fixar uma margem superior', 'camera.top + 20', 'Posiciona algo 20 pixels abaixo da borda superior.'),
@@ -160,7 +160,7 @@ const cameraExpressions = [
   ] }),
   cameraExpression({ property: 'bottom', slug: 'camera-borda-inferior', title: 'Borda inferior da câmera', icon: 'arrow-down-outline', summary: 'Retorna a coordenada da extremidade inferior visível.', examples: [
     example('Fixar uma margem inferior', 'camera.bottom - 20', 'Posiciona algo 20 pixels acima da borda inferior.'),
-    example('Detectar uma queda para fora', 'jogador.top > camera.bottom', 'Verifica se Jogador caiu completamente abaixo da área visível.'),
+    example('Detectar uma queda para fora', 'camera.bottom', 'No nó Comparar valores, compare jogador.top com esta expressão usando a opção Maior que.'),
   ] }),
   cameraExpression({ property: 'width', slug: 'camera-largura-visivel', title: 'Largura visível da câmera', icon: 'videocam-outline', summary: 'Retorna a largura lógica visível da câmera em pixels.', examples: [
     example('Encontrar metade da tela', 'camera.width / 2', 'Calcula metade da largura visível atual.'),
@@ -182,7 +182,7 @@ const timeExpressions = [
   plain({ key: 'time-delta', slug: 'tempo-delta', category: 'tempo', title: 'Delta time', icon: 'time-outline', color: '#2DD4BF', token: 'time.delta', summary: 'Retorna o tempo, em segundos, usado pela atualização atual.', returns: 'Uma pequena fração de segundo que acompanha o tempo real entre atualizações.', examples: [
     example('Mover por segundo', '120 * time.delta', 'Transforma 120 pixels por segundo na distância correta para esta atualização.'),
     example('Girar por segundo', '90 * time.delta', 'Transforma 90 graus por segundo no giro correto para esta atualização.'),
-    example('Contador independente do FPS', 'tempo + time.delta', 'Soma o tempo real da atualização a um contador numérico.'),
+    example('Contador independente do FPS', 'relogio.variable.tempo + time.delta', 'Soma o tempo real da atualização à variável numérica Tempo do objeto Relógio.'),
   ], rules: ['Use em mudanças executadas continuamente para que a velocidade não dependa do FPS.', 'Não multiplique novamente por delta quando a ação ou comportamento já informa que trabalha em pixels por segundo.'] }),
   plain({ key: 'time-elapsed', slug: 'tempo-decorrido', category: 'tempo', title: 'Tempo decorrido da cena', icon: 'stopwatch-outline', color: '#2DD4BF', token: 'time.elapsed', summary: 'Retorna os segundos decorridos desde o início da cena.', returns: 'Um número crescente, em segundos, contado desde que a cena começou.', examples: [
     example('Aumentar dificuldade com o tempo', '1 + time.elapsed / 60', 'Cria um multiplicador que aumenta 1 ponto a cada 60 segundos.'),
@@ -191,35 +191,35 @@ const timeExpressions = [
   ], rules: ['O valor volta ao início quando a cena é reiniciada.', 'Use `time.delta` para somar uma mudança por atualização; use `time.elapsed` quando precisar do relógio total da cena.'] }),
   plain({ key: 'game-fps', slug: 'quadros-por-segundo', category: 'tempo', title: 'Quadros por segundo', icon: 'speedometer-outline', color: '#2DD4BF', token: 'game.fps', summary: 'Retorna a quantidade atual de quadros por segundo do jogo.', returns: 'Uma estimativa numérica do FPS medido durante a execução.', examples: [
     example('Mostrar o FPS inteiro', 'math.round(game.fps)', 'Arredonda a medição para exibir um número fácil de ler.'),
-    example('Ativar um modo leve', 'game.fps < 30', 'Pode ser usado em uma condição para reduzir efeitos quando o desempenho cair.'),
+    example('Ativar um modo leve', 'game.fps', 'No nó Comparar valores, compare esta expressão com 30 usando a opção Menor que.'),
     example('Limitar o valor exibido', 'math.clamp(game.fps, 0, 120)', 'Mantém a informação usada pela interface entre 0 e 120.'),
   ], rules: ['O valor pode variar de uma atualização para outra.', 'FPS mede desempenho; não use esse valor para controlar velocidade. Para isso, use `time.delta`.'] }),
 ];
 
 const touchExpressions = [
   plain({ key: 'touch-x', slug: 'toque-x-no-mundo', category: 'toque', title: 'Toque X no mundo', icon: 'hand-left-outline', type: 'expression-touch-x', color: '#FB923C', token: 'touch.x', summary: 'Retorna a posição X do último toque dentro do mundo do jogo.', returns: 'A coordenada X convertida pela posição e pelo zoom da câmera.', examples: [
-    example('Mover até o toque', 'touch.x', 'Use como destino X para levar um objeto ao ponto tocado no mundo.'),
-    example('Criar no toque', 'touch.x', 'Use como X da ação Criar objeto para criar uma instância onde o dedo tocou.'),
+    example('Usar o toque como destino', 'touch.x', 'Use como destino X de uma ação para levar a posição horizontal do objeto ao ponto tocado no mundo.'),
+    example('Criar na posição tocada', 'touch.x', 'Use como X da ação Criar objeto para definir a posição horizontal da nova instância pelo toque.'),
     example('Manter uma margem', 'touch.x + 24', 'Posiciona algo 24 pixels à direita do ponto tocado.'),
   ], rules: ['Depois que o dedo é solto, a expressão mantém a última posição.', 'Consulte `touch.is_down` quando precisar confirmar que o toque continua ativo.'] }),
   plain({ key: 'touch-y', slug: 'toque-y-no-mundo', category: 'toque', title: 'Toque Y no mundo', icon: 'hand-left-outline', type: 'expression-touch-y', color: '#FB923C', token: 'touch.y', summary: 'Retorna a posição Y do último toque dentro do mundo do jogo.', returns: 'A coordenada Y convertida pela posição e pelo zoom da câmera.', examples: [
-    example('Mover até o toque', 'touch.y', 'Use como destino Y para levar um objeto ao ponto tocado no mundo.'),
-    example('Criar no toque', 'touch.y', 'Use como Y da ação Criar objeto para criar uma instância onde o dedo tocou.'),
+    example('Usar o toque como destino', 'touch.y', 'Use como destino Y de uma ação para levar a posição vertical do objeto ao ponto tocado no mundo.'),
+    example('Criar na posição tocada', 'touch.y', 'Use como Y da ação Criar objeto para definir a posição vertical da nova instância pelo toque.'),
     example('Criar acima do dedo', 'touch.y - 24', 'Posiciona algo 24 pixels acima do ponto tocado.'),
   ], rules: ['Depois que o dedo é solto, a expressão mantém a última posição.', 'Consulte `touch.is_down` quando precisar confirmar que o toque continua ativo.'] }),
   plain({ key: 'touch-screen-x', slug: 'toque-x-na-tela', category: 'toque', title: 'Toque X na tela', icon: 'phone-portrait-outline', type: 'expression-touch-x', color: '#FB923C', token: 'touch.screen_x', summary: 'Retorna a posição X direta do toque na tela do aparelho.', returns: 'A coordenada X da tela, sem aplicar a posição nem o zoom da câmera.', examples: [
-    example('Posicionar uma interface', 'touch.screen_x', 'Use para alinhar um elemento de interface ao dedo na horizontal.'),
-    example('Detectar a metade da tela', 'touch.screen_x < camera.width / 2', 'Ajuda a distinguir um toque no lado esquerdo da tela.'),
-    example('Criar uma margem visual', 'touch.screen_x + 12', 'Desloca uma dica de interface 12 pixels para a direita do dedo.'),
+    example('Ler a posição horizontal na tela', 'touch.screen_x', 'Retorna a distância horizontal entre o toque e a borda esquerda da tela.'),
+    example('Comparar uma região da tela', 'touch.screen_x', 'No nó Comparar valores, compare esta expressão com uma posição X fixa da tela.'),
+    example('Calcular uma margem', 'touch.screen_x + 12', 'Calcula uma posição de tela 12 pixels à direita do dedo.'),
   ], rules: ['Use `touch.x` para objetos do mundo e `touch.screen_x` para interface ligada diretamente à tela.'] }),
   plain({ key: 'touch-screen-y', slug: 'toque-y-na-tela', category: 'toque', title: 'Toque Y na tela', icon: 'phone-portrait-outline', type: 'expression-touch-y', color: '#FB923C', token: 'touch.screen_y', summary: 'Retorna a posição Y direta do toque na tela do aparelho.', returns: 'A coordenada Y da tela, sem aplicar a posição nem o zoom da câmera.', examples: [
-    example('Posicionar uma interface', 'touch.screen_y', 'Use para alinhar um elemento de interface ao dedo na vertical.'),
-    example('Detectar a metade da tela', 'touch.screen_y < camera.height / 2', 'Ajuda a distinguir um toque na metade superior da tela.'),
-    example('Mostrar uma dica acima do dedo', 'touch.screen_y - 20', 'Desloca uma dica de interface 20 pixels para cima.'),
+    example('Ler a posição vertical na tela', 'touch.screen_y', 'Retorna a distância vertical entre o toque e a borda superior da tela.'),
+    example('Comparar uma região da tela', 'touch.screen_y', 'No nó Comparar valores, compare esta expressão com uma posição Y fixa da tela.'),
+    example('Calcular uma margem', 'touch.screen_y - 20', 'Calcula uma posição de tela 20 pixels acima do dedo.'),
   ], rules: ['Use `touch.y` para objetos do mundo e `touch.screen_y` para interface ligada diretamente à tela.'] }),
   plain({ key: 'touch-is-down', slug: 'toque-esta-pressionado', category: 'toque', title: 'Toque está pressionado', icon: 'finger-print-outline', color: '#FB923C', token: 'touch.is_down', summary: 'Retorna 1 enquanto o dedo está na tela e 0 depois que ele é solto.', returns: 'O número `1` para toque ativo ou `0` para toque solto.', examples: [
-    example('Verificar o toque', 'touch.is_down == 1', 'Pode ser usado em uma condição para executar apenas enquanto o dedo estiver pressionando.'),
-    example('Bloquear quando soltar', 'touch.is_down == 0', 'Reconhece o momento em que não há toque ativo.'),
+    example('Verificar o toque', 'touch.is_down', 'No nó Comparar valores, compare esta expressão com 1 para executar enquanto o dedo estiver pressionando.'),
+    example('Bloquear quando soltar', 'touch.is_down', 'No nó Comparar valores, compare esta expressão com 0 para reconhecer quando não há toque ativo.'),
     example('Controlar uma intensidade', 'touch.is_down * 100', 'Retorna 100 enquanto o toque está ativo e 0 quando está solto.'),
   ], rules: ['A expressão é numérica: use `1` para ativo e `0` para inativo.', 'As coordenadas do último toque continuam guardadas mesmo quando esta expressão retorna `0`.'] }),
 ];
@@ -237,21 +237,21 @@ const mathExpressions = [
   mathExpression({ key: 'math-abs', slug: 'matematica-valor-absoluto', title: 'Valor absoluto', icon: 'remove-outline', token: 'math.abs(valor)', summary: 'Remove o sinal negativo e retorna a distância até zero.', examples: [example('Número negativo', 'math.abs(-8)', 'Retorna 8.'), example('Número positivo', 'math.abs(8)', 'Continua retornando 8.'), example('Distância horizontal', 'math.abs(jogador.center_x - inimigo.center_x)', 'Retorna a distância horizontal entre os centros, sem direção.')]}),
   mathExpression({ key: 'math-min', slug: 'matematica-menor-valor', title: 'Menor valor', icon: 'chevron-down-outline', token: 'math.min(a, b)', summary: 'Retorna o menor entre dois valores.', examples: [example('Comparar números', 'math.min(7, 3)', 'Retorna 3.'), example('Limitar pelo máximo atual', 'math.min(jogador.variable.vida, 100)', 'Nunca deixa o resultado usado passar de 100.'), example('Escolher a borda mais próxima', 'math.min(jogador.left, inimigo.left)', 'Retorna a coordenada que estiver mais à esquerda.')]}),
   mathExpression({ key: 'math-max', slug: 'matematica-maior-valor', title: 'Maior valor', icon: 'chevron-up-outline', token: 'math.max(a, b)', summary: 'Retorna o maior entre dois valores.', examples: [example('Comparar números', 'math.max(7, 3)', 'Retorna 7.'), example('Impedir valor negativo', 'math.max(0, jogador.variable.vida - 10)', 'Garante que a vida calculada nunca fique abaixo de zero.'), example('Escolher a borda mais distante', 'math.max(jogador.right, inimigo.right)', 'Retorna a coordenada que estiver mais à direita.')]}),
-  mathExpression({ key: 'math-clamp', slug: 'matematica-limitar', title: 'Limitar valor', icon: 'contract-outline', token: 'math.clamp(valor, mínimo, máximo)', summary: 'Mantém um valor dentro de um intervalo.', examples: [example('Limitar entre 0 e 10', 'math.clamp(14, 0, 10)', 'Retorna 10.'), example('Limitar vida', 'math.clamp(jogador.variable.vida, 0, 100)', 'Mantém a vida entre 0 e 100.'), example('Limitar posição à câmera', 'math.clamp(jogador.x, camera.left, camera.right)', 'Mantém a posição usada entre as bordas horizontais visíveis.')], rules: ['Se mínimo e máximo forem informados na ordem errada, organize os limites antes de usar.'] }),
+  mathExpression({ key: 'math-clamp', slug: 'matematica-limitar', title: 'Limitar valor', icon: 'contract-outline', token: 'math.clamp(valor, mínimo, máximo)', summary: 'Mantém um valor dentro de um intervalo.', examples: [example('Limitar entre 0 e 10', 'math.clamp(14, 0, 10)', 'Retorna 10.'), example('Limitar vida', 'math.clamp(jogador.variable.vida, 0, 100)', 'Mantém a vida entre 0 e 100.'), example('Limitar posição à câmera', 'math.clamp(jogador.x, camera.left, camera.right)', 'Mantém a posição usada entre as bordas horizontais visíveis.')], rules: ['Os dois limites podem ser informados em qualquer ordem; a função reconhece automaticamente o menor e o maior.'] }),
   mathExpression({ key: 'math-sqrt', slug: 'matematica-raiz-quadrada', title: 'Raiz quadrada', icon: 'calculator-outline', token: 'math.sqrt(valor)', summary: 'Calcula a raiz quadrada de um valor.', examples: [example('Raiz exata', 'math.sqrt(81)', 'Retorna 9.'), example('Raiz decimal', 'math.sqrt(2)', 'Retorna aproximadamente 1,414.'), example('Distância em dois eixos', 'math.sqrt(math.pow(jogador.x - inimigo.x, 2) + math.pow(jogador.y - inimigo.y, 2))', 'Calcula a distância direta entre dois pontos.')], rules: ['O valor não pode ser negativo.'] }),
   mathExpression({ key: 'math-pow', slug: 'matematica-potencia', title: 'Potência', icon: 'trending-up-outline', token: 'math.pow(base, expoente)', summary: 'Eleva uma base ao expoente informado.', examples: [example('Ao cubo', 'math.pow(2, 3)', 'Retorna 8.'), example('Ao quadrado', 'math.pow(5, 2)', 'Retorna 25.'), example('Distância ao quadrado', 'math.pow(jogador.x - inimigo.x, 2)', 'Calcula o quadrado da diferença horizontal.')]}),
-  mathExpression({ key: 'math-mod', slug: 'matematica-resto-da-divisao', title: 'Resto da divisão', icon: 'repeat-outline', token: 'math.mod(a, b)', summary: 'Retorna o resto da divisão entre dois valores.', examples: [example('Resto simples', 'math.mod(10, 3)', 'Retorna 1.'), example('Alternar par e ímpar', 'math.mod(indice, 2)', 'Retorna 0 para índices pares e 1 para índices ímpares.'), example('Repetir um ângulo', 'math.mod(time.elapsed * 90, 360)', 'Mantém um ângulo crescente no intervalo de uma volta.')], rules: ['O divisor não pode ser zero.'] }),
+  mathExpression({ key: 'math-mod', slug: 'matematica-resto-da-divisao', title: 'Resto da divisão', icon: 'repeat-outline', token: 'math.mod(a, b)', summary: 'Retorna o resto da divisão entre dois valores.', examples: [example('Resto simples', 'math.mod(10, 3)', 'Retorna 1.'), example('Alternar par e ímpar', 'math.mod(contador.variable.indice, 2)', 'Retorna 0 para índices pares e 1 para índices ímpares.'), example('Repetir um ângulo', 'math.mod(time.elapsed * 90, 360)', 'Mantém um ângulo crescente no intervalo de uma volta.')], rules: ['O divisor não pode ser zero.'] }),
   mathExpression({ key: 'math-sin', slug: 'matematica-seno', title: 'Seno', icon: 'analytics-outline', token: 'math.sin(graus)', summary: 'Calcula o seno de um ângulo informado em graus.', examples: [example('Ângulo de 90°', 'math.sin(90)', 'Retorna 1.'), example('Oscilação com o tempo', 'math.sin(time.elapsed * 180) * 20', 'Oscila suavemente entre -20 e 20.'), example('Componente vertical', 'math.sin(jogador.rotation) * 200', 'Calcula a parte vertical de uma velocidade de 200 na rotação do jogador.')], rules: ['Os ângulos usam graus, não radianos.'] }),
   mathExpression({ key: 'math-cos', slug: 'matematica-cosseno', title: 'Cosseno', icon: 'analytics-outline', token: 'math.cos(graus)', summary: 'Calcula o cosseno de um ângulo informado em graus.', examples: [example('Ângulo de 180°', 'math.cos(180)', 'Retorna -1.'), example('Oscilação com o tempo', 'math.cos(time.elapsed * 180) * 20', 'Oscila suavemente e começa no valor 20.'), example('Componente horizontal', 'math.cos(jogador.rotation) * 200', 'Calcula a parte horizontal de uma velocidade de 200 na rotação do jogador.')], rules: ['Os ângulos usam graus, não radianos.'] }),
-  mathExpression({ key: 'math-tan', slug: 'matematica-tangente', title: 'Tangente', icon: 'analytics-outline', token: 'math.tan(graus)', summary: 'Calcula a tangente de um ângulo informado em graus.', examples: [example('Ângulo de 45°', 'math.tan(45)', 'Retorna aproximadamente 1.'), example('Inclinação de 30°', 'math.tan(30)', 'Retorna aproximadamente 0,577.'), example('Calcular subida por distância', 'math.tan(angulo) * distancia_x', 'Calcula a variação vertical de uma inclinação conhecida.')], rules: ['Os ângulos usam graus, não radianos.', 'Perto de 90° e 270°, o resultado cresce muito; limite o valor quando necessário.'] }),
-  mathExpression({ key: 'math-lerp', slug: 'matematica-interpolar', title: 'Interpolar valores', icon: 'swap-horizontal-outline', token: 'math.lerp(início, fim, progresso)', summary: 'Mistura dois valores usando um progresso.', examples: [example('Um quarto do caminho', 'math.lerp(0, 100, 0.25)', 'Retorna 25.'), example('Metade entre objeto e câmera', 'math.lerp(jogador.x, camera.x, 0.5)', 'Retorna o ponto no meio entre as duas posições X.'), example('Aproximação suave', 'math.lerp(objeto.x, destino_x, 0.1)', 'Retorna uma posição 10% mais próxima do destino.')], rules: ['Progresso `0` retorna o início e progresso `1` retorna o fim.', 'Valores entre 0 e 1 percorrem o intervalo; valores fora dele ultrapassam as pontas.'] }),
+  mathExpression({ key: 'math-tan', slug: 'matematica-tangente', title: 'Tangente', icon: 'analytics-outline', token: 'math.tan(graus)', summary: 'Calcula a tangente de um ângulo informado em graus.', examples: [example('Ângulo de 45°', 'math.tan(45)', 'Retorna aproximadamente 1.'), example('Inclinação de 30°', 'math.tan(30)', 'Retorna aproximadamente 0,577.'), example('Calcular subida por distância', 'math.tan(rampa.variable.angulo) * rampa.variable.distancia_x', 'Calcula a variação vertical usando as variáveis numéricas Ângulo e Distância X de Rampa.')], rules: ['Os ângulos usam graus, não radianos.', 'Perto de 90° e 270°, o resultado cresce muito; limite o valor quando necessário.'] }),
+  mathExpression({ key: 'math-lerp', slug: 'matematica-interpolar', title: 'Interpolar valores', icon: 'swap-horizontal-outline', token: 'math.lerp(início, fim, progresso)', summary: 'Mistura dois valores usando um progresso.', examples: [example('Um quarto do caminho', 'math.lerp(0, 100, 0.25)', 'Retorna 25.'), example('Metade entre objeto e câmera', 'math.lerp(jogador.x, camera.x, 0.5)', 'Retorna o ponto no meio entre as duas posições X.'), example('Aproximação suave', 'math.lerp(objeto.x, alvo.x, 0.1)', 'Retorna uma posição 10% mais próxima da posição X de Alvo.')], rules: ['Progresso `0` retorna o início e progresso `1` retorna o fim.', 'Valores entre 0 e 1 percorrem o intervalo; valores fora dele ultrapassam as pontas.'] }),
 ];
 
 const randomExpressions = [
   plain({ key: 'random-int', slug: 'aleatorio-inteiro', category: 'aleatorio', title: 'Número inteiro aleatório', icon: 'dice-outline', color: '#A78BFA', token: 'random.int(mínimo, máximo)', summary: 'Sorteia um número inteiro incluindo os dois limites.', returns: 'Um número inteiro sorteado entre o mínimo e o máximo, com os dois incluídos.', examples: [
     example('Simular um dado', 'random.int(1, 6)', 'Sorteia um dos números inteiros de 1 a 6.'),
     example('Escolher um lado', 'random.int(0, 1)', 'Sorteia 0 ou 1 para tomar uma decisão simples.'),
-    example('Escolher uma instância', 'random.int(1, inimigo.instances)', 'Sorteia um índice entre a primeira e a última instância de Inimigo.'),
+    example('Escolher uma animação numerada', 'random.int(1, 4)', 'Sorteia um número inteiro para escolher uma entre quatro opções.'),
   ], rules: ['Os limites podem ser informados em qualquer ordem.', 'A função sorteia novamente toda vez que é calculada.', 'Use Uma única vez quando quiser manter um único resultado.'] }),
   plain({ key: 'random-float', slug: 'aleatorio-decimal', category: 'aleatorio', title: 'Número decimal aleatório', icon: 'dice-outline', color: '#A78BFA', token: 'random.float(mínimo, máximo)', summary: 'Sorteia um número com casas decimais entre os limites.', returns: 'Um número decimal sorteado entre o mínimo e o máximo.', examples: [
     example('Variar uma posição', 'random.float(-20, 20)', 'Sorteia um deslocamento decimal entre -20 e 20 pixels.'),

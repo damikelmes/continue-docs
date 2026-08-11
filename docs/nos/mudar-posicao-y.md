@@ -51,7 +51,7 @@ Posiciona ou desloca um objeto no eixo Y sem alterar a posição X.
 <div class="node-example" style="--node-page-color: #38BDF8">
   <ol>
     <li>Escolha “Marcador”.</li>
-    <li>Use Definir como e a expressão CameraCenterY().</li>
+    <li>Use Definir como e a expressão camera.y.</li>
   </ol>
   <p class="node-result"><strong>Resultado:</strong> O centro do marcador fica na posição Y do centro da câmera.</p>
 </div>
@@ -59,7 +59,8 @@ Posiciona ou desloca um objeto no eixo Y sem alterar a posição X.
 ## Regras
 
 - O objeto precisa existir na cena quando o fluxo executar este nó.
-- A posição Y representa o centro real do objeto.
+- Ao usar camera.y com Definir como, o centro vertical do objeto é alinhado ao centro da câmera.
+- Com outros valores, a ação altera a propriedade Y armazenada pelo objeto.
 - Somar e Subtrair usam a posição atual como base.
 - Divisão por zero não deve ser usada.
 - Escolha o modo de execução de acordo com a duração desejada. “Uma única vez” não mantém uma ação contínua ativa.

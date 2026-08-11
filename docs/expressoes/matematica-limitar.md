@@ -51,7 +51,7 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 
 - Dentro de funções, separe os argumentos com vírgulas e use ponto nas casas decimais.
 - Os argumentos podem ser números, propriedades ou outras funções.
-- Se mínimo e máximo forem informados na ordem errada, organize os limites antes de usar.
+- Os dois limites podem ser informados em qualquer ordem; a função reconhece automaticamente o menor e o maior.
 
 ## Expressões relacionadas
 

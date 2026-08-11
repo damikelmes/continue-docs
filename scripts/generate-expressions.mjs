@@ -133,8 +133,12 @@ O seletor escreve o identificador correto. Por exemplo, \`camera.x + 120\` repre
 
 Multiplicação e divisão são calculadas antes de soma e subtração. Use parênteses quando quiser deixar a ordem clara: \`(10 + 4) * 2\` retorna \`28\`.
 
+::: info Comparações ficam no nó de condição
+Não escreva \`<\`, \`>\` ou \`==\` dentro de uma expressão numérica. No nó **Comparar valores**, coloque uma expressão em cada campo e escolha separadamente **Igual a**, **Menor que** ou **Maior que**.
+:::
+
 ::: warning Divisão por zero
-Uma expressão que divide por zero é inválida. Corrija o divisor ou use um valor mínimo seguro, como \`math.max(divisor, 0.0001)\`.
+Uma expressão que divide por zero é inválida. Corrija o divisor ou use um valor mínimo seguro, como \`math.max(jogador.variable.divisor, 0.0001)\`.
 :::
 
 ## <DocHeadingIcon icon="play-forward-outline" color="#FACC15" /> Ordem e valores atualizados

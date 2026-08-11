@@ -26,7 +26,7 @@ Esses botões ficam na parte de cima do editor e cuidam das ações mais usadas 
   <span>Play</span>
 </h3>
 
-Abre o visualizador e testa a cena atual do jeito que ela está salva. Use esse botão para conferir o jogo, os scripts, a câmera, a colisão e os comportamentos no Expo Go.
+Abre o visualizador dentro da própria Continue e testa a cena atual do jeito que ela está salva. Use esse botão para conferir o jogo, os scripts, a câmera, a colisão e os comportamentos. Não é necessário instalar outro aplicativo para testar.
 
 <h3 id="adicionar-instancia" class="doc-icon-heading">
   <span class="doc-heading-icon doc-heading-icon--tool"><NodeIcon type="plain" icon="add" color="#60A5FA" :size="18" /></span>

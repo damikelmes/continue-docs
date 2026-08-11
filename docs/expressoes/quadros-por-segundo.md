@@ -37,8 +37,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>2. Ativar um modo leve</strong>
-    <pre><code>game.fps &lt; 30</code></pre>
-    <p>Pode ser usado em uma condição para reduzir efeitos quando o desempenho cair.</p>
+    <pre><code>game.fps</code></pre>
+    <p>No nó Comparar valores, compare esta expressão com 30 usando a opção Menor que.</p>
   </section>
   <section class="expression-example">
     <strong>3. Limitar o valor exibido</strong>

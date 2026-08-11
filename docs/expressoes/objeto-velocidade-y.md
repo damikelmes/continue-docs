@@ -42,8 +42,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>3. Detectar queda rápida</strong>
-    <pre><code>jogador.velocity_y &gt; 500</code></pre>
-    <p>Pode ser usado em uma condição para reconhecer uma queda acima de 500 pixels por segundo.</p>
+    <pre><code>jogador.velocity_y</code></pre>
+    <p>No nó Comparar valores, compare esta expressão com 500 usando a opção Maior que.</p>
   </section>
 </div>
 

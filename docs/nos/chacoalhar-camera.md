@@ -50,7 +50,7 @@ Cria impacto visual para explosões, dano, quedas e eventos importantes.
 
 ## Regras
 
-- O tremor é visual e não altera CameraCenterX() ou CameraCenterY().
+- O tremor é visual e não altera camera.x nem camera.y.
 - No modo Sempre, o campo de duração some e o tremor continua enquanto o fluxo estiver ativo.
 - Intensidades altas podem dificultar a leitura da cena.
 - Escolha o modo de execução de acordo com a duração desejada. “Uma única vez” não mantém uma ação contínua ativa.

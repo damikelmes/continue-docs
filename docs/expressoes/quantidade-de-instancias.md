@@ -37,8 +37,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>2. Verificar se todos foram derrotados</strong>
-    <pre><code>inimigo.instances &lt;= 0</code></pre>
-    <p>Pode ser usado em uma condição para continuar quando não restar nenhum inimigo.</p>
+    <pre><code>inimigo.instances</code></pre>
+    <p>No nó Comparar valores, compare esta expressão com 0 usando a opção Igual a.</p>
   </section>
   <section class="expression-example">
     <strong>3. Calcular quantos ainda podem nascer</strong>

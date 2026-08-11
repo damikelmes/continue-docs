@@ -42,8 +42,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>3. Comparar com a câmera</strong>
-    <pre><code>inimigo.right &gt; camera.right</code></pre>
-    <p>Ajuda a verificar se Inimigo já saiu pelo lado direito da área visível.</p>
+    <pre><code>inimigo.right</code></pre>
+    <p>No nó Comparar valores, compare esta expressão com camera.right usando a opção Maior que.</p>
   </section>
 </div>
 
@@ -52,6 +52,7 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 - Troque `jogador` pelo identificador do objeto escolhido no seletor de expressões.
 - Use `jogador.instance_2.right` para ler a segunda instância. A numeração começa em 1.
 - Se o objeto ou a instância não existir naquele momento, o valor retornado será `0`.
+- A rotação não altera esse valor; a borda acompanha a posição e a largura do objeto.
 
 ## Expressões relacionadas
 

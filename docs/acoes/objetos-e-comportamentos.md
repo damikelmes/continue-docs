@@ -18,8 +18,8 @@ Quando vários objetos são marcados, a ação usa a mesma posição, camada e o
 
 Por exemplo, se você escolher **Projétil** e **Clarão** com quantidade `1`, a ação cria uma instância de cada um. Se escolher dois objetos com quantidade `3`, serão criadas três instâncias de cada objeto, seis no total.
 
-::: tip Criar no centro de outro objeto
-Use `jogador.center_x` na posição X e `jogador.center_y` na posição Y para criar todos os objetos selecionados no centro real do jogador.
+::: tip Criar no centro da câmera
+Use `camera.x` na posição X e `camera.y` na posição Y para criar todos os objetos selecionados com seus centros alinhados ao centro da câmera.
 :::
 
 ## <DocHeadingIcon icon="trash-outline" color="#FB7185" /> Excluir objeto

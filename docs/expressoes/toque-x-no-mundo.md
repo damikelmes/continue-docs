@@ -31,14 +31,14 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 
 <div class="expression-example-list" style="--expression-color: #FB923C">
   <section class="expression-example">
-    <strong>1. Mover até o toque</strong>
+    <strong>1. Usar o toque como destino</strong>
     <pre><code>touch.x</code></pre>
-    <p>Use como destino X para levar um objeto ao ponto tocado no mundo.</p>
+    <p>Use como destino X de uma ação para levar a posição horizontal do objeto ao ponto tocado no mundo.</p>
   </section>
   <section class="expression-example">
-    <strong>2. Criar no toque</strong>
+    <strong>2. Criar na posição tocada</strong>
     <pre><code>touch.x</code></pre>
-    <p>Use como X da ação Criar objeto para criar uma instância onde o dedo tocou.</p>
+    <p>Use como X da ação Criar objeto para definir a posição horizontal da nova instância pelo toque.</p>
   </section>
   <section class="expression-example">
     <strong>3. Manter uma margem</strong>

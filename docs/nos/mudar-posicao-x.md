@@ -51,7 +51,7 @@ Posiciona ou desloca um objeto no eixo X sem alterar a posição Y.
 <div class="node-example" style="--node-page-color: #60A5FA">
   <ol>
     <li>Escolha “Jogador”.</li>
-    <li>Use Definir como e a expressão CameraCenterX().</li>
+    <li>Use Definir como e a expressão camera.x.</li>
   </ol>
   <p class="node-result"><strong>Resultado:</strong> O centro do jogador fica na posição X do centro da câmera.</p>
 </div>
@@ -59,7 +59,8 @@ Posiciona ou desloca um objeto no eixo X sem alterar a posição Y.
 ## Regras
 
 - O objeto precisa existir na cena quando o fluxo executar este nó.
-- A posição X representa o centro real do objeto.
+- Ao usar camera.x com Definir como, o centro horizontal do objeto é alinhado ao centro da câmera.
+- Com outros valores, a ação altera a propriedade X armazenada pelo objeto.
 - Somar e Subtrair usam a posição atual como base.
 - Divisão por zero não deve ser usada.
 - Escolha o modo de execução de acordo com a duração desejada. “Uma única vez” não mantém uma ação contínua ativa.

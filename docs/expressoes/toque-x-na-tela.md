@@ -31,19 +31,19 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 
 <div class="expression-example-list" style="--expression-color: #FB923C">
   <section class="expression-example">
-    <strong>1. Posicionar uma interface</strong>
+    <strong>1. Ler a posição horizontal na tela</strong>
     <pre><code>touch.screen_x</code></pre>
-    <p>Use para alinhar um elemento de interface ao dedo na horizontal.</p>
+    <p>Retorna a distância horizontal entre o toque e a borda esquerda da tela.</p>
   </section>
   <section class="expression-example">
-    <strong>2. Detectar a metade da tela</strong>
-    <pre><code>touch.screen_x &lt; camera.width / 2</code></pre>
-    <p>Ajuda a distinguir um toque no lado esquerdo da tela.</p>
+    <strong>2. Comparar uma região da tela</strong>
+    <pre><code>touch.screen_x</code></pre>
+    <p>No nó Comparar valores, compare esta expressão com uma posição X fixa da tela.</p>
   </section>
   <section class="expression-example">
-    <strong>3. Criar uma margem visual</strong>
+    <strong>3. Calcular uma margem</strong>
     <pre><code>touch.screen_x + 12</code></pre>
-    <p>Desloca uma dica de interface 12 pixels para a direita do dedo.</p>
+    <p>Calcula uma posição de tela 12 pixels à direita do dedo.</p>
   </section>
 </div>
 

@@ -42,8 +42,8 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
   </section>
   <section class="expression-example">
     <strong>3. Contador independente do FPS</strong>
-    <pre><code>tempo + time.delta</code></pre>
-    <p>Soma o tempo real da atualização a um contador numérico.</p>
+    <pre><code>relogio.variable.tempo + time.delta</code></pre>
+    <p>Soma o tempo real da atualização à variável numérica Tempo do objeto Relógio.</p>
   </section>
 </div>
 
