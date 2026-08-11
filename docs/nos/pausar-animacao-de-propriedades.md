@@ -4,14 +4,16 @@ description: "Pausa a animação sem perder o progresso."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FBBF24">
-  <span class="node-page-icon"><NodeIcon type="action-pause-property-animation" icon="pause-circle-outline" color="#FBBF24" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Pausar animação de propriedades
+<h1 class="node-page-title" style="--node-page-color: #FBBF24">
+  <span class="node-title-icon"><NodeIcon type="action-pause-property-animation" icon="pause-circle-outline" color="#FBBF24" :size="26" /></span>
+  <span>Pausar animação de propriedades</span>
+</h1>
 
 <p class="node-purpose">Pausa a animação sem perder o progresso.</p>
 

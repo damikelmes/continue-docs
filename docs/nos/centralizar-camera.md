@@ -4,14 +4,16 @@ description: "Coloca o centro da câmera exatamente no centro do objeto."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #60A5FA">
-  <span class="node-page-icon"><NodeIcon type="action-center-camera-on-object" icon="videocam" color="#60A5FA" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Câmera</span>
   </span>
 </div>
 
-# Centralizar câmera
+<h1 class="node-page-title" style="--node-page-color: #60A5FA">
+  <span class="node-title-icon"><NodeIcon type="action-center-camera-on-object" icon="videocam" color="#60A5FA" :size="26" /></span>
+  <span>Centralizar câmera</span>
+</h1>
 
 <p class="node-purpose">Coloca o centro da câmera exatamente no centro do objeto.</p>
 

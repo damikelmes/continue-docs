@@ -4,14 +4,16 @@ description: "Reproduz uma animação de sprites pelo nome."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #4ADE80">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-animation" icon="film" color="#4ADE80" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Trocar animação
+<h1 class="node-page-title" style="--node-page-color: #4ADE80">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-animation" icon="film" color="#4ADE80" :size="26" /></span>
+  <span>Trocar animação</span>
+</h1>
 
 <p class="node-purpose">Reproduz uma animação de sprites pelo nome.</p>
 

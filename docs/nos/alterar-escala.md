@@ -4,14 +4,16 @@ description: "Aumenta ou diminui o objeto proporcionalmente."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FB923C">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-scale" icon="expand-outline" color="#FB923C" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Alterar escala
+<h1 class="node-page-title" style="--node-page-color: #FB923C">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-scale" icon="expand-outline" color="#FB923C" :size="26" /></span>
+  <span>Alterar escala</span>
+</h1>
 
 <p class="node-purpose">Aumenta ou diminui o objeto proporcionalmente.</p>
 

@@ -4,14 +4,16 @@ description: "Aplica uma cor sobre o visual do objeto."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #F472B6">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-tint" icon="color-palette-outline" color="#F472B6" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Alterar tonalidade
+<h1 class="node-page-title" style="--node-page-color: #F472B6">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-tint" icon="color-palette-outline" color="#F472B6" :size="26" /></span>
+  <span>Alterar tonalidade</span>
+</h1>
 
 <p class="node-purpose">Aplica uma cor sobre o visual do objeto.</p>
 

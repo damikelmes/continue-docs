@@ -46,14 +46,16 @@ description: ${JSON.stringify(node.summary)}
 ---
 
 <div class="node-page-kicker" style="--node-page-color: ${node.color}">
-  <span class="node-page-icon"><NodeIcon type="${node.type}" icon="${node.icon}" color="${node.color}" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">${node.kind}</span>
     <span class="node-category-name">${escapeHtml(category.label)}</span>
   </span>
 </div>
 
-# ${node.title}
+<h1 class="node-page-title" style="--node-page-color: ${node.color}">
+  <span class="node-title-icon"><NodeIcon type="${node.type}" icon="${node.icon}" color="${node.color}" :size="26" /></span>
+  <span>${escapeHtml(node.title)}</span>
+</h1>
 
 <p class="node-purpose">${escapeHtml(node.summary)}</p>
 

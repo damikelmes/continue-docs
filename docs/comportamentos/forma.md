@@ -4,14 +4,16 @@ description: "Desenha um retângulo configurável sem precisar de sprite."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #FB923C">
-  <span class="behavior-page-icon"><BehaviorIcon type="shape" color="#FB923C" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Visual e animação</span>
   </span>
 </div>
 
-# Forma
+<h1 class="behavior-page-title" style="--behavior-page-color: #FB923C">
+  <span class="behavior-title-icon"><BehaviorIcon type="shape" color="#FB923C" :size="26" /></span>
+  <span>Forma</span>
+</h1>
 
 <p class="behavior-purpose">Desenha um retângulo configurável sem precisar de sprite.</p>
 

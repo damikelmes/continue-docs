@@ -4,14 +4,16 @@ description: "Aplica queda, peso, atrito, impulso e resposta física ao objeto."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #60A5FA">
-  <span class="behavior-page-icon"><BehaviorIcon type="gravity-body" color="#60A5FA" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Física e colisão</span>
   </span>
 </div>
 
-# Corpo com gravidade
+<h1 class="behavior-page-title" style="--behavior-page-color: #60A5FA">
+  <span class="behavior-title-icon"><BehaviorIcon type="gravity-body" color="#60A5FA" :size="26" /></span>
+  <span>Corpo com gravidade</span>
+</h1>
 
 <p class="behavior-purpose">Aplica queda, peso, atrito, impulso e resposta física ao objeto.</p>
 

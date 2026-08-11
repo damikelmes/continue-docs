@@ -4,14 +4,16 @@ description: "Muda a escala do objeto quando ele recebe um toque."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #F472B6">
-  <span class="behavior-page-icon"><BehaviorIcon type="press-scale" color="#F472B6" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Visual e animação</span>
   </span>
 </div>
 
-# Crescer ao pressionar
+<h1 class="behavior-page-title" style="--behavior-page-color: #F472B6">
+  <span class="behavior-title-icon"><BehaviorIcon type="press-scale" color="#F472B6" :size="26" /></span>
+  <span>Crescer ao pressionar</span>
+</h1>
 
 <p class="behavior-purpose">Muda a escala do objeto quando ele recebe um toque.</p>
 

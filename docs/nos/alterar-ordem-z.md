@@ -4,14 +4,16 @@ description: "Muda a ordem em que o objeto é desenhado."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #818CF8">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-z-index" icon="layers-outline" color="#818CF8" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Alterar ordem Z
+<h1 class="node-page-title" style="--node-page-color: #818CF8">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-z-index" icon="layers-outline" color="#818CF8" :size="26" /></span>
+  <span>Alterar ordem Z</span>
+</h1>
 
 <p class="node-purpose">Muda a ordem em que o objeto é desenhado.</p>
 

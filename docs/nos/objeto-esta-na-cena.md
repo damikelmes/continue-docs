@@ -4,14 +4,16 @@ description: "Verifica se existe uma instância do objeto na cena."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FACC15">
-  <span class="node-page-icon"><NodeIcon type="condition-object-exists" icon="git-branch" color="#FACC15" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Estado do objeto</span>
   </span>
 </div>
 
-# Objeto está na cena
+<h1 class="node-page-title" style="--node-page-color: #FACC15">
+  <span class="node-title-icon"><NodeIcon type="condition-object-exists" icon="git-branch" color="#FACC15" :size="26" /></span>
+  <span>Objeto está na cena</span>
+</h1>
 
 <p class="node-purpose">Verifica se existe uma instância do objeto na cena.</p>
 

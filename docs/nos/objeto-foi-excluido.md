@@ -4,14 +4,16 @@ description: "Detecta o momento em que uma instância é removida."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FB7185">
-  <span class="node-page-icon"><NodeIcon type="condition-object-deleted" icon="remove-circle-outline" color="#FB7185" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Estado do objeto</span>
   </span>
 </div>
 
-# Objeto foi excluído
+<h1 class="node-page-title" style="--node-page-color: #FB7185">
+  <span class="node-title-icon"><NodeIcon type="condition-object-deleted" icon="remove-circle-outline" color="#FB7185" :size="26" /></span>
+  <span>Objeto foi excluído</span>
+</h1>
 
 <p class="node-purpose">Detecta o momento em que uma instância é removida.</p>
 

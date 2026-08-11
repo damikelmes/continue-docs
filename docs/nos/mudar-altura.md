@@ -4,14 +4,16 @@ description: "Muda a altura do objeto durante o jogo."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #C084FC">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-height" icon="resize-outline" color="#C084FC" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Mudar altura
+<h1 class="node-page-title" style="--node-page-color: #C084FC">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-height" icon="resize-outline" color="#C084FC" :size="26" /></span>
+  <span>Mudar altura</span>
+</h1>
 
 <p class="node-purpose">Muda a altura do objeto durante o jogo.</p>
 

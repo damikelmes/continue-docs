@@ -4,14 +4,16 @@ description: "Reinicia uma animação de propriedades no primeiro quadro."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #38BDF8">
-  <span class="node-page-icon"><NodeIcon type="action-restart-property-animation" icon="refresh-circle-outline" color="#38BDF8" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Recomeçar animação de propriedades
+<h1 class="node-page-title" style="--node-page-color: #38BDF8">
+  <span class="node-title-icon"><NodeIcon type="action-restart-property-animation" icon="refresh-circle-outline" color="#38BDF8" :size="26" /></span>
+  <span>Recomeçar animação de propriedades</span>
+</h1>
 
 <p class="node-purpose">Reinicia uma animação de propriedades no primeiro quadro.</p>
 

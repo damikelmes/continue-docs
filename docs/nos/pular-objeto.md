@@ -4,14 +4,16 @@ description: "Aplica uma força de pulo a um objeto no chão."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #4ADE80">
-  <span class="node-page-icon"><NodeIcon type="action-jump-object" icon="arrow-up-circle" color="#4ADE80" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Pular objeto
+<h1 class="node-page-title" style="--node-page-color: #4ADE80">
+  <span class="node-title-icon"><NodeIcon type="action-jump-object" icon="arrow-up-circle" color="#4ADE80" :size="26" /></span>
+  <span>Pular objeto</span>
+</h1>
 
 <p class="node-purpose">Aplica uma força de pulo a um objeto no chão.</p>
 

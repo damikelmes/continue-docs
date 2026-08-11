@@ -4,14 +4,16 @@ description: "Cria novas instâncias durante o jogo."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #4ADE80">
-  <span class="node-page-icon"><NodeIcon type="action-create-object" icon="cube-outline" color="#4ADE80" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Objetos e instâncias</span>
   </span>
 </div>
 
-# Criar objeto
+<h1 class="node-page-title" style="--node-page-color: #4ADE80">
+  <span class="node-title-icon"><NodeIcon type="action-create-object" icon="cube-outline" color="#4ADE80" :size="26" /></span>
+  <span>Criar objeto</span>
+</h1>
 
 <p class="node-purpose">Cria novas instâncias durante o jogo.</p>
 

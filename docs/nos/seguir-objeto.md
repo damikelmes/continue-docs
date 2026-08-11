@@ -4,14 +4,16 @@ description: "Move um objeto até outro mantendo uma distância escolhida."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #34D399">
-  <span class="node-page-icon"><NodeIcon type="action-follow-object" icon="navigate-circle-outline" color="#34D399" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Seguir objeto
+<h1 class="node-page-title" style="--node-page-color: #34D399">
+  <span class="node-title-icon"><NodeIcon type="action-follow-object" icon="navigate-circle-outline" color="#34D399" :size="26" /></span>
+  <span>Seguir objeto</span>
+</h1>
 
 <p class="node-purpose">Move um objeto até outro mantendo uma distância escolhida.</p>
 

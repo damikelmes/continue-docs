@@ -52,14 +52,16 @@ description: ${JSON.stringify(behavior.summary)}
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: ${behavior.color}">
-  <span class="behavior-page-icon"><BehaviorIcon type="${behavior.type}" color="${behavior.color}" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">${escapeHtml(category.label)}</span>
   </span>
 </div>
 
-# ${behavior.title}
+<h1 class="behavior-page-title" style="--behavior-page-color: ${behavior.color}">
+  <span class="behavior-title-icon"><BehaviorIcon type="${behavior.type}" color="${behavior.color}" :size="26" /></span>
+  <span>${escapeHtml(behavior.title)}</span>
+</h1>
 
 <p class="behavior-purpose">${escapeHtml(behavior.summary)}</p>
 

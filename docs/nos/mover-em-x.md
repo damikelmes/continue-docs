@@ -4,14 +4,16 @@ description: "Move o objeto horizontalmente usando velocidade e aceleração."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #60A5FA">
-  <span class="node-page-icon"><NodeIcon type="action-move-object-x" icon="speedometer-outline" color="#60A5FA" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Mover em X
+<h1 class="node-page-title" style="--node-page-color: #60A5FA">
+  <span class="node-title-icon"><NodeIcon type="action-move-object-x" icon="speedometer-outline" color="#60A5FA" :size="26" /></span>
+  <span>Mover em X</span>
+</h1>
 
 <p class="node-purpose">Move o objeto horizontalmente usando velocidade e aceleração.</p>
 

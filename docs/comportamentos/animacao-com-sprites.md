@@ -4,14 +4,16 @@ description: "Reproduz uma sequência de sprites como uma animação."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #4ADE80">
-  <span class="behavior-page-icon"><BehaviorIcon type="animation" color="#4ADE80" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Visual e animação</span>
   </span>
 </div>
 
-# Animação com sprites
+<h1 class="behavior-page-title" style="--behavior-page-color: #4ADE80">
+  <span class="behavior-title-icon"><BehaviorIcon type="animation" color="#4ADE80" :size="26" /></span>
+  <span>Animação com sprites</span>
+</h1>
 
 <p class="behavior-purpose">Reproduz uma sequência de sprites como uma animação.</p>
 

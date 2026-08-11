@@ -4,14 +4,16 @@ description: "Permanece verdadeira enquanto o objeto estiver pressionado."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FB923C">
-  <span class="node-page-icon"><NodeIcon type="condition-object-pressed" icon="hand-left-outline" color="#FB923C" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Interação e toque</span>
   </span>
 </div>
 
-# Objeto pressionado
+<h1 class="node-page-title" style="--node-page-color: #FB923C">
+  <span class="node-title-icon"><NodeIcon type="condition-object-pressed" icon="hand-left-outline" color="#FB923C" :size="26" /></span>
+  <span>Objeto pressionado</span>
+</h1>
 
 <p class="node-purpose">Permanece verdadeira enquanto o objeto estiver pressionado.</p>
 

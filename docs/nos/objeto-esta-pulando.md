@@ -4,14 +4,16 @@ description: "Verifica se o objeto está na parte ascendente do pulo."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #A78BFA">
-  <span class="node-page-icon"><NodeIcon type="condition-object-jumping" icon="arrow-up-circle-outline" color="#A78BFA" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Estado do objeto</span>
   </span>
 </div>
 
-# Objeto está pulando
+<h1 class="node-page-title" style="--node-page-color: #A78BFA">
+  <span class="node-title-icon"><NodeIcon type="condition-object-jumping" icon="arrow-up-circle-outline" color="#A78BFA" :size="26" /></span>
+  <span>Objeto está pulando</span>
+</h1>
 
 <p class="node-purpose">Verifica se o objeto está na parte ascendente do pulo.</p>
 

@@ -4,14 +4,16 @@ description: "Gira somente o sprite do objeto."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FB7185">
-  <span class="node-page-icon"><NodeIcon type="action-rotate-sprite" icon="sync-outline" color="#FB7185" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Rotacionar sprite
+<h1 class="node-page-title" style="--node-page-color: #FB7185">
+  <span class="node-title-icon"><NodeIcon type="action-rotate-sprite" icon="sync-outline" color="#FB7185" :size="26" /></span>
+  <span>Rotacionar sprite</span>
+</h1>
 
 <p class="node-purpose">Gira somente o sprite do objeto.</p>
 

@@ -4,14 +4,16 @@ description: "Compara dois números ou expressões."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #60A5FA">
-  <span class="node-page-icon"><NodeIcon type="condition-compare-numbers" icon="git-compare-outline" color="#60A5FA" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Lógica e tempo</span>
   </span>
 </div>
 
-# Comparar números
+<h1 class="node-page-title" style="--node-page-color: #60A5FA">
+  <span class="node-title-icon"><NodeIcon type="condition-compare-numbers" icon="git-compare-outline" color="#60A5FA" :size="26" /></span>
+  <span>Comparar números</span>
+</h1>
 
 <p class="node-purpose">Compara dois números ou expressões.</p>
 

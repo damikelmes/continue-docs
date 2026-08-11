@@ -4,14 +4,16 @@ description: "Faz a câmera acompanhar um objeto com suavidade."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #22D3EE">
-  <span class="node-page-icon"><NodeIcon type="action-follow-camera-on-object" icon="navigate-circle-outline" color="#22D3EE" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Câmera</span>
   </span>
 </div>
 
-# Câmera suave
+<h1 class="node-page-title" style="--node-page-color: #22D3EE">
+  <span class="node-title-icon"><NodeIcon type="action-follow-camera-on-object" icon="navigate-circle-outline" color="#22D3EE" :size="26" /></span>
+  <span>Câmera suave</span>
+</h1>
 
 <p class="node-purpose">Faz a câmera acompanhar um objeto com suavidade.</p>
 

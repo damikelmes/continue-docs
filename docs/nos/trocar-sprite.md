@@ -4,14 +4,16 @@ description: "Troca a imagem exibida pelo objeto."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #C084FC">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-sprite" icon="images" color="#C084FC" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Trocar sprite
+<h1 class="node-page-title" style="--node-page-color: #C084FC">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-sprite" icon="images" color="#C084FC" :size="26" /></span>
+  <span>Trocar sprite</span>
+</h1>
 
 <p class="node-purpose">Troca a imagem exibida pelo objeto.</p>
 

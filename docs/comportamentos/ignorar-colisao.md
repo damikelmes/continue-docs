@@ -4,14 +4,16 @@ description: "Escolhe objetos que não devem colidir com este objeto."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #22D3EE">
-  <span class="behavior-page-icon"><BehaviorIcon type="ignore-collision" color="#22D3EE" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Física e colisão</span>
   </span>
 </div>
 
-# Ignorar colisão
+<h1 class="behavior-page-title" style="--behavior-page-color: #22D3EE">
+  <span class="behavior-title-icon"><BehaviorIcon type="ignore-collision" color="#22D3EE" :size="26" /></span>
+  <span>Ignorar colisão</span>
+</h1>
 
 <p class="behavior-purpose">Escolhe objetos que não devem colidir com este objeto.</p>
 

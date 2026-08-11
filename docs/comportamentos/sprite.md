@@ -4,14 +4,16 @@ description: "Adiciona imagens nomeadas para representar o objeto."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #A78BFA">
-  <span class="behavior-page-icon"><BehaviorIcon type="sprite" color="#A78BFA" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Visual e animação</span>
   </span>
 </div>
 
-# Sprite
+<h1 class="behavior-page-title" style="--behavior-page-color: #A78BFA">
+  <span class="behavior-title-icon"><BehaviorIcon type="sprite" color="#A78BFA" :size="26" /></span>
+  <span>Sprite</span>
+</h1>
 
 <p class="behavior-purpose">Adiciona imagens nomeadas para representar o objeto.</p>
 

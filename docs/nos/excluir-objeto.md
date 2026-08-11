@@ -4,14 +4,16 @@ description: "Remove instâncias da cena durante o jogo."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FB7185">
-  <span class="node-page-icon"><NodeIcon type="action-delete-object" icon="trash-outline" color="#FB7185" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Objetos e instâncias</span>
   </span>
 </div>
 
-# Excluir objeto
+<h1 class="node-page-title" style="--node-page-color: #FB7185">
+  <span class="node-title-icon"><NodeIcon type="action-delete-object" icon="trash-outline" color="#FB7185" :size="26" /></span>
+  <span>Excluir objeto</span>
+</h1>
 
 <p class="node-purpose">Remove instâncias da cena durante o jogo.</p>
 

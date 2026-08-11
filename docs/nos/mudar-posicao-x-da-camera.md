@@ -4,14 +4,16 @@ description: "Altera apenas o centro horizontal da câmera."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #60A5FA">
-  <span class="node-page-icon"><NodeIcon type="action-set-camera-x" icon="arrow-forward-circle-outline" color="#60A5FA" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Câmera</span>
   </span>
 </div>
 
-# Mudar posição X da câmera
+<h1 class="node-page-title" style="--node-page-color: #60A5FA">
+  <span class="node-title-icon"><NodeIcon type="action-set-camera-x" icon="arrow-forward-circle-outline" color="#60A5FA" :size="26" /></span>
+  <span>Mudar posição X da câmera</span>
+</h1>
 
 <p class="node-purpose">Altera apenas o centro horizontal da câmera.</p>
 

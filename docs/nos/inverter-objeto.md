@@ -4,14 +4,16 @@ description: "Espelha o objeto instantaneamente."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #34D399">
-  <span class="node-page-icon"><NodeIcon type="action-flip-object" icon="swap-horizontal-outline" color="#34D399" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Inverter objeto
+<h1 class="node-page-title" style="--node-page-color: #34D399">
+  <span class="node-title-icon"><NodeIcon type="action-flip-object" icon="swap-horizontal-outline" color="#34D399" :size="26" /></span>
+  <span>Inverter objeto</span>
+</h1>
 
 <p class="node-purpose">Espelha o objeto instantaneamente.</p>
 

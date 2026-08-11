@@ -4,14 +4,16 @@ description: "Verifica se o objeto está descendo pela gravidade."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #38BDF8">
-  <span class="node-page-icon"><NodeIcon type="condition-object-falling" icon="arrow-down-circle-outline" color="#38BDF8" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Estado do objeto</span>
   </span>
 </div>
 
-# Objeto está caindo
+<h1 class="node-page-title" style="--node-page-color: #38BDF8">
+  <span class="node-title-icon"><NodeIcon type="condition-object-falling" icon="arrow-down-circle-outline" color="#38BDF8" :size="26" /></span>
+  <span>Objeto está caindo</span>
+</h1>
 
 <p class="node-purpose">Verifica se o objeto está descendo pela gravidade.</p>
 

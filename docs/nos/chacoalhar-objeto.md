@@ -4,14 +4,16 @@ description: "Sacode o visual do objeto sem mudar sua posição real."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FB923C">
-  <span class="node-page-icon"><NodeIcon type="action-shake-object" icon="cube-outline" color="#FB923C" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Chacoalhar objeto
+<h1 class="node-page-title" style="--node-page-color: #FB923C">
+  <span class="node-title-icon"><NodeIcon type="action-shake-object" icon="cube-outline" color="#FB923C" :size="26" /></span>
+  <span>Chacoalhar objeto</span>
+</h1>
 
 <p class="node-purpose">Sacode o visual do objeto sem mudar sua posição real.</p>
 

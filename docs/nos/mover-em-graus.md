@@ -4,14 +4,16 @@ description: "Move o objeto na direção de um ângulo."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #2DD4BF">
-  <span class="node-page-icon"><NodeIcon type="action-move-object-angle" icon="compass-outline" color="#2DD4BF" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Mover em graus
+<h1 class="node-page-title" style="--node-page-color: #2DD4BF">
+  <span class="node-title-icon"><NodeIcon type="action-move-object-angle" icon="compass-outline" color="#2DD4BF" :size="26" /></span>
+  <span>Mover em graus</span>
+</h1>
 
 <p class="node-purpose">Move o objeto na direção de um ângulo.</p>
 

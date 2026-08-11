@@ -4,14 +4,16 @@ description: "Cria a área sólida usada para contatos e bloqueios."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #FBBF24">
-  <span class="behavior-page-icon"><BehaviorIcon type="collision" color="#FBBF24" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Física e colisão</span>
   </span>
 </div>
 
-# Colisão
+<h1 class="behavior-page-title" style="--behavior-page-color: #FBBF24">
+  <span class="behavior-title-icon"><BehaviorIcon type="collision" color="#FBBF24" :size="26" /></span>
+  <span>Colisão</span>
+</h1>
 
 <p class="behavior-purpose">Cria a área sólida usada para contatos e bloqueios.</p>
 

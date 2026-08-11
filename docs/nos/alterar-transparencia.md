@@ -4,14 +4,16 @@ description: "Muda o quanto o objeto está visível."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #2DD4BF">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-opacity" icon="water-outline" color="#2DD4BF" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Alterar transparência
+<h1 class="node-page-title" style="--node-page-color: #2DD4BF">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-opacity" icon="water-outline" color="#2DD4BF" :size="26" /></span>
+  <span>Alterar transparência</span>
+</h1>
 
 <p class="node-purpose">Muda o quanto o objeto está visível.</p>
 

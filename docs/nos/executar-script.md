@@ -4,14 +4,16 @@ description: "Executa um script visual salvo na biblioteca."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #4ADE80">
-  <span class="node-page-icon"><NodeIcon type="run-library-script" icon="code-slash" color="#4ADE80" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">SCRIPT</span>
     <span class="node-category-name">Scripts da biblioteca</span>
   </span>
 </div>
 
-# Executar script
+<h1 class="node-page-title" style="--node-page-color: #4ADE80">
+  <span class="node-title-icon"><NodeIcon type="run-library-script" icon="code-slash" color="#4ADE80" :size="26" /></span>
+  <span>Executar script</span>
+</h1>
 
 <p class="node-purpose">Executa um script visual salvo na biblioteca.</p>
 

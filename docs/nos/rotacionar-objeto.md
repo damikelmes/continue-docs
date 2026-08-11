@@ -4,14 +4,16 @@ description: "Altera a rotação completa do objeto."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #F59E0B">
-  <span class="node-page-icon"><NodeIcon type="action-rotate-object" icon="refresh-outline" color="#F59E0B" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Rotacionar objeto
+<h1 class="node-page-title" style="--node-page-color: #F59E0B">
+  <span class="node-title-icon"><NodeIcon type="action-rotate-object" icon="refresh-outline" color="#F59E0B" :size="26" /></span>
+  <span>Rotacionar objeto</span>
+</h1>
 
 <p class="node-purpose">Altera a rotação completa do objeto.</p>
 

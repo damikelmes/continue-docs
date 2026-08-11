@@ -4,14 +4,16 @@ description: "Inicia ou continua uma animação de propriedades."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #2DD4BF">
-  <span class="node-page-icon"><NodeIcon type="action-play-property-animation" icon="play-circle-outline" color="#2DD4BF" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Aparência</span>
   </span>
 </div>
 
-# Reproduzir animação de propriedades
+<h1 class="node-page-title" style="--node-page-color: #2DD4BF">
+  <span class="node-title-icon"><NodeIcon type="action-play-property-animation" icon="play-circle-outline" color="#2DD4BF" :size="26" /></span>
+  <span>Reproduzir animação de propriedades</span>
+</h1>
 
 <p class="node-purpose">Inicia ou continua uma animação de propriedades.</p>
 

@@ -4,14 +4,16 @@ description: "Altera apenas a posição horizontal do objeto."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #60A5FA">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-x" icon="swap-horizontal-outline" color="#60A5FA" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Mudar posição X
+<h1 class="node-page-title" style="--node-page-color: #60A5FA">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-x" icon="swap-horizontal-outline" color="#60A5FA" :size="26" /></span>
+  <span>Mudar posição X</span>
+</h1>
 
 <p class="node-purpose">Altera apenas a posição horizontal do objeto.</p>
 

@@ -4,14 +4,16 @@ description: "Altera apenas a posição vertical do objeto."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #38BDF8">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-y" icon="swap-vertical-outline" color="#38BDF8" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Mudar posição Y
+<h1 class="node-page-title" style="--node-page-color: #38BDF8">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-y" icon="swap-vertical-outline" color="#38BDF8" :size="26" /></span>
+  <span>Mudar posição Y</span>
+</h1>
 
 <p class="node-purpose">Altera apenas a posição vertical do objeto.</p>
 

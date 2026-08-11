@@ -4,14 +4,16 @@ description: "Move o objeto suavemente até a posição tocada."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #34D399">
-  <span class="behavior-page-icon"><BehaviorIcon type="move-to-touch" color="#34D399" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Interação</span>
   </span>
 </div>
 
-# Mover até o toque
+<h1 class="behavior-page-title" style="--behavior-page-color: #34D399">
+  <span class="behavior-title-icon"><BehaviorIcon type="move-to-touch" color="#34D399" :size="26" /></span>
+  <span>Mover até o toque</span>
+</h1>
 
 <p class="behavior-purpose">Move o objeto suavemente até a posição tocada.</p>
 

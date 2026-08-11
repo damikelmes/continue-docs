@@ -4,14 +4,16 @@ description: "Verifica se a posição atual do dedo está sobre o objeto."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #FACC15">
-  <span class="node-page-icon"><NodeIcon type="condition-finger-over-object" icon="locate-outline" color="#FACC15" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Interação e toque</span>
   </span>
 </div>
 
-# Dedo sobre o objeto
+<h1 class="node-page-title" style="--node-page-color: #FACC15">
+  <span class="node-title-icon"><NodeIcon type="condition-finger-over-object" icon="locate-outline" color="#FACC15" :size="26" /></span>
+  <span>Dedo sobre o objeto</span>
+</h1>
 
 <p class="node-purpose">Verifica se a posição atual do dedo está sobre o objeto.</p>
 

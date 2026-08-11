@@ -4,14 +4,16 @@ description: "Verifica o estado de um comportamento."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #4ADE80">
-  <span class="node-page-icon"><NodeIcon type="condition-behavior-enabled" icon="checkmark-circle-outline" color="#4ADE80" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Estado do objeto</span>
   </span>
 </div>
 
-# Comportamento está ativado
+<h1 class="node-page-title" style="--node-page-color: #4ADE80">
+  <span class="node-title-icon"><NodeIcon type="condition-behavior-enabled" icon="checkmark-circle-outline" color="#4ADE80" :size="26" /></span>
+  <span>Comportamento está ativado</span>
+</h1>
 
 <p class="node-purpose">Verifica o estado de um comportamento.</p>
 

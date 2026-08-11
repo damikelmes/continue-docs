@@ -4,14 +4,16 @@ description: "Detecta o momento em que uma instância é criada."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #4ADE80">
-  <span class="node-page-icon"><NodeIcon type="condition-object-created" icon="add-circle-outline" color="#4ADE80" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">CONDIÇÃO</span>
     <span class="node-category-name">Estado do objeto</span>
   </span>
 </div>
 
-# Objeto foi criado
+<h1 class="node-page-title" style="--node-page-color: #4ADE80">
+  <span class="node-title-icon"><NodeIcon type="condition-object-created" icon="add-circle-outline" color="#4ADE80" :size="26" /></span>
+  <span>Objeto foi criado</span>
+</h1>
 
 <p class="node-purpose">Detecta o momento em que uma instância é criada.</p>
 

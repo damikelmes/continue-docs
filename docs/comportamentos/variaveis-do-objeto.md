@@ -4,14 +4,16 @@ description: "Guarda valores separados em cada instância do objeto."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #60A5FA">
-  <span class="behavior-page-icon"><BehaviorIcon type="object-variables" color="#60A5FA" :size="38" /></span>
   <span class="behavior-page-meta">
     <span class="behavior-kind">COMPORTAMENTO</span>
     <span class="behavior-category-name">Dados do objeto</span>
   </span>
 </div>
 
-# Variáveis do objeto
+<h1 class="behavior-page-title" style="--behavior-page-color: #60A5FA">
+  <span class="behavior-title-icon"><BehaviorIcon type="object-variables" color="#60A5FA" :size="26" /></span>
+  <span>Variáveis do objeto</span>
+</h1>
 
 <p class="behavior-purpose">Guarda valores separados em cada instância do objeto.</p>
 

@@ -4,14 +4,16 @@ description: "Muda a largura do objeto durante o jogo."
 ---
 
 <div class="node-page-kicker" style="--node-page-color: #A78BFA">
-  <span class="node-page-icon"><NodeIcon type="action-set-object-width" icon="resize-outline" color="#A78BFA" :size="38" /></span>
   <span class="node-page-meta">
     <span class="node-kind">AÇÃO</span>
     <span class="node-category-name">Movimento e posição</span>
   </span>
 </div>
 
-# Mudar largura
+<h1 class="node-page-title" style="--node-page-color: #A78BFA">
+  <span class="node-title-icon"><NodeIcon type="action-set-object-width" icon="resize-outline" color="#A78BFA" :size="26" /></span>
+  <span>Mudar largura</span>
+</h1>
 
 <p class="node-purpose">Muda a largura do objeto durante o jogo.</p>
 
