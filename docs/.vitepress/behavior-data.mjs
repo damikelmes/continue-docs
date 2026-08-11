@@ -15,7 +15,7 @@ export const behaviorCategories = [
   },
   {
     key: 'fisica-e-colisao',
-    icon: 'body',
+    icon: 'shapes-outline',
     color: '#60A5FA',
     label: 'Física e colisão',
     description: 'Gravidade, áreas de colisão e exceções entre objetos.',
@@ -29,7 +29,7 @@ export const behaviorCategories = [
   },
   {
     key: 'dados-do-objeto',
-    icon: 'calculator-outline',
+    icon: 'server-outline',
     color: '#60A5FA',
     label: 'Dados do objeto',
     description: 'Valores próprios guardados separadamente em cada instância.',

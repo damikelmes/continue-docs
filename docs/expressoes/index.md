@@ -292,7 +292,7 @@ Os limites podem ser informados em qualquer ordem. `random.int(10, 1)` funciona 
 Uma função aleatória é sorteada novamente toda vez que a expressão é calculada. Em uma ação configurada como **Sempre**, o resultado pode mudar a cada atualização. Use **Uma única vez** quando quiser sortear e manter apenas um resultado.
 :::
 
-## <DocHeadingIcon icon="git-branch" color="#FACC15" /> Ordem e valores atualizados
+## <DocHeadingIcon icon="play-forward-outline" color="#FACC15" /> Ordem e valores atualizados
 
 A expressão usa o valor disponível no instante em que o nó é executado. Se um fluxo move o personagem e outro centraliza a câmera, deixe o movimento acima para que a câmera leia a posição nova.
 

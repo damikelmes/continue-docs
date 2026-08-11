@@ -25,7 +25,7 @@ O arquivo exportado contém:
 
 Mantenha os dois arquivos juntos na mesma pasta.
 
-## <DocHeadingIcon icon="archive-outline" color="#93C5FD" /> Exportações salvas
+## <DocHeadingIcon icon="save-outline" color="#93C5FD" /> Exportações salvas
 
 As versões geradas ficam listadas nas configurações do projeto. Você pode compartilhar novamente ou excluir versões antigas para liberar espaço.
 

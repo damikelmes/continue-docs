@@ -82,7 +82,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## <DocHeadingIcon icon="body" color="#60A5FA" /> Física e colisão
+## <DocHeadingIcon icon="shapes-outline" color="#60A5FA" /> Física e colisão
 
 <p class="behavior-category-copy">Gravidade, áreas de colisão e exceções entre objetos.</p>
 
@@ -136,7 +136,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## <DocHeadingIcon icon="calculator-outline" color="#60A5FA" /> Dados do objeto
+## <DocHeadingIcon icon="server-outline" color="#60A5FA" /> Dados do objeto
 
 <p class="behavior-category-copy">Valores próprios guardados separadamente em cada instância.</p>
 

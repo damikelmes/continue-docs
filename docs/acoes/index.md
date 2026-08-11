@@ -39,7 +39,7 @@ Use a seleção múltipla quando todos devem receber exatamente a mesma mudança
 
 Nem toda ação precisa ou permite vários destinos. Quando o seletor mostrar círculos de marcação, você pode escolher mais de um; confirme a seleção depois de marcar todos os objetos desejados.
 
-## <DocHeadingIcon icon="layers-outline" color="#FACC15" /> Objeto e instância são escolhas diferentes
+## <DocHeadingIcon icon="shapes-outline" color="#FACC15" /> Objeto e instância são escolhas diferentes
 
 O campo **Objeto** escolhe o tipo, como Jogador, Inimigo ou Caixa. O campo **Instâncias** escolhe quais cópias desses objetos, já colocadas na cena, serão afetadas.
 
@@ -60,7 +60,7 @@ Campos numéricos podem usar uma operação para definir como o valor será apli
 | **Multiplicar** | Multiplica o valor atual. |
 | **Dividir** | Divide o valor atual. |
 
-## <DocHeadingIcon icon="repeat-outline" color="#22D3EE" /> Modo de execução
+## <DocHeadingIcon icon="options-outline" color="#22D3EE" /> Modo de execução
 
 | Modo | Quando a ação funciona |
 | --- | --- |

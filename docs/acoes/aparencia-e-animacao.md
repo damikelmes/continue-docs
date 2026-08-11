@@ -24,7 +24,7 @@ Ativa a animação desde o primeiro quadro, mesmo que ela já estivesse em andam
 
 Pausa a animação atual sem apagar seu progresso. Use **Reproduzir** para continuar.
 
-## <DocHeadingIcon icon="water-outline" color="#2DD4BF" /> Alterar transparência
+## <DocHeadingIcon icon="contrast-outline" color="#2DD4BF" /> Alterar transparência
 
 Muda o quanto o objeto fica transparente.
 
@@ -49,7 +49,7 @@ Faz o espelhamento com animação. Escolha:
 - Lado ou sentido de destino.
 - Tempo da animação.
 
-## <DocHeadingIcon type="action-set-object-z-index" icon="layers-outline" color="#818CF8" /> Alterar ordem Z
+## <DocHeadingIcon icon="layers-outline" color="#818CF8" /> Alterar ordem Z
 
 Muda a ordem em que o objeto é desenhado. Valores maiores aparecem na frente de valores menores.
 

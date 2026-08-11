@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="images" color="#A78BFA" :size="22" /> Cenas, camadas e objetos
+# <DocHeadingIcon icon="apps-outline" color="#A78BFA" :size="22" /> Cenas, camadas e objetos
 
 ## <DocHeadingIcon icon="images" color="#A78BFA" /> Cenas
 
@@ -20,7 +20,7 @@ A ordem Z dos objetos ainda pode ser usada para controlar qual objeto aparece na
 
 Um objeto guarda as configurações reutilizáveis. Você pode definir largura, altura, sprite, animações, colisão e comportamentos.
 
-## <DocHeadingIcon icon="layers-outline" color="#FACC15" /> Instâncias
+## <DocHeadingIcon icon="locate-outline" color="#FACC15" /> Instâncias
 
 Uma instância é o objeto colocado na cena. Instâncias do mesmo objeto podem ter posições, tamanhos e outras configurações diferentes.
 

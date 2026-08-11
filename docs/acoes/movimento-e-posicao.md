@@ -2,7 +2,7 @@
 
 Estas ações mudam a posição, o tamanho, a rotação ou o movimento de um objeto.
 
-## <DocHeadingIcon icon="pulse-outline" color="#A78BFA" /> Transicionar propriedade
+## <DocHeadingIcon icon="analytics-outline" color="#A78BFA" /> Transicionar propriedade
 
 Anima uma propriedade partindo do valor atual até o valor final escolhido.
 
@@ -57,7 +57,7 @@ Move um objeto em direção a outro mantendo a distância escolhida.
 - **Aceleração:** rapidez com que começa a se mover.
 - **Desaceleração:** suavidade ao chegar perto do destino.
 
-## <DocHeadingIcon type="action-set-object-x" icon="swap-horizontal-outline" color="#60A5FA" /> Mudar posição X e Y
+## <DocHeadingIcon icon="move-outline" color="#60A5FA" /> Mudar posição X e Y
 
 - **Mudar posição X:** altera apenas a posição horizontal.
 - **Mudar posição Y:** altera apenas a posição vertical.
@@ -71,7 +71,7 @@ Essas ações aceitam valores fixos ou expressões, além das operações defini
 
 Use as duas quando quiser redimensionar cada eixo de forma independente.
 
-## <DocHeadingIcon type="action-move-object-x" icon="speedometer-outline" color="#60A5FA" /> Mover em X e Y
+## <DocHeadingIcon icon="speedometer-outline" color="#60A5FA" /> Mover em X e Y
 
 Movem o objeto continuamente em um único eixo.
 

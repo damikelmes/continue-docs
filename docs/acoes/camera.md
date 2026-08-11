@@ -17,11 +17,11 @@ Faz a câmera seguir o objeto de forma contínua e suave.
 
 Valores maiores deixam a câmera chegar mais rápido. Valores menores criam um acompanhamento mais suave.
 
-## <DocHeadingIcon type="action-set-camera-x" icon="arrow-forward-circle-outline" color="#60A5FA" /> Mudar posição X da câmera
+## <DocHeadingIcon icon="arrow-forward-circle-outline" color="#60A5FA" /> Mudar posição X da câmera
 
 Altera somente o centro horizontal da câmera. Aceita um número ou uma expressão.
 
-## <DocHeadingIcon type="action-set-camera-y" icon="arrow-down-circle-outline" color="#38BDF8" /> Mudar posição Y da câmera
+## <DocHeadingIcon icon="arrow-down-circle-outline" color="#38BDF8" /> Mudar posição Y da câmera
 
 Altera somente o centro vertical da câmera. Aceita um número ou uma expressão.
 
@@ -35,7 +35,7 @@ Aplica um tremor temporário na visualização.
 - **Quantidade:** usa a quantidade e o intervalo configurados.
 - **Por tempo:** continua pelo tempo escolhido.
 
-## <DocHeadingIcon icon="search-outline" color="#A78BFA" /> Dar zoom na câmera
+## <DocHeadingIcon icon="expand-outline" color="#A78BFA" /> Dar zoom na câmera
 
 Altera o nível de aproximação.
 

@@ -447,11 +447,27 @@
   background: color-mix(in srgb, var(--doc-heading-color) 11%, transparent);
 }
 
+.vp-doc h1:has(> .doc-heading-icon),
+.vp-doc h2:has(> .doc-heading-icon),
+.vp-doc h3:has(> .doc-heading-icon) {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
 .vp-doc h1 > .doc-heading-icon,
 .vp-doc h2 > .doc-heading-icon,
 .vp-doc h3 > .doc-heading-icon {
-  margin-right: 7px;
-  vertical-align: -0.16em;
+  align-self: center;
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.doc-heading-icon .node-glyph,
+.doc-heading-icon .ion {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vp-doc h1 > .doc-heading-icon {

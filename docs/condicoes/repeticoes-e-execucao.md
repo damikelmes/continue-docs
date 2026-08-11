@@ -1,6 +1,6 @@
 # <DocHeadingIcon icon="repeat-outline" color="#22D3EE" :size="22" /> Repetições e execução
 
-## <DocHeadingIcon type="repeat-count" icon="sync-outline" color="#22D3EE" /> Quantidade de vezes
+## <DocHeadingIcon icon="sync-outline" color="#22D3EE" /> Quantidade de vezes
 
 O nó de repetição executa os próximos nós pela quantidade escolhida.
 

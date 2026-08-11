@@ -9,7 +9,7 @@ A Continue é uma engine para criar jogos pelo celular. O projeto é organizado 
   <GuideCard href="/nos/" icon="grid-outline" color="#fb923c" title="Consultar os nós" description="Encontre cada função usando o ícone do editor." />
 </div>
 
-## <DocHeadingIcon icon="cube-outline" color="#60A5FA" /> Partes principais
+## <DocHeadingIcon icon="apps-outline" color="#60A5FA" /> Partes principais
 
 | Parte | Para que serve |
 | --- | --- |

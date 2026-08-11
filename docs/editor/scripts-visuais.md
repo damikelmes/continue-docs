@@ -23,7 +23,7 @@ O texto **Novo fluxo** marca o começo de outra sequência. Esse fluxo não depe
 
 Ao adicionar um nó acima ou abaixo, escolha primeiro entre **Conectado** e **Novo fluxo** quando as duas opções estiverem disponíveis. A opção de novo fluxo aparece somente onde uma sequência independente pode ser criada sem quebrar uma conexão existente.
 
-## <DocHeadingIcon icon="git-branch" color="#A78BFA" /> Ordem de execução
+## <DocHeadingIcon icon="play-forward-outline" color="#A78BFA" /> Ordem de execução
 
 A engine lê o **Script da cena de cima para baixo** em cada atualização do jogo.
 

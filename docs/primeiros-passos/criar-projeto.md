@@ -6,12 +6,12 @@ Na tela inicial, use o botão para criar um projeto e preencha as configuraçõe
 
 Escolha um nome curto e fácil de identificar. O nome também é usado como base para o arquivo exportado.
 
-## <DocHeadingIcon icon="phone-portrait-outline" color="#C4B5FD" /> Orientação
+## <DocHeadingIcon type="doc-screen-orientation" icon="phone-portrait-outline" color="#C4B5FD" /> Orientação
 
 - **Retrato:** indicado para jogos com o celular em pé.
 - **Paisagem:** indicado para jogos com o celular deitado.
 
-## <DocHeadingIcon icon="grid-outline" color="#60A5FA" /> Resolução do jogo
+## <DocHeadingIcon type="doc-game-resolution" icon="scan-outline" color="#60A5FA" /> Resolução do jogo
 
 A resolução define o tamanho lógico da câmera. Ela não limita a qualidade final da imagem e não estica o jogo.
 
