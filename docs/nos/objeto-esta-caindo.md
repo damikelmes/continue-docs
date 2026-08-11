@@ -1,0 +1,56 @@
+---
+title: "Objeto está caindo"
+description: "Verifica se o objeto está descendo pela gravidade."
+---
+
+<div class="node-page-kicker" style="--node-page-color: #38BDF8">
+  <span class="node-page-icon"><NodeIcon type="condition-object-falling" icon="arrow-down-circle-outline" color="#38BDF8" :size="38" /></span>
+  <span class="node-page-meta">
+    <span class="node-kind">CONDIÇÃO</span>
+    <span class="node-category-name">Estado do objeto</span>
+  </span>
+</div>
+
+# Objeto está caindo
+
+<p class="node-purpose">Verifica se o objeto está descendo pela gravidade.</p>
+
+## Para que serve
+
+Diferencia a queda da subida para animações, dano e aterrissagem.
+
+## Campos
+
+| Campo | O que configurar |
+| --- | --- |
+| **Objeto** | Objeto que será verificado. |
+| **Instâncias** | Todas as instâncias ou uma instância específica. |
+| **Resultado esperado** | Ativado verifica a condição normal; desativado verifica o contrário. |
+
+## Exemplo
+
+<div class="node-example" style="--node-page-color: #38BDF8">
+  <ol>
+    <li>Escolha “Jogador”.</li>
+    <li>Enquanto estiver caindo, reproduza a animação “Caindo”.</li>
+  </ol>
+  <p class="node-result"><strong>Resultado:</strong> A animação Caindo aparece durante a descida.</p>
+</div>
+
+## Regras
+
+- Se nenhuma instância correspondente existir, a verificação do objeto será falsa, exceto na forma negativa.
+- O objeto precisa usar o comportamento Gravidade.
+- Estar parado no chão não conta como queda.
+- A forma negativa verifica se o objeto não está caindo.
+- Somente os nós conectados abaixo continuam quando o resultado escolhido é verdadeiro.
+- Desative “Resultado esperado” para usar a forma negativa da condição.
+
+## Nós relacionados
+
+- [Objeto está na cena](./objeto-esta-na-cena) — Verifica se existe uma instância do objeto na cena.
+- [Objeto está no chão](./objeto-esta-no-chao) — Verifica se o objeto está apoiado em uma colisão.
+- [Objeto está pulando](./objeto-esta-pulando) — Verifica se o objeto está na parte ascendente do pulo.
+- [Objeto está se movendo](./objeto-esta-se-movendo) — Verifica movimento em qualquer direção, eixo ou ângulo.
+
+<a class="node-back-link" href="./">← Ver todos os nós</a>

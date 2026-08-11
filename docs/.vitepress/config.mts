@@ -1,10 +1,20 @@
 import { defineConfig } from 'vitepress';
+import { nodeCategories, nodesByCategory } from './node-data.mjs';
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
 const isAccountSite = repositoryName?.toLowerCase().endsWith('.github.io');
 const base = process.env.GITHUB_ACTIONS === 'true' && repositoryName && !isAccountSite
   ? `/${repositoryName}/`
   : '/';
+
+const nodeSidebarItems = nodeCategories.map((category) => ({
+  text: category.label,
+  collapsed: true,
+  items: nodesByCategory[category.key].map((node) => ({
+    text: node.title,
+    link: `/nos/${node.slug}`,
+  })),
+}));
 
 export default defineConfig({
   lang: 'pt-BR',
@@ -21,9 +31,9 @@ export default defineConfig({
     logo: '/logo.png',
     siteTitle: 'Continue Docs',
     nav: [
-      { text: 'Começar', link: '/primeiros-passos/criar-projeto' },
+      { text: 'Início', link: '/' },
+      { text: 'Todos os nós', link: '/nos/' },
       { text: 'Editor', link: '/editor/visao-geral' },
-      { text: 'Ações', link: '/acoes/' },
       { text: 'Comportamentos', link: '/comportamentos/' },
     ],
     sidebar: [
@@ -43,14 +53,11 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Ações',
+        text: 'Nós do script',
         collapsed: false,
         items: [
-          { text: 'Visão geral', link: '/acoes/' },
-          { text: 'Movimento e posição', link: '/acoes/movimento-e-posicao' },
-          { text: 'Aparência e animação', link: '/acoes/aparencia-e-animacao' },
-          { text: 'Câmera', link: '/acoes/camera' },
-          { text: 'Objetos e comportamentos', link: '/acoes/objetos-e-comportamentos' },
+          { text: 'Todos os nós', link: '/nos/' },
+          ...nodeSidebarItems,
         ],
       },
       {

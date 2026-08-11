@@ -1,5 +1,9 @@
 # Ações
 
+::: tip Documentação nova
+Agora cada ação, condição, repetição e script possui sua própria página na seção [Todos os nós](/nos/).
+:::
+
 As ações alteram alguma parte do jogo quando o fluxo chega até elas. Elas estão separadas por categoria para facilitar a busca.
 
 <div class="action-grid">
