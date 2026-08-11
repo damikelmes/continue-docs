@@ -1,29 +1,35 @@
-# Continue Docs
+![Ícone da Continue](docs/public/logo.png)
 
-Documentação pública de uso da engine Continue. Este projeto contém somente guias para usuários, referências de ações, condições, comportamentos e expressões. O código-fonte da engine não faz parte deste repositório.
+# Continue
 
-## Trabalhar na documentação
+A Continue é uma engine para criar jogos diretamente pelo celular. Ela foi feita para transformar ideias em jogos de forma visual, organizada e fácil de entender.
 
-```bash
-npm install
-npm run docs:dev
-```
+## Crie seu jogo do seu jeito
 
-Os textos ficam na pasta `docs` e usam Markdown.
+Na Continue, você pode montar fases, menus e telas usando cenas. Dentro de cada cena, é possível adicionar objetos, posicionar suas instâncias, organizar camadas e acompanhar tudo pelo editor visual.
 
-## Gerar o site
+## Dê vida aos objetos
 
-```bash
-npm run docs:build
-```
+Os comportamentos adicionam recursos prontos aos objetos, como:
 
-## Publicar manualmente no GitHub Pages
+- Sprites e animações.
+- Gravidade e colisão.
+- Movimento pelo toque.
+- Arrastar e soltar.
+- Luzes e sombras.
+- Animação de propriedades.
+- Variáveis próprias do objeto.
 
-1. Crie um repositório público no GitHub.
-2. Envie apenas o conteúdo desta pasta para o repositório.
-3. Em **Settings → Pages**, escolha **GitHub Actions** como fonte.
-4. Quando quiser publicar, abra **Actions → Publicar documentação → Run workflow**.
+## Monte a lógica visualmente
 
-Atualizar os textos não publica o site sozinho. Uma nova versão só entra no ar quando você executar a ação manualmente.
+O sistema de scripts visuais permite conectar ações, condições e repetições para definir o funcionamento do jogo. Você pode movimentar objetos, controlar a câmera, verificar toques, criar animações e organizar diferentes fluxos sem precisar escrever código.
 
-O endereço será semelhante a `https://seu-usuario.github.io/nome-do-repositorio/`. O caminho é detectado automaticamente durante a publicação.
+## Teste e exporte
+
+O visualizador permite acompanhar o jogo durante a criação. Quando o projeto estiver pronto, ele pode ser preparado para jogar no Windows com seu próprio nome, versão e ícone.
+
+## Aprenda a usar a Continue
+
+Esta documentação explica o editor, os comportamentos, as ações, as condições, as expressões e a exportação do jogo de maneira simples e direta.
+
+[Começar pela documentação](docs/primeiros-passos/conheca-a-engine.md)
