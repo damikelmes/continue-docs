@@ -31,6 +31,8 @@ pageClass: continue-home
       <GuideCard href="/primeiros-passos/criar-projeto" icon="rocket-outline" color="#34d399" title="Criar um projeto" description="Configure a tela e prepare a primeira cena." />
       <GuideCard href="/editor/visao-geral" icon="construct-outline" color="#60a5fa" title="Conhecer o editor" description="Aprenda as ferramentas para montar cada cena." />
       <GuideCard href="/comportamentos/" icon="extension-puzzle-outline" color="#fb923c" title="Usar comportamentos" description="Adicione animação, física, luz e interação." />
+      <GuideCard href="/expressoes/" icon="calculator-outline" color="#2dd4bf" title="Usar expressões" description="Combine posições, câmera, tempo, toque e matemática." />
+      <GuideCard href="/editor/scripts-visuais" icon="git-branch" color="#f472b6" title="Entender os fluxos" description="Veja a ordem dos nós e evite valores atrasados." />
     </div>
   </section>
 

@@ -23,7 +23,7 @@ Cria uma transição visual ao virar o objeto na horizontal ou vertical.
 
 | Campo | O que configurar |
 | --- | --- |
-| **Objeto de destino** | O objeto que receberá a ação. |
+| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
 | **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
 | **Direção** | Horizontal ou vertical. |
 | **Resultado** | Alternar lados ou escolher um lado fixo. |

@@ -1,87 +1,152 @@
 ---
-title: Comportamentos
-description: Funções prontas que você pode adicionar aos objetos da Continue.
-pageClass: guide-page
+title: Todos os comportamentos
+description: Lista completa dos comportamentos disponíveis para os objetos da Continue.
 ---
 
-# Comportamentos
+# Todos os comportamentos
 
-Comportamentos adicionam funções prontas aos objetos. Escolha um grupo abaixo para encontrar rapidamente o que precisa configurar.
+Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque em um comportamento para abrir sua página com campos, exemplo e regras.
 
-<div class="guide-grid">
-  <GuideCard href="#visual-e-animacao" icon="color-palette-outline" color="#a78bfa" title="Visual e animação" description="Sprites, formas, propriedades animadas e luz." />
-  <GuideCard href="#fisica-e-colisao" icon="planet-outline" color="#60a5fa" title="Física e colisão" description="Gravidade, contato e regras de colisão." />
-  <GuideCard href="#interacao" icon="finger-print-outline" color="#34d399" title="Interação" description="Toque, arrastar e movimento pelo dedo." />
-  <GuideCard href="#dados-do-objeto" icon="code-slash" color="#fb923c" title="Dados do objeto" description="Valores próprios usados pelos scripts." />
+<div class="behaviors-intro">
+  <strong>13</strong>
+  <span>comportamentos documentados individualmente para você encontrar rapidamente o que cada um faz.</span>
 </div>
 
 ## Visual e animação
 
-### Sprite
+<p class="behavior-category-copy">Imagem, forma, resposta visual e animações do objeto.</p>
 
-Adiciona imagens nomeadas ao objeto. Esses sprites podem ser usados diretamente, em animações ou pela ação **Trocar sprite**.
+<div class="behavior-grid">
+  <a class="behavior-card" style="--behavior-card-color: #A78BFA" href="./sprite">
+    <span class="behavior-card-icon"><BehaviorIcon type="sprite" color="#A78BFA" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Sprite</strong>
+      <small>Adiciona imagens nomeadas para representar o objeto.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="behavior-card" style="--behavior-card-color: #4ADE80" href="./animacao-com-sprites">
+    <span class="behavior-card-icon"><BehaviorIcon type="animation" color="#4ADE80" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Animação com sprites</strong>
+      <small>Reproduz uma sequência de sprites como uma animação.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="behavior-card" style="--behavior-card-color: #2DD4BF" href="./animacao-de-propriedades">
+    <span class="behavior-card-icon"><BehaviorIcon type="property-animation" color="#2DD4BF" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Animação de propriedades</strong>
+      <small>Anima valores do objeto com keyframes organizados por nome.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="behavior-card" style="--behavior-card-color: #F472B6" href="./crescer-ao-pressionar">
+    <span class="behavior-card-icon"><BehaviorIcon type="press-scale" color="#F472B6" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Crescer ao pressionar</strong>
+      <small>Muda a escala do objeto quando ele recebe um toque.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="behavior-card" style="--behavior-card-color: #FB923C" href="./forma">
+    <span class="behavior-card-icon"><BehaviorIcon type="shape" color="#FB923C" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Forma</strong>
+      <small>Desenha um retângulo configurável sem precisar de sprite.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+</div>
 
-### Animação com sprites
+## Iluminação
 
-Cria uma sequência usando os sprites do objeto. Escolha os quadros, a ordem, a velocidade e a repetição.
+<p class="behavior-category-copy">Luzes, sombras e objetos que bloqueiam ou recebem luz.</p>
 
-### Animação de propriedades
-
-Cria várias animações por nome usando quadros-chave. Pode animar posição X e Y, rotação, escala, largura, altura, transparência, ordem Z e cor.
-
-Cada animação pode ser linear, acelerada, desacelerada, suave, antecipada, com ultrapassagem, quique ou efeito elástico. Também pode tocar uma vez, repetir ou repetir voltando. Nos scripts, use as ações **Reproduzir**, **Recomeçar** e **Pausar animação de propriedades**.
-
-### Crescer ao pressionar
-
-Muda temporariamente a escala quando o objeto é pressionado. Valores menores que `1` diminuem e valores maiores que `1` aumentam.
-
-### Forma
-
-Desenha uma forma sem precisar de sprite. Configure tamanho, cantos, preenchimento e borda.
-
-### Emitir luz
-
-Transforma o objeto em uma luz 2D. Permite configurar cor, intensidade, raio, posição, sombras, suavidade, pulsação e a camada de escuridão compartilhada.
-
-### Barrar luz
-
-Faz a colisão do objeto projetar sombra.
-
-- **Bloqueio da luz:** `100%` bloqueia totalmente; valores menores deixam parte da luz atravessar.
-- **Comprimento da sombra:** `0` alcança automaticamente o limite da luz.
-- **Receber luz normalmente:** mantém o objeto iluminado enquanto projeta sombra.
-- **Luz que entra no objeto:** controla quanto da iluminação aparece sobre ele.
+<div class="behavior-grid">
+  <a class="behavior-card" style="--behavior-card-color: #FDE047" href="./emitir-luz">
+    <span class="behavior-card-icon"><BehaviorIcon type="light-emitter" color="#FDE047" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Emitir luz</strong>
+      <small>Faz o objeto iluminar a cena e projetar sombras.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="behavior-card" style="--behavior-card-color: #94A3B8" href="./barrar-luz">
+    <span class="behavior-card-icon"><BehaviorIcon type="light-blocker" color="#94A3B8" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Barrar luz</strong>
+      <small>Faz o objeto bloquear luz e projetar sua área de colisão.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+</div>
 
 ## Física e colisão
 
-### Corpo com gravidade
+<p class="behavior-category-copy">Gravidade, áreas de colisão e exceções entre objetos.</p>
 
-Adiciona movimento físico ao objeto. Configure gravidade, velocidade máxima de queda, resistência do ar, elasticidade, massa, atrito e rotação física. A colisão precisa ajuda objetos pequenos ou rápidos.
-
-### Colisão
-
-Cria uma área física que acompanha o tamanho atual do objeto. Objetos com gravidade param ao tocar em outros objetos com colisão.
-
-### Ignorar colisão
-
-Escolhe objetos que não devem colidir com este. Também pode impedir que instâncias do mesmo objeto colidam entre si.
+<div class="behavior-grid">
+  <a class="behavior-card" style="--behavior-card-color: #60A5FA" href="./corpo-com-gravidade">
+    <span class="behavior-card-icon"><BehaviorIcon type="gravity-body" color="#60A5FA" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Corpo com gravidade</strong>
+      <small>Aplica queda, peso, atrito, impulso e resposta física ao objeto.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="behavior-card" style="--behavior-card-color: #FBBF24" href="./colisao">
+    <span class="behavior-card-icon"><BehaviorIcon type="collision" color="#FBBF24" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Colisão</strong>
+      <small>Cria a área sólida usada para contatos e bloqueios.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="behavior-card" style="--behavior-card-color: #22D3EE" href="./ignorar-colisao">
+    <span class="behavior-card-icon"><BehaviorIcon type="ignore-collision" color="#22D3EE" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Ignorar colisão</strong>
+      <small>Escolhe objetos que não devem colidir com este objeto.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+</div>
 
 ## Interação
 
-### Arrastar e soltar
+<p class="behavior-category-copy">Movimento controlado diretamente pelo toque da pessoa.</p>
 
-Permite pressionar e mover o objeto diretamente com o dedo. O ponto pressionado é mantido, evitando que o objeto se teleporte para o centro do toque.
-
-### Mover até o toque
-
-Move o objeto suavemente até o ponto tocado. Configure velocidade, aceleração e desaceleração. A opção de seguir o dedo durante o deslize começa desativada.
+<div class="behavior-grid">
+  <a class="behavior-card" style="--behavior-card-color: #38BDF8" href="./arrastar-e-soltar">
+    <span class="behavior-card-icon"><BehaviorIcon type="drag-drop" color="#38BDF8" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Arrastar e soltar</strong>
+      <small>Permite mover o objeto diretamente com o dedo.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="behavior-card" style="--behavior-card-color: #34D399" href="./mover-ate-o-toque">
+    <span class="behavior-card-icon"><BehaviorIcon type="move-to-touch" color="#34D399" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Mover até o toque</strong>
+      <small>Move o objeto suavemente até a posição tocada.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+</div>
 
 ## Dados do objeto
 
-### Variáveis do objeto
+<p class="behavior-category-copy">Valores próprios guardados separadamente em cada instância.</p>
 
-Guarda valores próprios do objeto para serem usados pelas condições, ações e expressões do jogo.
-
-::: tip Use apenas o necessário
-Adicionar somente os comportamentos usados pelo objeto deixa a configuração mais simples e evita cálculos desnecessários.
-:::
+<div class="behavior-grid">
+  <a class="behavior-card" style="--behavior-card-color: #60A5FA" href="./variaveis-do-objeto">
+    <span class="behavior-card-icon"><BehaviorIcon type="object-variables" color="#60A5FA" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Variáveis do objeto</strong>
+      <small>Guarda valores separados em cada instância do objeto.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+</div>

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { behaviorCategories, behaviorsByCategory } from './behavior-data.mjs';
 import { nodeCategories, nodesByCategory } from './node-data.mjs';
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
@@ -13,6 +14,15 @@ const nodeSidebarItems = nodeCategories.map((category) => ({
   items: nodesByCategory[category.key].map((node) => ({
     text: node.title,
     link: `/nos/${node.slug}`,
+  })),
+}));
+
+const behaviorSidebarItems = behaviorCategories.map((category) => ({
+  text: category.label,
+  collapsed: true,
+  items: behaviorsByCategory[category.key].map((behavior) => ({
+    text: behavior.title,
+    link: `/comportamentos/${behavior.slug}`,
   })),
 }));
 
@@ -33,6 +43,7 @@ export default defineConfig({
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Todos os nós', link: '/nos/' },
+      { text: 'Expressões', link: '/expressoes/' },
       { text: 'Editor', link: '/editor/visao-geral' },
       { text: 'Comportamentos', link: '/comportamentos/' },
     ],
@@ -74,7 +85,10 @@ export default defineConfig({
       {
         text: 'Comportamentos',
         collapsed: true,
-        items: [{ text: 'Todos os comportamentos', link: '/comportamentos/' }],
+        items: [
+          { text: 'Todos os comportamentos', link: '/comportamentos/' },
+          ...behaviorSidebarItems,
+        ],
       },
       {
         text: 'Exportação',

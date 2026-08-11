@@ -23,7 +23,7 @@ Redimensiona largura e altura juntas mantendo a proporção original.
 
 | Campo | O que configurar |
 | --- | --- |
-| **Objeto de destino** | O objeto que receberá a ação. |
+| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
 | **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
 | **Escala** | Multiplicador do tamanho: 1 é o tamanho normal, 2 é o dobro e 0,5 é a metade. |
 | **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |

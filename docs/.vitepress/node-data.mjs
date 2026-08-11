@@ -58,7 +58,7 @@ const executionField = [
 
 const objectField = [
   'Objeto de destino',
-  'O objeto que receberá a ação.',
+  'Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração.',
 ];
 
 const instancesField = [

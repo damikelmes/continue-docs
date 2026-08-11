@@ -23,7 +23,7 @@ Liga e desliga comportamentos durante o jogo sem removê-los da configuração d
 
 | Campo | O que configurar |
 | --- | --- |
-| **Objeto de destino** | O objeto que receberá a ação. |
+| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
 | **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
 | **Comportamento** | Comportamento do objeto que será alterado. |
 | **Estado** | Ativado ou desativado. |

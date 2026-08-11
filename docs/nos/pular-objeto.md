@@ -23,7 +23,7 @@ Faz personagens e outros corpos com gravidade pularem usando a detecção de ch�
 
 | Campo | O que configurar |
 | --- | --- |
-| **Objeto de destino** | O objeto que receberá a ação. |
+| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
 | **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
 | **Força do pulo** | Velocidade vertical inicial aplicada ao pulo. |
 | **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |

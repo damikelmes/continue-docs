@@ -23,7 +23,7 @@ Cria movimento contínuo no eixo Y com partida e parada graduais.
 
 | Campo | O que configurar |
 | --- | --- |
-| **Objeto de destino** | O objeto que receberá a ação. |
+| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
 | **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
 | **Velocidade** | Velocidade vertical em pixels por segundo; o sinal define cima ou baixo. |
 | **Aceleração** | Quanto a velocidade aumenta por segundo. |

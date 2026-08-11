@@ -23,7 +23,7 @@ Cria movimento livre em qualquer direção usando ângulo, velocidade, aceleraç
 
 | Campo | O que configurar |
 | --- | --- |
-| **Objeto de destino** | O objeto que receberá a ação. |
+| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
 | **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
 | **Ângulo** | Direção do movimento em graus. |
 | **Velocidade** | Velocidade em pixels por segundo. |

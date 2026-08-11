@@ -23,7 +23,7 @@ Estica ou encolhe o objeto verticalmente, atualizando também seu tamanho visual
 
 | Campo | O que configurar |
 | --- | --- |
-| **Objeto de destino** | O objeto que receberá a ação. |
+| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
 | **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
 | **Altura** | Nova altura em pixels ou uma expressão numérica. |
 | **Modo de execução** | Sempre, Uma única vez, Quantidade ou Por tempo. |

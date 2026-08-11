@@ -23,7 +23,7 @@ Cria uma mudança gradual sem precisar atualizar a propriedade em vários nós. 
 
 | Campo | O que configurar |
 | --- | --- |
-| **Objeto de destino** | O objeto que receberá a ação. |
+| **Objeto de destino** | Um ou mais objetos que receberão a ação. Quando o campo permitir seleção múltipla, todos os objetos marcados usarão a mesma configuração. |
 | **Instâncias** | Escolha todas as instâncias ou uma instância específica, quando essa opção aparecer. |
 | **Propriedade** | Posição X, Posição Y, rotação, rotação do sprite, escala, largura, altura, transparência, ordem Z ou cor. |
 | **Valor final** | Valor que a propriedade deve alcançar. A cor usa um seletor próprio. |
