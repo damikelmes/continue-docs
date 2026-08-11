@@ -2,6 +2,13 @@
 
 O editor da cena é o espaço onde você posiciona e organiza as instâncias do jogo.
 
+<div class="guide-grid">
+  <GuideCard href="#ferramentas-de-edicao" icon="hand-left-outline" color="#a78bfa" title="Ferramentas" description="Mova a cena, edite, duplique ou exclua objetos." />
+  <GuideCard href="#zoom" icon="resize-outline" color="#34d399" title="Zoom" description="Veja a cena inteira ou trabalhe perto de um pixel." />
+  <GuideCard href="#posicao-da-camera" icon="videocam-outline" color="#60a5fa" title="Posição da câmera" description="Entenda o centro X e Y mostrado no editor." />
+  <GuideCard href="/editor/cenas-camadas-objetos" icon="layers-outline" color="#fb923c" title="Cenas e objetos" description="Veja como o conteúdo do jogo é organizado." />
+</div>
+
 ## Ferramentas de edição
 
 ### Mão

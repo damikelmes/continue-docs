@@ -1,58 +1,34 @@
+---
+title: Condições
+description: Nós que verificam uma situação antes de continuar o fluxo.
+pageClass: guide-page
+---
+
 # Condições
 
-Uma condição permite que os próximos nós sejam executados somente quando o resultado for verdadeiro. As condições também podem ser invertidas para verificar o contrário.
+Uma condição deixa os próximos nós continuarem somente quando o resultado for verdadeiro. Escolha um grupo para abrir os nós correspondentes.
 
-## Objeto está na cena
+<div class="guide-grid">
+  <GuideCard href="/nos/#interacao-e-toque" icon="finger-print-outline" color="#34d399" title="Interação e toque" description="Clique, pressão e posição do dedo." />
+  <GuideCard href="/nos/#estado-do-objeto" icon="cube-outline" color="#60a5fa" title="Estado do objeto" description="Existência, movimento, chão, pulo e criação." />
+  <GuideCard href="/nos/#logica-e-tempo" icon="git-compare-outline" color="#fb923c" title="Lógica e tempo" description="Comparações, comportamentos e espera." />
+  <GuideCard href="/nos/" icon="grid-outline" color="#a78bfa" title="Ver todos os nós" description="Abra a lista completa igual à do editor." />
+</div>
 
-Verdadeiro enquanto existe pelo menos uma instância do objeto escolhido na cena.
+## Como uma condição funciona
 
-## Objeto pressionado
+Coloque a condição antes das ações que ela deve controlar. Quando a condição for verdadeira, o fluxo segue; quando for falsa, as ações conectadas abaixo não são executadas.
 
-Verdadeiro enquanto o dedo continua pressionando o objeto.
+### Resultado invertido
 
-## Objeto clicado
+Você pode inverter o resultado esperado. Assim, **Objeto está na cena** também pode verificar **Objeto não está na cena** sem precisar de outro tipo de condição.
 
-Verdadeiro uma vez a cada novo toque. Use para botões, seleção e interações que devem acontecer apenas uma vez.
+### Condição contínua ou de um único momento
 
-## Dedo sobre o objeto
+- **Objeto pressionado** permanece verdadeiro enquanto o dedo estiver pressionando.
+- **Objeto clicado** fica verdadeiro uma vez para cada novo toque.
+- **Objeto foi criado** e **Objeto foi excluído** verificam exatamente o momento do acontecimento.
 
-Verdadeiro enquanto a posição do dedo estiver dentro da área do objeto.
-
-## Estado de movimento
-
-- **Objeto está caindo:** verifica se o objeto está descendo com gravidade.
-- **Objeto está no chão:** verifica o contato com uma superfície de colisão.
-- **Objeto está pulando:** verifica o movimento de pulo.
-- **Objeto está se movendo:** permite verificar qualquer direção, X, Y ou um ângulo específico.
-
-## Criação e exclusão
-
-- **Objeto foi criado:** ativa quando uma nova instância aparece.
-- **Objeto foi excluído:** ativa quando uma instância é removida.
-
-Essas condições são úteis para executar uma lógica exatamente no momento do acontecimento.
-
-## Comportamento está ativado
-
-Verifica o estado de um comportamento existente no objeto. A condição invertida verifica se ele está desativado.
-
-## Comparar números
-
-Compara dois valores fixos ou expressões.
-
-| Comparação | Símbolo |
-| --- | --- |
-| Igual | `=` |
-| Maior | `>` |
-| Menor | `<` |
-| Igual ou maior | `≥` |
-| Igual ou menor | `≤` |
-| Diferente | `≠` |
-
-## Aguardar segundos
-
-Espera o tempo informado antes de liberar o próximo nó do fluxo.
-
-::: tip Condição invertida
-Use a opção de resultado esperado para transformar, por exemplo, **Objeto está na cena** em **Objeto não está na cena** sem precisar criar outra condição.
+::: tip Abra a página do nó
+Cada condição possui uma página própria com campos, exemplo prático e regras de uso.
 :::

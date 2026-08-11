@@ -22,6 +22,7 @@ function renderCard(node) {
       <strong>${escapeHtml(node.title)}</strong>
       <small>${escapeHtml(node.summary)}</small>
     </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
   </a>`;
 }
 
@@ -131,4 +132,3 @@ await Promise.all([
 ]);
 
 console.log(`${nodes.length} páginas de nós geradas.`);
-

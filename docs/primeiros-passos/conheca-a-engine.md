@@ -2,6 +2,13 @@
 
 A Continue é uma engine para criar jogos pelo celular. O projeto é organizado visualmente: você cria cenas, adiciona objetos e conecta ações e condições para definir o que acontece durante o jogo.
 
+<div class="guide-grid">
+  <GuideCard href="/primeiros-passos/criar-projeto" icon="rocket-outline" color="#34d399" title="Criar um projeto" description="Defina o nome, a orientação e o tamanho da tela." />
+  <GuideCard href="/editor/visao-geral" icon="construct-outline" color="#60a5fa" title="Conhecer o editor" description="Aprenda a organizar e editar a primeira cena." />
+  <GuideCard href="/editor/scripts-visuais" icon="git-branch" color="#a78bfa" title="Montar a lógica" description="Conecte condições e ações no Script da cena." />
+  <GuideCard href="/nos/" icon="grid-outline" color="#fb923c" title="Consultar os nós" description="Encontre cada função usando o ícone do editor." />
+</div>
+
 ## Partes principais
 
 | Parte | Para que serve |

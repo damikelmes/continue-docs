@@ -39,6 +39,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Primeiros passos',
+        collapsed: true,
         items: [
           { text: 'Conheça a Continue', link: '/primeiros-passos/conheca-a-engine' },
           { text: 'Criar um projeto', link: '/primeiros-passos/criar-projeto' },
@@ -46,6 +47,7 @@ export default defineConfig({
       },
       {
         text: 'Editor',
+        collapsed: true,
         items: [
           { text: 'Visão geral', link: '/editor/visao-geral' },
           { text: 'Cenas, camadas e objetos', link: '/editor/cenas-camadas-objetos' },
@@ -54,7 +56,7 @@ export default defineConfig({
       },
       {
         text: 'Nós do script',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Todos os nós', link: '/nos/' },
           ...nodeSidebarItems,
@@ -62,6 +64,7 @@ export default defineConfig({
       },
       {
         text: 'Lógica',
+        collapsed: true,
         items: [
           { text: 'Condições', link: '/condicoes/' },
           { text: 'Repetições e execução', link: '/condicoes/repeticoes-e-execucao' },
@@ -70,10 +73,12 @@ export default defineConfig({
       },
       {
         text: 'Comportamentos',
+        collapsed: true,
         items: [{ text: 'Todos os comportamentos', link: '/comportamentos/' }],
       },
       {
         text: 'Exportação',
+        collapsed: true,
         items: [{ text: 'Jogo para Windows', link: '/exportacao/windows' }],
       },
     ],
