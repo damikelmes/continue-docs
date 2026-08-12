@@ -26,7 +26,7 @@ O sistema de scripts visuais permite conectar ações, condições e repetiçõe
 
 ## Teste e exporte
 
-O visualizador permite acompanhar o jogo durante a criação. Quando o projeto estiver pronto, ele pode ser preparado para jogar no Windows com seu próprio nome, versão e ícone.
+O visualizador permite acompanhar o jogo durante a criação. Quando o projeto estiver pronto, ele pode ser exportado para Android em APK ou AAB, para Windows com seu próprio executável ou para Web em um pacote HTML5 pronto para serviços como o itch.io.
 
 ## Aprenda a usar a Continue
 

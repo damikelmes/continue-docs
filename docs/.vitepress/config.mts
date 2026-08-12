@@ -56,6 +56,7 @@ export default defineConfig({
       { text: 'Expressões', link: '/expressoes/' },
       { text: 'Editor', link: '/editor/visao-geral' },
       { text: 'Comportamentos', link: '/comportamentos/' },
+      { text: 'Exportar', link: '/exportacao/' },
     ],
     sidebar: [
       {
@@ -104,7 +105,12 @@ export default defineConfig({
       {
         text: 'Exportação',
         collapsed: true,
-        items: [{ text: 'Jogo para Windows', link: '/exportacao/windows' }],
+        items: [
+          { text: 'Como exportar', link: '/exportacao/' },
+          { text: 'Android', link: '/exportacao/android' },
+          { text: 'Windows', link: '/exportacao/windows' },
+          { text: 'Web (HTML5)', link: '/exportacao/web' },
+        ],
       },
     ],
     search: {
