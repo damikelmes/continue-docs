@@ -21,13 +21,28 @@ type FlowNode = {
 };
 
 const props = defineProps<{
-  variant: 'correct-order' | 'delayed-order' | 'multiple-targets';
+  variant: 'first-flow' | 'correct-order' | 'delayed-order' | 'multiple-targets';
 }>();
 
 const examples: Record<
   typeof props.variant,
   { label: string; nodes: FlowNode[]; tone: 'good' | 'neutral' | 'warning' }
 > = {
+  'first-flow': {
+    label: 'PRIMEIRO FLUXO',
+    tone: 'neutral',
+    nodes: [
+      {
+        color: '#F472B6', condition: true, icon: 'finger-print-outline',
+        kind: 'CONDIÇÃO', newFlow: true, title: 'Objeto clicado', type: 'condition-object-clicked',
+        fields: [{ label: 'OBJETO', value: 'Botão' }],
+      },
+      {
+        color: '#38BDF8', icon: 'swap-vertical-outline', kind: 'AÇÃO', title: 'Mudar posição Y', type: 'action-set-object-y',
+        fields: [{ label: 'OBJETO', value: 'Porta' }, { label: 'POSIÇÃO Y', value: '120 px' }, { label: 'EXECUÇÃO', value: 'Uma única vez' }],
+      },
+    ],
+  },
   'correct-order': {
     label: 'ORDEM RECOMENDADA',
     tone: 'good',

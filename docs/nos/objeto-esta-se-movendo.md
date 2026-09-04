@@ -30,7 +30,7 @@ Detecta se a instância está se deslocando e permite filtrar direção e sinal 
   </div>
   <div class="doc-field-item">
     <strong>Instâncias</strong>
-    <p>Todas as instâncias ou uma instância específica.</p>
+    <p>Qualquer instância, Todas as instâncias ou uma instância específica.</p>
   </div>
   <div class="doc-field-item">
     <strong>Modo</strong>

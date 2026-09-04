@@ -42,9 +42,9 @@ Reaproveita o mesmo fluxo em diferentes pontos do Script da cena sem duplicar to
 
 ## Regras
 
-- Este nó aparece no Script da cena e não dentro de outro script da biblioteca.
+- Este nó aparece no Script da cena e no Script global, não dentro de outro script da biblioteca.
 - O script escolhido precisa existir.
-- O fluxo retorna ao ponto seguinte depois que o script chamado termina.
+- As condições e conexões da rotina chamada também controlam sua execução.
 
 ## Nós relacionados
 

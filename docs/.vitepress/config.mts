@@ -38,42 +38,51 @@ const expressionSidebarItems = expressionCategories.map((category) => ({
 
 export default defineConfig({
   lang: 'pt-BR',
-  title: 'Continue Docs',
+  title: 'Continue — Documentação',
   description: 'Aprenda a criar jogos com a engine Continue.',
   base,
   cleanUrls: true,
   lastUpdated: true,
   head: [
-    ['meta', { name: 'theme-color', content: '#0d0b10' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['link', { rel: 'icon', type: 'image/png', href: `${base}logo.png` }],
   ],
   themeConfig: {
     logo: '/logo.png',
-    siteTitle: 'Continue Docs',
+    siteTitle: 'Continue',
     nav: [
       { text: 'Início', link: '/' },
-      { text: 'Todos os nós', link: '/nos/' },
-      { text: 'Expressões', link: '/expressoes/' },
-      { text: 'Editor', link: '/editor/visao-geral' },
-      { text: 'Comportamentos', link: '/comportamentos/' },
+      { text: 'Comece aqui', link: '/primeiros-passos/conheca-a-engine' },
+      { text: 'Consultar', items: [
+        { text: 'Nós: ações e condições', link: '/nos/' },
+        { text: 'Comportamentos', link: '/comportamentos/' },
+        { text: 'Expressões', link: '/expressoes/' },
+        { text: 'Ferramentas do editor', link: '/editor/visao-geral' },
+      ] },
       { text: 'Exportar', link: '/exportacao/' },
     ],
     sidebar: [
       {
-        text: 'Primeiros passos',
-        collapsed: true,
+        text: 'Comece aqui',
+        collapsed: false,
         items: [
           { text: 'Conheça a Continue', link: '/primeiros-passos/conheca-a-engine' },
           { text: 'Criar um projeto', link: '/primeiros-passos/criar-projeto' },
         ],
       },
       {
-        text: 'Editor',
-        collapsed: true,
+        text: 'Aprenda a usar',
+        collapsed: false,
         items: [
-          { text: 'Visão geral', link: '/editor/visao-geral' },
+          { text: 'Ferramentas do editor', link: '/editor/visao-geral' },
           { text: 'Cenas, camadas e objetos', link: '/editor/cenas-camadas-objetos' },
-          { text: 'Scripts visuais', link: '/editor/scripts-visuais' },
+          { text: 'Nós e fluxos: o básico', link: '/editor/scripts-visuais' },
+          { text: 'Cena, global ou biblioteca?', link: '/editor/tipos-de-script' },
+          { text: 'Combinar comportamentos', link: '/editor/combinar-comportamentos' },
+          { text: 'Aparência e animação', link: '/editor/aparencia-e-animacao' },
+          { text: 'Variáveis e expressões', link: '/editor/variaveis-e-expressoes' },
+          { text: 'Trocar, pausar e retomar cenas', link: '/editor/gerenciar-cenas' },
+          { text: 'Toque, teclado e colisões', link: '/editor/interacao-e-colisoes' },
         ],
       },
       {
@@ -85,11 +94,9 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Lógica',
+        text: 'Expressões',
         collapsed: true,
         items: [
-          { text: 'Condições', link: '/condicoes/' },
-          { text: 'Repetições e execução', link: '/condicoes/repeticoes-e-execucao' },
           { text: 'Todas as expressões', link: '/expressoes/' },
           ...expressionSidebarItems,
         ],
@@ -134,7 +141,7 @@ export default defineConfig({
     docFooter: { prev: 'Página anterior', next: 'Próxima página' },
     lastUpdated: { text: 'Atualizado em', formatOptions: { dateStyle: 'short' } },
     returnToTopLabel: 'Voltar ao topo',
-    sidebarMenuLabel: 'Menu',
+    sidebarMenuLabel: 'Explorar documentação',
     darkModeSwitchLabel: 'Tema',
     lightModeSwitchTitle: 'Usar tema claro',
     darkModeSwitchTitle: 'Usar tema escuro',

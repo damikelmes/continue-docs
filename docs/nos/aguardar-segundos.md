@@ -49,5 +49,8 @@ Cria atrasos entre ações sem travar a atualização do restante do jogo.
 ## Nós relacionados
 
 - [Comparar números](./comparar-numeros) — Compara dois números ou expressões.
+- [Variável foi alterada](./variavel-foi-alterada) — Dispara uma vez quando a variável escolhida muda de valor.
+- [A cada X segundos](./a-cada-x-segundos) — Executa novamente sempre que o intervalo escolhido é completado.
+- [Chance aleatória](./chance-aleatoria) — Executa de acordo com a porcentagem de chance escolhida.
 
 <a class="node-back-link" href="./">← Ver todos os nós</a>

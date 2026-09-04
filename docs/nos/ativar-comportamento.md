@@ -66,6 +66,9 @@ Liga e desliga comportamentos durante o jogo sem removê-los da configuração d
 
 ## Nós relacionados
 
-- Nenhum nó relacionado nesta categoria.
+- [Iniciar emissor de partículas](./iniciar-emissor-de-particulas) — Inicia ou continua o emissor das instâncias escolhidas.
+- [Parar emissor de partículas](./parar-emissor-de-particulas) — Interrompe novas partículas e deixa as atuais terminarem.
+- [Pausar emissor de partículas](./pausar-emissor-de-particulas) — Pausa a emissão e o movimento das partículas atuais.
+- [Disparar partículas](./disparar-particulas) — Cria imediatamente a quantidade de partículas escolhida.
 
 <a class="node-back-link" href="./">← Ver todos os nós</a>

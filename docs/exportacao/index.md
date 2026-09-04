@@ -25,7 +25,7 @@ No Android, revise ainda o identificador do pacote, a versão mínima do sistema
 7. Use o botão de compartilhar para enviar ou publicar o arquivo.
 
 ::: tip Teste antes de publicar
-Gere primeiro uma versão para teste. Verifique os controles, a câmera, os textos, a iluminação, o som e a adaptação a outros tamanhos de tela.
+Gere primeiro uma versão para teste. Verifique os controles, a câmera, as animações, a iluminação e a adaptação a outros tamanhos de tela.
 :::
 
 ## <DocHeadingIcon icon="save-outline" color="#C4B5FD" /> Exportações salvas

@@ -66,9 +66,9 @@ Permite criar várias animações com keyframes para posição, tamanho, escala,
 
 ## Comportamentos relacionados
 
+- [Emitir partículas](./emitir-particulas) — Cria efeitos como fumaça, fogo, chuva e faíscas.
 - [Sprite](./sprite) — Adiciona imagens nomeadas para representar o objeto.
 - [Animação com sprites](./animacao-com-sprites) — Reproduz uma sequência de sprites como uma animação.
 - [Crescer ao pressionar](./crescer-ao-pressionar) — Muda a escala do objeto quando ele recebe um toque.
-- [Forma](./forma) — Desenha um retângulo configurável sem precisar de sprite.
 
 <a class="behavior-back-link" href="./">← Ver todos os comportamentos</a>

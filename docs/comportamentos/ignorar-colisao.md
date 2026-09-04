@@ -50,6 +50,6 @@ Cria exceções de colisão sem remover o comportamento Colisão. É útil para 
 ## Comportamentos relacionados
 
 - [Corpo com gravidade](./corpo-com-gravidade) — Aplica queda, peso, atrito, impulso e resposta física ao objeto.
-- [Colisão](./colisao) — Cria a área sólida usada para contatos e bloqueios.
+- [Colisão](./colisao) — Define a área de contato, os bloqueios e os gatilhos do objeto.
 
 <a class="behavior-back-link" href="./">← Ver todos os comportamentos</a>

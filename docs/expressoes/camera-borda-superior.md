@@ -51,13 +51,14 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 
 - A expressão usa a câmera atual da cena.
 - O valor considera o zoom quando isso altera a área visível.
+- Com a câmera girada, estes valores são os extremos da área visível nos eixos do mundo. Um ponto perto de um extremo não está necessariamente dentro do retângulo girado; use as condições de câmera para testar a visibilidade do objeto.
 
 ## Expressões relacionadas
 
+- [Rotação atual da câmera](./rotacao-da-camera) — `camera.rotation`
 - [Centro X da câmera](./camera-centro-x) — `camera.x`
 - [Centro Y da câmera](./camera-centro-y) — `camera.y`
 - [Borda esquerda da câmera](./camera-borda-esquerda) — `camera.left`
 - [Borda direita da câmera](./camera-borda-direita) — `camera.right`
-- [Borda inferior da câmera](./camera-borda-inferior) — `camera.bottom`
 
 <a class="node-back-link" href="./">← Ver todas as expressões</a>

@@ -28,5 +28,5 @@ Não retire somente o executável do ZIP e não separe os arquivos extraídos. E
 Os pacotes concluídos aparecem em **Jogos para Windows salvos**. Você pode compartilhar uma versão novamente ou excluir arquivos antigos para liberar espaço no celular.
 
 ::: tip Teste antes de compartilhar
-Abra o jogo em um computador e confira controles, câmera, iluminação, som, desempenho e redimensionamento da janela.
+Abra o jogo em um computador e confira controles, câmera, iluminação, animações, desempenho e redimensionamento da janela.
 :::

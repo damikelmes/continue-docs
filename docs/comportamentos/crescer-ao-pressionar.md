@@ -61,9 +61,9 @@ Adiciona uma resposta visual pronta para botões e objetos interativos, sem prec
 
 ## Comportamentos relacionados
 
+- [Emitir partículas](./emitir-particulas) — Cria efeitos como fumaça, fogo, chuva e faíscas.
 - [Sprite](./sprite) — Adiciona imagens nomeadas para representar o objeto.
 - [Animação com sprites](./animacao-com-sprites) — Reproduz uma sequência de sprites como uma animação.
 - [Animação de propriedades](./animacao-de-propriedades) — Anima valores do objeto com keyframes organizados por nome.
-- [Forma](./forma) — Desenha um retângulo configurável sem precisar de sprite.
 
 <a class="behavior-back-link" href="./">← Ver todos os comportamentos</a>

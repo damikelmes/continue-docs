@@ -30,7 +30,7 @@ Detecta a sobreposição do toque com o objeto para arrastar, destacar ou mostra
   </div>
   <div class="doc-field-item">
     <strong>Instâncias</strong>
-    <p>Todas as instâncias ou uma instância específica.</p>
+    <p>Qualquer instância, Todas as instâncias ou uma instância específica.</p>
   </div>
   <div class="doc-field-item">
     <strong>Resultado esperado</strong>
@@ -61,5 +61,7 @@ Detecta a sobreposição do toque com o objeto para arrastar, destacar ou mostra
 
 - [Objeto clicado](./objeto-clicado) — Detecta uma vez cada novo toque no objeto.
 - [Objeto pressionado](./objeto-pressionado) — Permanece verdadeira enquanto o objeto estiver pressionado.
+- [Objeto pressionado por um tempo](./objeto-pressionado-por-um-tempo) — Executa depois que o objeto permanece pressionado pelo tempo escolhido.
+- [Objeto clicado X vezes](./objeto-clicado-x-vezes) — Executa quando o objeto recebe a quantidade de cliques escolhida.
 
 <a class="node-back-link" href="./">← Ver todos os nós</a>

@@ -53,9 +53,10 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 
 ## Expressões relacionadas
 
-- [Toque X no mundo](./toque-x-no-mundo) — `touch.x`
-- [Toque Y no mundo](./toque-y-no-mundo) — `touch.y`
-- [Toque X na tela](./toque-x-na-tela) — `touch.screen_x`
-- [Toque está pressionado](./toque-esta-pressionado) — `touch.is_down`
+- [Início do toque X](./inicio-do-toque-x) — `touch.start_x`
+- [Início do toque Y](./inicio-do-toque-y) — `touch.start_y`
+- [Deslocamento do toque X](./deslocamento-do-toque-x) — `touch.delta_x`
+- [Deslocamento do toque Y](./deslocamento-do-toque-y) — `touch.delta_y`
+- [Distância do deslize](./distancia-do-deslize) — `touch.distance`
 
 <a class="node-back-link" href="./">← Ver todas as expressões</a>

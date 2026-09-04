@@ -56,10 +56,10 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 
 ## Expressões relacionadas
 
+- [Quadro atual da animação](./quadro-atual-da-animacao) — `jogador.animation_frame`
+- [Progresso da animação de propriedades](./progresso-da-animacao-de-propriedades) — `porta.property_animation_progress`
 - [Posição Y do objeto](./objeto-posicao-y) — `jogador.y`
 - [Centro X do objeto](./objeto-centro-x) — `jogador.center_x`
 - [Centro Y do objeto](./objeto-centro-y) — `jogador.center_y`
-- [Borda esquerda do objeto](./objeto-borda-esquerda) — `jogador.left`
-- [Borda direita do objeto](./objeto-borda-direita) — `jogador.right`
 
 <a class="node-back-link" href="./">← Ver todas as expressões</a>

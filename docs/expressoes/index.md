@@ -5,12 +5,16 @@ description: Lista completa das expressões numéricas disponíveis na Continue.
 
 # <DocHeadingIcon icon="calculator-outline" color="#FB923C" :size="22" /> Todas as expressões
 
-Expressões usam informações do jogo no lugar de um número fixo. Toque em uma expressão para ver o que ela retorna, suas regras e vários exemplos diferentes de utilização.
+Expressões usam informações do jogo no lugar de um número fixo. Elas podem ler uma posição, consultar uma variável ou calcular um resultado. Consultar um valor não altera o jogo por si só: o nó usa esse resultado no campo escolhido.
+
+Se este assunto é novo, comece por [Variáveis e expressões](/editor/variaveis-e-expressoes). Aqui você encontra a escrita, as regras e vários exemplos de cada expressão.
 
 <div class="nodes-intro expressions-intro">
-  <strong>55</strong>
+  <strong>67</strong>
   <span>expressões documentadas individualmente, cada uma com pelo menos três exemplos de uso.</span>
 </div>
+
+<CatalogNav :groups='[{"key":"globais","label":"Variáveis globais","icon":"globe-outline","color":"#F4C54B","count":1},{"key":"objetos","label":"Objetos e instâncias","icon":"cube-outline","color":"#A78BFA","count":23},{"key":"camera","label":"Câmera","icon":"videocam-outline","color":"#60A5FA","count":10},{"key":"tempo","label":"Tempo e desempenho","icon":"timer-outline","color":"#2DD4BF","count":3},{"key":"toque","label":"Toque","icon":"hand-left-outline","color":"#FB923C","count":13},{"key":"matematica","label":"Matemática","icon":"calculator-outline","color":"#FB923C","count":15},{"key":"aleatorio","label":"Valores aleatórios","icon":"shuffle-outline","color":"#A78BFA","count":2}]' />
 
 ## <DocHeadingIcon icon="search-outline" color="#60A5FA" /> Como inserir uma expressão
 
@@ -46,11 +50,42 @@ A expressão lê o valor disponível no instante em que seu nó é executado. Se
 
 Veja [Ordem de execução dos scripts](/editor/scripts-visuais#ordem-de-execucao) para entender os fluxos completos.
 
-## <DocHeadingIcon icon="cube-outline" color="#A78BFA" /> Objetos e instâncias
+## <DocHeadingIcon icon="globe-outline" color="#F4C54B" /> Variáveis globais {#globais}
+
+<p class="node-category-copy">Consulte números compartilhados entre as cenas durante a partida.</p>
+
+<div class="node-grid expression-grid">
+  <a class="node-card expression-card" style="--node-card-color: #F4C54B" href="./variavel-numerica-global">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="globe-outline" color="#F4C54B" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Variável numérica global</strong>
+      <small><code>global.variable.pontos</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+</div>
+
+## <DocHeadingIcon icon="cube-outline" color="#A78BFA" /> Objetos e instâncias {#objetos}
 
 <p class="node-category-copy">Leia posição, tamanho, aparência, velocidade, quantidade e variáveis numéricas.</p>
 
 <div class="node-grid expression-grid">
+  <a class="node-card expression-card" style="--node-card-color: #4ADE80" href="./quadro-atual-da-animacao">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="film" color="#4ADE80" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Quadro atual da animação</strong>
+      <small><code>jogador.animation_frame</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="node-card expression-card" style="--node-card-color: #2DD4BF" href="./progresso-da-animacao-de-propriedades">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="play-forward-outline" color="#2DD4BF" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Progresso da animação de propriedades</strong>
+      <small><code>porta.property_animation_progress</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
   <a class="node-card expression-card" style="--node-card-color: #A78BFA" href="./objeto-posicao-x">
     <span class="node-card-icon"><NodeIcon type="expression-object-x" icon="remove-outline" color="#A78BFA" :size="30" /></span>
     <span class="node-card-copy">
@@ -221,11 +256,19 @@ Veja [Ordem de execução dos scripts](/editor/scripts-visuais#ordem-de-execucao
   </a>
 </div>
 
-## <DocHeadingIcon icon="videocam-outline" color="#60A5FA" /> Câmera
+## <DocHeadingIcon icon="videocam-outline" color="#60A5FA" /> Câmera {#camera}
 
 <p class="node-category-copy">Use o centro, as bordas, o tamanho visível e o zoom atual da câmera.</p>
 
 <div class="node-grid expression-grid">
+  <a class="node-card expression-card" style="--node-card-color: #60A5FA" href="./rotacao-da-camera">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="camera-reverse-outline" color="#60A5FA" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Rotação atual da câmera</strong>
+      <small><code>camera.rotation</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
   <a class="node-card expression-card" style="--node-card-color: #60A5FA" href="./camera-centro-x">
     <span class="node-card-icon"><NodeIcon type="plain" icon="swap-horizontal-outline" color="#60A5FA" :size="30" /></span>
     <span class="node-card-copy">
@@ -300,7 +343,7 @@ Veja [Ordem de execução dos scripts](/editor/scripts-visuais#ordem-de-execucao
   </a>
 </div>
 
-## <DocHeadingIcon icon="timer-outline" color="#2DD4BF" /> Tempo e desempenho
+## <DocHeadingIcon icon="timer-outline" color="#2DD4BF" /> Tempo e desempenho {#tempo}
 
 <p class="node-category-copy">Consulte o tempo da atualização, o tempo da cena e os quadros por segundo.</p>
 
@@ -331,11 +374,75 @@ Veja [Ordem de execução dos scripts](/editor/scripts-visuais#ordem-de-execucao
   </a>
 </div>
 
-## <DocHeadingIcon icon="hand-left-outline" color="#FB923C" /> Toque
+## <DocHeadingIcon icon="hand-left-outline" color="#FB923C" /> Toque {#toque}
 
 <p class="node-category-copy">Leia o toque no mundo, o toque direto na tela e o estado do dedo.</p>
 
 <div class="node-grid expression-grid">
+  <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./inicio-do-toque-x">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Início do toque X</strong>
+      <small><code>touch.start_x</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./inicio-do-toque-y">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Início do toque Y</strong>
+      <small><code>touch.start_y</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./deslocamento-do-toque-x">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Deslocamento do toque X</strong>
+      <small><code>touch.delta_x</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./deslocamento-do-toque-y">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Deslocamento do toque Y</strong>
+      <small><code>touch.delta_y</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./distancia-do-deslize">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Distância do deslize</strong>
+      <small><code>touch.distance</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./angulo-do-deslize">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Ângulo do deslize</strong>
+      <small><code>touch.angle</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./tempo-do-toque">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Tempo do toque</strong>
+      <small><code>touch.duration</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
+  <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./quantidade-de-toques">
+    <span class="node-card-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
+    <span class="node-card-copy">
+      <strong>Quantidade de toques</strong>
+      <small><code>touch.count</code></small>
+    </span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
   <a class="node-card expression-card" style="--node-card-color: #FB923C" href="./toque-x-no-mundo">
     <span class="node-card-icon"><NodeIcon type="expression-touch-x" icon="hand-left-outline" color="#FB923C" :size="30" /></span>
     <span class="node-card-copy">
@@ -378,7 +485,7 @@ Veja [Ordem de execução dos scripts](/editor/scripts-visuais#ordem-de-execucao
   </a>
 </div>
 
-## <DocHeadingIcon icon="calculator-outline" color="#FB923C" /> Matemática
+## <DocHeadingIcon icon="calculator-outline" color="#FB923C" /> Matemática {#matematica}
 
 <p class="node-category-copy">Arredonde, limite, compare e transforme valores numéricos.</p>
 
@@ -505,7 +612,7 @@ Veja [Ordem de execução dos scripts](/editor/scripts-visuais#ordem-de-execucao
   </a>
 </div>
 
-## <DocHeadingIcon icon="shuffle-outline" color="#A78BFA" /> Valores aleatórios
+## <DocHeadingIcon icon="shuffle-outline" color="#A78BFA" /> Valores aleatórios {#aleatorio}
 
 <p class="node-category-copy">Sorteie números inteiros ou valores com casas decimais.</p>
 

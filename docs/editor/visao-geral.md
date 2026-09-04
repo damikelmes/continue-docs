@@ -75,7 +75,7 @@ Mostra as cópias de objetos que foram colocadas na cena atual. Use essa aba par
 Abre a biblioteca de scripts reutilizáveis do projeto. Você pode criar um script com nome próprio e chamá-lo onde precisar usando o nó **Executar script**.
 
 ::: tip Script da cena e Script
-**Script da cena** controla diretamente a cena atual. A aba **Script** guarda rotinas reutilizáveis, que só são executadas quando algum fluxo chama essas rotinas.
+**Script da cena** controla diretamente a cena atual. A aba **Script** guarda rotinas reutilizáveis, que só são executadas quando um fluxo as chama. Existe também o **Script global**, na página de cenas, executado antes do Script da cena. Veja [onde colocar cada regra](/editor/tipos-de-script).
 :::
 
 <h3 id="camadas" class="doc-icon-heading">
@@ -137,7 +137,7 @@ Use o gesto de pinça para aproximar ou afastar. O zoom pode ser reduzido até *
   <span>Posição da câmera</span>
 </h2>
 
-O indicador discreto próximo às abas mostra a posição X e Y do centro da câmera no editor. Essas posições podem ser usadas nas expressões `camera.x` e `camera.y`.
+O indicador próximo às abas mostra o centro da visualização no editor. Durante o jogo, `camera.x` e `camera.y` consultam o centro da câmera em execução, que pode mudar por ações do script. Mover a visualização para editar não é a mesma coisa que executar uma ação de câmera no jogo.
 
 ::: tip Centralizar um objeto
 Para colocar um objeto exatamente no centro da câmera, use `camera.x` na posição X e `camera.y` na posição Y.

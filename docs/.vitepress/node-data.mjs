@@ -1,4 +1,7 @@
+import { additionalNodes } from './node-additions.mjs';
+
 export const nodeCategories = [
+  { key: 'cena', icon: 'albums-outline', color: '#A78BFA', label: 'Cena', description: 'Trocar, retomar, reiniciar e pausar cenas, além de manter objetos entre elas.' },
   {
     key: 'movimento-e-posicao',
     icon: 'navigate-circle-outline',
@@ -41,6 +44,10 @@ export const nodeCategories = [
     label: 'Interação e toque',
     description: 'Detectar clique, pressão e posição do dedo.',
   },
+  { key: 'variaveis', icon: 'server-outline', color: '#FBBF24', label: 'Variáveis', description: 'Alterar dados de uma instância ou valores globais do jogo.' },
+  { key: 'camera-e-tela', icon: 'eye', color: '#38BDF8', label: 'Câmera e tela', description: 'Detectar quando um objeto entra, permanece ou sai da área da câmera.' },
+  { key: 'colisoes', icon: 'link-outline', color: '#4ADE80', label: 'Colisões', description: 'Reconhecer o começo, a duração, o fim e o lado de um contato.' },
+  { key: 'teclado', icon: 'keypad-outline', color: '#60A5FA', label: 'Teclado', description: 'Reconhecer teclas mantidas, novos apertos, solturas, combinações e sequências.' },
   {
     key: 'estado-do-objeto',
     icon: 'pulse-outline',
@@ -123,7 +130,7 @@ const objectCondition = (node) => condition({
   ...node,
   fields: [
     ['Objeto', 'Objeto que será verificado.'],
-    ['Instâncias', 'Todas as instâncias ou uma instância específica.'],
+    ['Instâncias', 'Qualquer instância, Todas as instâncias ou uma instância específica.'],
     ...(node.fields ?? []),
   ],
   rules: [
@@ -926,8 +933,9 @@ export const nodes = [
     fields: [['Script', 'Nome do script salvo na biblioteca que será executado.']],
     example: ['Crie o script “Receber dano” na biblioteca.', 'No Script da cena, escolha Executar script e selecione “Receber dano”.'],
     result: 'Todos os nós do script Receber dano são executados naquele ponto do fluxo.',
-    rules: ['Este nó aparece no Script da cena e não dentro de outro script da biblioteca.', 'O script escolhido precisa existir.', 'O fluxo retorna ao ponto seguinte depois que o script chamado termina.'],
+    rules: ['Este nó aparece no Script da cena e no Script global, não dentro de outro script da biblioteca.', 'O script escolhido precisa existir.', 'As condições e conexões da rotina chamada também controlam sua execução.'],
   },
+  ...additionalNodes,
 ];
 
 export const nodesByCategory = Object.fromEntries(

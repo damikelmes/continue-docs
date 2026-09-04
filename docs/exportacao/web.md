@@ -37,5 +37,5 @@ Quando houver uma opção de arquivo inicial, use a página `index.html` que já
 Os pacotes concluídos aparecem nas exportações Web salvas do projeto. Você pode compartilhar novamente ou excluir versões antigas.
 
 ::: tip Teste a versão publicada
-Além do visualizador da engine, abra o link do jogo em um celular e em um computador. Confira controles, som, carregamento, tela cheia e adaptação da câmera.
+Além do visualizador da engine, abra o link do jogo em um celular e em um computador. Confira controles, animações, carregamento, tela cheia e adaptação da câmera.
 :::

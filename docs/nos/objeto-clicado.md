@@ -30,7 +30,7 @@ Executa um fluxo quando o dedo começa um toque sobre a área do objeto.
   </div>
   <div class="doc-field-item">
     <strong>Instâncias</strong>
-    <p>Todas as instâncias ou uma instância específica.</p>
+    <p>Qualquer instância, Todas as instâncias ou uma instância específica.</p>
   </div>
   <div class="doc-field-item">
     <strong>Resultado esperado</strong>
@@ -61,5 +61,7 @@ Executa um fluxo quando o dedo começa um toque sobre a área do objeto.
 
 - [Objeto pressionado](./objeto-pressionado) — Permanece verdadeira enquanto o objeto estiver pressionado.
 - [Dedo sobre o objeto](./dedo-sobre-o-objeto) — Verifica se a posição atual do dedo está sobre o objeto.
+- [Objeto pressionado por um tempo](./objeto-pressionado-por-um-tempo) — Executa depois que o objeto permanece pressionado pelo tempo escolhido.
+- [Objeto clicado X vezes](./objeto-clicado-x-vezes) — Executa quando o objeto recebe a quantidade de cliques escolhida.
 
 <a class="node-back-link" href="./">← Ver todos os nós</a>

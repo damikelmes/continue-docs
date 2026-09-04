@@ -88,9 +88,10 @@ ${related || '- Nenhuma expressão relacionada nesta categoria.'}
 }
 
 function renderIndex() {
+  const shortcuts = expressionCategories.map(({ key, label, icon, color }) => ({ key, label, icon, color, count: expressionsByCategory[key].length }));
   const sections = expressionCategories.map((category) => {
     const cards = expressionsByCategory[category.key].map(renderCard).join('\n');
-    return `## <DocHeadingIcon icon="${category.icon}" color="${category.color}" /> ${category.label}
+    return `## <DocHeadingIcon icon="${category.icon}" color="${category.color}" /> ${category.label} {#${category.key}}
 
 <p class="node-category-copy">${escapeHtml(category.description)}</p>
 
@@ -106,12 +107,16 @@ description: Lista completa das expressões numéricas disponíveis na Continue.
 
 # <DocHeadingIcon icon="calculator-outline" color="#FB923C" :size="22" /> Todas as expressões
 
-Expressões usam informações do jogo no lugar de um número fixo. Toque em uma expressão para ver o que ela retorna, suas regras e vários exemplos diferentes de utilização.
+Expressões usam informações do jogo no lugar de um número fixo. Elas podem ler uma posição, consultar uma variável ou calcular um resultado. Consultar um valor não altera o jogo por si só: o nó usa esse resultado no campo escolhido.
+
+Se este assunto é novo, comece por [Variáveis e expressões](/editor/variaveis-e-expressoes). Aqui você encontra a escrita, as regras e vários exemplos de cada expressão.
 
 <div class="nodes-intro expressions-intro">
   <strong>${expressions.length}</strong>
   <span>expressões documentadas individualmente, cada uma com pelo menos três exemplos de uso.</span>
 </div>
+
+<CatalogNav :groups='${JSON.stringify(shortcuts).replaceAll("'", '&#39;')}' />
 
 ## <DocHeadingIcon icon="search-outline" color="#60A5FA" /> Como inserir uma expressão
 

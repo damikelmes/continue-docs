@@ -55,10 +55,10 @@ Use o botão de procurar expressão no campo numérico para o editor escrever o 
 
 ## Expressões relacionadas
 
+- [Rotação atual da câmera](./rotacao-da-camera) — `camera.rotation`
 - [Centro X da câmera](./camera-centro-x) — `camera.x`
 - [Borda esquerda da câmera](./camera-borda-esquerda) — `camera.left`
 - [Borda direita da câmera](./camera-borda-direita) — `camera.right`
 - [Borda superior da câmera](./camera-borda-superior) — `camera.top`
-- [Borda inferior da câmera](./camera-borda-inferior) — `camera.bottom`
 
 <a class="node-back-link" href="./">← Ver todas as expressões</a>

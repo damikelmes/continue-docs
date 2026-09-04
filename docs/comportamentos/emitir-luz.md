@@ -56,6 +56,14 @@ Adiciona uma luz 2D configurável ao objeto. A luz acompanha a instância e pode
     <strong>Pulso</strong>
     <p>Varia o tamanho da luz usando escala e velocidade.</p>
   </div>
+  <div class="doc-field-item">
+    <strong>Cor da escuridão</strong>
+    <p>Cor ambiente compartilhada pelas luzes do projeto.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Escuridão</strong>
+    <p>0% mantém a camada clara; 100% deixa a camada totalmente escura fora da iluminação.</p>
+  </div>
 </div>
 
 ## Exemplo

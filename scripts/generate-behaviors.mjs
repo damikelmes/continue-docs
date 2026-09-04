@@ -99,9 +99,10 @@ ${related || '- Nenhum outro comportamento nesta categoria.'}
 }
 
 function renderIndex() {
+  const shortcuts = behaviorCategories.map(({ key, label, icon, color }) => ({ key, label, icon, color, count: behaviorsByCategory[key].length }));
   const sections = behaviorCategories.map((category) => {
     const cards = behaviorsByCategory[category.key].map(renderCard).join('\n');
-    return `## <DocHeadingIcon icon="${category.icon}" color="${category.color}" /> ${category.label}
+    return `## <DocHeadingIcon icon="${category.icon}" color="${category.color}" /> ${category.label} {#${category.key}}
 
 <p class="behavior-category-copy">${escapeHtml(category.description)}</p>
 
@@ -117,12 +118,16 @@ description: Lista completa dos comportamentos disponíveis para os objetos da C
 
 # <DocHeadingIcon icon="extension-puzzle-outline" color="#F59E0B" :size="22" /> Todos os comportamentos
 
-Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque em um comportamento para abrir sua página com campos, exemplo e regras.
+Comportamentos são funções prontas que você adiciona a um objeto. Um mesmo objeto pode combinar imagem, animação, colisão, movimento e efeitos. Eles não substituem os nós: os scripts podem controlar quando essas funções atuam.
+
+Leia [como combinar comportamentos](/editor/combinar-comportamentos) para montar seu primeiro objeto. Abaixo, escolha uma função para conhecer seus campos, exemplos e regras.
 
 <div class="behaviors-intro">
   <strong>${behaviors.length}</strong>
   <span>comportamentos documentados individualmente para você encontrar rapidamente o que cada um faz.</span>
 </div>
+
+<CatalogNav :groups='${JSON.stringify(shortcuts).replaceAll("'", '&#39;')}' />
 
 ${sections}
 `;

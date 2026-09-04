@@ -1,6 +1,6 @@
 ---
 title: "Forma"
-description: "Desenha um retângulo configurável sem precisar de sprite."
+description: "Desenha formas configuráveis sem precisar de sprite."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #FB923C">
@@ -15,7 +15,7 @@ description: "Desenha um retângulo configurável sem precisar de sprite."
   <span>Forma</span>
 </h1>
 
-<p class="behavior-purpose">Desenha um retângulo configurável sem precisar de sprite.</p>
+<p class="behavior-purpose">Desenha formas configuráveis sem precisar de sprite.</p>
 
 ## Para que serve
 
@@ -25,8 +25,16 @@ Cria objetos visuais simples e leves para cenários, fundos, plataformas, interf
 
 <div class="doc-field-list" style="--doc-field-color: #FB923C">
   <div class="doc-field-item">
+    <strong>Forma</strong>
+    <p>Quadrado, Círculo, Triângulo, Losango, Pentágono, Hexágono ou Estrela.</p>
+  </div>
+  <div class="doc-field-item">
     <strong>Largura e altura</strong>
-    <p>Tamanho base da forma em pixels.</p>
+    <p>Tamanho base em pixels para formas com dimensões independentes.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Raio</strong>
+    <p>Tamanho das formas radiais. A estrela também tem raio interno.</p>
   </div>
   <div class="doc-field-item">
     <strong>Arredondamento</strong>
@@ -65,9 +73,9 @@ Cria objetos visuais simples e leves para cenários, fundos, plataformas, interf
 
 ## Comportamentos relacionados
 
+- [Emitir partículas](./emitir-particulas) — Cria efeitos como fumaça, fogo, chuva e faíscas.
 - [Sprite](./sprite) — Adiciona imagens nomeadas para representar o objeto.
 - [Animação com sprites](./animacao-com-sprites) — Reproduz uma sequência de sprites como uma animação.
 - [Animação de propriedades](./animacao-de-propriedades) — Anima valores do objeto com keyframes organizados por nome.
-- [Crescer ao pressionar](./crescer-ao-pressionar) — Muda a escala do objeto quando ele recebe um toque.
 
 <a class="behavior-back-link" href="./">← Ver todos os comportamentos</a>

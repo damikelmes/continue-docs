@@ -1,5 +1,6 @@
 node_modules/
 .npm-cache/
+.publish/
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 .DS_Store

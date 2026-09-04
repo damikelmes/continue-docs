@@ -1,6 +1,7 @@
 const example = (title, code, description) => ({ title, code, description });
 
 export const expressionCategories = [
+  { key: 'globais', label: 'Variáveis globais', icon: 'globe-outline', color: '#F4C54B', description: 'Consulte números compartilhados entre as cenas durante a partida.' },
   { key: 'objetos', label: 'Objetos e instâncias', icon: 'cube-outline', color: '#A78BFA', description: 'Leia posição, tamanho, aparência, velocidade, quantidade e variáveis numéricas.' },
   { key: 'camera', label: 'Câmera', icon: 'videocam-outline', color: '#60A5FA', description: 'Use o centro, as bordas, o tamanho visível e o zoom atual da câmera.' },
   { key: 'tempo', label: 'Tempo e desempenho', icon: 'timer-outline', color: '#2DD4BF', description: 'Consulte o tempo da atualização, o tempo da cena e os quadros por segundo.' },
@@ -134,7 +135,7 @@ const objectExpressions = [
 const cameraExpression = ({ property, slug, title, icon, summary, examples, rules = [] }) => ({
   key: `camera-${property}`, slug, category: 'camera', title, icon, type: 'plain', color: '#60A5FA', token: `camera.${property}`, summary, returns: summary,
   examples: [example(`Ler ${title.toLowerCase()}`, `camera.${property}`, `Usa o valor atual de ${title.toLowerCase()} no momento em que o nó é executado.`), ...examples],
-  rules: ['A expressão usa a câmera atual da cena.', 'O valor considera o zoom quando isso altera a área visível.', ...rules],
+  rules: ['A expressão usa a câmera atual da cena.', 'O valor considera o zoom quando isso altera a área visível.', ...(['left', 'right', 'top', 'bottom'].includes(property) ? ['Com a câmera girada, estes valores são os extremos da área visível nos eixos do mundo. Um ponto perto de um extremo não está necessariamente dentro do retângulo girado; use as condições de câmera para testar a visibilidade do objeto.'] : []), ...rules],
 });
 
 const cameraExpressions = [
@@ -260,7 +261,50 @@ const randomExpressions = [
   ], rules: ['Os limites podem ser informados em qualquer ordem.', 'A função sorteia novamente toda vez que é calculada.', 'Use Uma única vez quando quiser manter um único resultado.'] }),
 ];
 
+const additionalExpressions = [
+  {
+    key: 'global-variable', slug: 'variavel-numerica-global', category: 'globais', title: 'Variável numérica global', icon: 'globe-outline', color: '#F4C54B', token: 'global.variable.pontos',
+    summary: 'Lê uma variável numérica compartilhada entre as cenas do jogo.',
+    returns: 'O número atual da variável global escolhida. Crie a variável no projeto antes de usá-la.',
+    examples: [example('Consultar pontos', 'global.variable.pontos', 'Lê a variável Pontos. Use em Comparar valores para verificar uma meta.'), example('Calcular recompensa', 'global.variable.pontos + 50', 'Calcula a pontuação com mais 50. Para guardar, use Alterar variável global.'), example('Calcular uma porcentagem', 'global.variable.moedas / 100 * 100', 'Calcula a porcentagem de uma meta de 100 moedas.')],
+    rules: ['Use o seletor para inserir o nome correto.', 'Só variáveis do tipo Número entram em expressões numéricas.', 'Ler não altera a variável nem salva a partida no aparelho.'],
+  },
+  {
+    key: 'object-animation-frame', slug: 'quadro-atual-da-animacao', category: 'objetos', title: 'Quadro atual da animação', icon: 'film', color: '#4ADE80', token: 'jogador.animation_frame',
+    summary: 'Retorna o quadro atual da animação com sprites.', returns: 'O primeiro quadro é 1. Sem quadros de animação, retorna 0.',
+    examples: [example('Consultar o quadro', 'jogador.animation_frame', 'Em Comparar valores, compare com 3 para reconhecer o terceiro quadro.'), example('Outra instância', 'inimigo.instance_2.animation_frame', 'Consulta a segunda instância de Inimigo.'), example('Índice começando em zero', 'math.max(0, jogador.animation_frame - 1)', 'Calcula um índice a partir de zero sem ficar negativo.')],
+    rules: ['Não é a contagem de quadros do jogo; é o quadro da animação do objeto.', 'Um quadro pode permanecer ativo por várias atualizações. Controle a repetição da ação se precisar reagir uma única vez.'],
+  },
+  {
+    key: 'object-property-animation-progress', slug: 'progresso-da-animacao-de-propriedades', category: 'objetos', title: 'Progresso da animação de propriedades', icon: 'play-forward-outline', color: '#2DD4BF', token: 'porta.property_animation_progress',
+    summary: 'Consulta o progresso da animação de propriedades entre 0 e 100.', returns: 'Uma porcentagem do trecho atual da animação. Quando não há animação ativa, retorna 0.',
+    examples: [example('Consultar progresso', 'porta.property_animation_progress', 'Compare com 50 para verificar a metade da animação.'), example('Converter para 0 a 1', 'porta.property_animation_progress / 100', 'Usa o progresso como um fator de interpolação.'), example('Arredondar progresso', 'math.round(porta.property_animation_progress)', 'Retorna uma porcentagem inteira.')],
+    rules: ['Pausar mantém o ponto da animação.', 'Repetição e ida e volta afetam o progresso; não é um contador permanente de ciclos concluídos.'],
+  },
+  {
+    key: 'camera-rotation', slug: 'rotacao-da-camera', category: 'camera', title: 'Rotação atual da câmera', icon: 'camera-reverse-outline', color: '#60A5FA', token: 'camera.rotation',
+    summary: 'Lê o ângulo atual da câmera em graus.', returns: 'Um ângulo normalizado de 0 até antes de 360 graus.',
+    examples: [example('Copiar o ângulo', 'camera.rotation', 'Use na rotação de um objeto para aplicar o mesmo ângulo.'), example('Somar um quarto de volta', 'camera.rotation + 90', 'Calcula um ângulo 90 graus à frente.'), example('Arredondar o ângulo', 'math.round(camera.rotation)', 'Arredonda a rotação atual para graus inteiros.')],
+    rules: ['A rotação da câmera não altera a rotação física dos objetos.', 'As expressões das bordas da câmera consideram a rotação.'],
+  },
+  ...[
+    ['start_x', 'inicio-do-toque-x', 'Início do toque X', 'Posição horizontal do mundo onde o toque começou.', [['Origem do gesto', 'touch.start_x', 'Use para posicionar um marcador no X inicial.'], ['Margem à direita', 'touch.start_x + 20', 'Calcula um ponto 20 pixels à direita da origem.'], ['Meio do gesto', '(touch.start_x + touch.x) / 2', 'Calcula o meio horizontal entre a origem e a posição atual.']]],
+    ['start_y', 'inicio-do-toque-y', 'Início do toque Y', 'Posição vertical do mundo onde o toque começou.', [['Origem do gesto', 'touch.start_y', 'Use para posicionar um marcador no Y inicial.'], ['Margem acima', 'touch.start_y - 20', 'Calcula um ponto 20 pixels acima da origem.'], ['Meio do gesto', '(touch.start_y + touch.y) / 2', 'Calcula o meio vertical entre a origem e a posição atual.']]],
+    ['delta_x', 'deslocamento-do-toque-x', 'Deslocamento do toque X', 'Diferença horizontal entre o ponto atual e o início do toque.', [['Sentido do gesto', 'touch.delta_x', 'Positivo indica direita; negativo indica esquerda.'], ['Distância sem sinal', 'math.abs(touch.delta_x)', 'Mede apenas o deslocamento horizontal, sem direção.'], ['Limitar a resposta', 'math.clamp(touch.delta_x, -100, 100)', 'Limita um controle horizontal entre -100 e 100.']]],
+    ['delta_y', 'deslocamento-do-toque-y', 'Deslocamento do toque Y', 'Diferença vertical entre o ponto atual e o início do toque.', [['Sentido do gesto', 'touch.delta_y', 'Positivo indica baixo; negativo indica cima.'], ['Distância sem sinal', 'math.abs(touch.delta_y)', 'Mede apenas o deslocamento vertical.'], ['Limitar a resposta', 'math.clamp(touch.delta_y, -100, 100)', 'Limita um controle vertical entre -100 e 100.']]],
+    ['distance', 'distancia-do-deslize', 'Distância do deslize', 'Distância em linha reta entre o início e o ponto atual do toque.', [['Gesto mínimo', 'touch.distance', 'Compare com 40 para reconhecer um afastamento de pelo menos 40 pixels.'], ['Limitar intensidade', 'math.min(touch.distance, 100)', 'Limita a intensidade calculada em 100.'], ['Converter em escala', '1 + touch.distance / 200', 'Calcula uma escala que cresce conforme o dedo se afasta da origem.']]],
+    ['angle', 'angulo-do-deslize', 'Ângulo do deslize', 'Direção do início até o ponto atual, em graus de 0 até antes de 360.', [['Direção de lançamento', 'touch.angle', 'Use no campo Ângulo de Mover em graus.'], ['Sentido oposto', 'touch.angle + 180', 'Calcula a direção contrária ao gesto.'], ['Direções em passos', 'math.round(touch.angle / 45) * 45', 'Aproxima o ângulo de um múltiplo de 45 graus.']]],
+    ['duration', 'tempo-do-toque', 'Tempo do toque', 'Segundos decorridos desde o início do toque atual ou mais recente.', [['Pressão longa', 'touch.duration', 'Compare com 1 para verificar um segundo. Combine com touch.is_down se precisar que o dedo ainda esteja na tela.'], ['Progresso de carga', 'math.clamp(touch.duration / 2, 0, 1)', 'Calcula uma carga de zero a um em dois segundos.'], ['Milissegundos', 'touch.duration * 1000', 'Converte segundos para milissegundos.']]],
+    ['count', 'quantidade-de-toques', 'Quantidade de toques', 'Quantidade de dedos tocando a tela agora.', [['Dois dedos', 'touch.count', 'Compare com 2 para verificar dois toques simultâneos.'], ['Quantidade inteira', 'math.min(touch.count, 2)', 'Limita a resposta usada a no máximo dois dedos.'], ['Nenhum toque', 'touch.count', 'Compare com 0 para verificar que todos os dedos foram levantados.']]],
+  ].map(([property, slug, title, summary, uses]) => ({
+    key: `touch-${property}`, slug, category: 'toque', title, icon: 'hand-left-outline', color: '#FB923C', token: `touch.${property}`, summary, returns: summary,
+    examples: uses.map(([title, code, description]) => example(title, code, description)),
+    rules: ['Combine com uma condição de toque para decidir quando usar a leitura.', ...(property === 'distance' ? ['Mede a distância entre os extremos, não a soma de todo o caminho percorrido pelo dedo.'] : []), ...(property === 'angle' ? ['Sem deslocamento, retorna 0. No mundo do jogo, 0° aponta para a direita e 90° para baixo.'] : []), ...(property.startsWith('delta') ? ['É o deslocamento desde o início, não apenas desde a atualização anterior.'] : [])],
+  })),
+].map((item) => ({ type: 'plain', ...item }));
+
 export const expressions = [
+  ...additionalExpressions,
   ...objectExpressions,
   ...cameraExpressions,
   ...timeExpressions,

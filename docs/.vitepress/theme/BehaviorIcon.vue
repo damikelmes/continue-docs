@@ -14,6 +14,7 @@ const glyphCodes: Record<string, number> = {
   analytics: 61723,
   body: 61855,
   bulb: 61888,
+  sparkles: 62860,
   image: 62350,
   'hand-left': 62299,
   'play-circle': 62669,
@@ -31,6 +32,7 @@ const iconByType: Record<string, string> = {
   'press-scale': 'resize',
   shape: 'square-outline',
   'light-emitter': 'bulb',
+  'particle-emitter': 'sparkles',
 };
 
 const glyph = (name: string) => String.fromCodePoint(glyphCodes[name] ?? glyphCodes.image);

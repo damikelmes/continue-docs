@@ -1,6 +1,6 @@
 ---
 title: "Colisão"
-description: "Cria a área sólida usada para contatos e bloqueios."
+description: "Define a área de contato, os bloqueios e os gatilhos do objeto."
 ---
 
 <div class="behavior-page-kicker" style="--behavior-page-color: #FBBF24">
@@ -15,18 +15,54 @@ description: "Cria a área sólida usada para contatos e bloqueios."
   <span>Colisão</span>
 </h1>
 
-<p class="behavior-purpose">Cria a área sólida usada para contatos e bloqueios.</p>
+<p class="behavior-purpose">Define a área de contato, os bloqueios e os gatilhos do objeto.</p>
 
 ## Para que serve
 
-Permite que o objeto participe das verificações de colisão e das respostas físicas. A área acompanha o centro, o tamanho e a rotação atuais da instância.
+Permite configurar uma área de colisão separada da imagem. Ela acompanha a instância e pode ter tamanho, deslocamento e rotação próprios. Use para paredes, plataformas, personagens e regiões que detectam passagem.
 
 ## Campos
 
 <div class="doc-field-list" style="--doc-field-color: #FBBF24">
   <div class="doc-field-item">
-    <strong>Configuração</strong>
-    <p>Não possui campos próprios; usa a largura, a altura, o centro e a rotação da instância.</p>
+    <strong>Formato</strong>
+    <p>Retângulo, círculo ou polígono. O polígono permite editar os pontos e gerar um contorno a partir dos pixels visíveis do sprite.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Tamanho</strong>
+    <p>Largura, altura e arredondamento para o retângulo; raio para o círculo; pontos para o polígono.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Posição X e Y</strong>
+    <p>Deslocamento da colisão em relação ao objeto.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Rotação da colisão</strong>
+    <p>Gira somente a área de colisão, sem girar a imagem do objeto.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Tipo</strong>
+    <p>Sólida, Gatilho ou Um lado. O gatilho detecta contato sem atuar como uma parede.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Lados de bloqueio</strong>
+    <p>No modo Um lado, escolha os lados que impedem a passagem.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Ativa ao iniciar</strong>
+    <p>Define se a colisão começa ligada.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Colisão precisa</strong>
+    <p>Ajuda a evitar atravessar áreas finas em movimentos rápidos.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Margem de contato</strong>
+    <p>Pequena folga ao redor da área para estabilizar contatos.</p>
+  </div>
+  <div class="doc-field-item">
+    <strong>Mostrar no debug</strong>
+    <p>Permite ver o contorno quando o debug estiver ligado.</p>
   </div>
 </div>
 
@@ -43,7 +79,7 @@ Permite que o objeto participe das verificações de colisão e das respostas f�
 
 ## Regras
 
-- A posição X e Y representa o centro real da área de colisão.
+- Com deslocamento zero, a área fica centralizada no objeto; os campos de posição da colisão permitem afastá-la desse centro.
 - Alterar largura, altura ou rotação atualiza a área usada nas próximas verificações.
 - Use Ignorar colisão quando pares específicos não devem se bloquear.
 

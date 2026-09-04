@@ -2,88 +2,50 @@
 layout: page
 sidebar: false
 aside: false
-title: Continue
-description: Aprenda a criar e exportar jogos com a engine Continue.
+title: Documentação
+description: Aprenda o básico da Continue, encontre um recurso e veja como exportar seu jogo.
 pageClass: continue-home
 ---
 
 <main class="home-shell">
-  <section class="home-hero-simple">
-    <div class="home-brand-line">
-      <span class="home-brand-mark"><i></i></span>
-      <span>CONTINUE · DOCUMENTAÇÃO</span>
-    </div>
-    <h1>Crie seu jogo.<br><span>Publique onde quiser.</span></h1>
-    <p>Monte cenas, coloque objetos, adicione comportamentos e conecte nós visualmente. Teste tudo na própria engine e exporte para Android, Windows ou Web quando estiver pronto.</p>
+  <section class="home-hero-simple" aria-labelledby="home-title">
+    <span class="home-eyebrow">DOCUMENTAÇÃO DA CONTINUE</span>
+    <h1 id="home-title">Sua ideia começa aqui.</h1>
+    <p>Crie jogos conectando nós, combinando comportamentos e montando cenas. Aprenda no seu ritmo, do primeiro objeto à exportação.</p>
     <div class="home-actions">
-      <a class="home-primary-action" href="./primeiros-passos/criar-projeto">Começar a criar <span>→</span></a>
-      <a class="home-secondary-action" href="./exportacao/">Ver como exportar</a>
+      <a class="home-primary-action" href="./primeiros-passos/conheca-a-engine"><NodeIcon type="plain" icon="book-outline" color="#fff" :size="20" /> Aprender o básico <span aria-hidden="true">→</span></a>
+      <a class="home-secondary-action" href="./primeiros-passos/criar-projeto"><NodeIcon type="plain" icon="add" color="#7c3aed" :size="20" /> Criar meu primeiro projeto</a>
+    </div>
+    <p class="home-search-tip">Já sabe o que procura? Use a busca no topo pelo nome do recurso.</p>
+  </section>
+
+  <section aria-labelledby="explore-title">
+    <div class="home-section-heading"><h2 id="explore-title">O que você quer fazer?</h2><p>Escolha um assunto. Cada guia explica por onde começar e o que vem depois.</p></div>
+    <div class="guide-grid home-guide-grid home-topic-grid">
+      <GuideCard href="/editor/visao-geral" icon="hand-left-outline" color="#A78BFA" title="Usar o editor" description="Entenda os botões, as abas e as ferramentas da cena." />
+      <GuideCard href="/editor/cenas-camadas-objetos" icon="cube-outline" color="#60A5FA" title="Montar objetos e cenas" description="Saiba o que é um objeto, uma instância e uma camada." />
+      <GuideCard href="/editor/scripts-visuais" type="flow-glyph" icon="git-branch" color="#F472B6" title="Criar a lógica com nós" description="Conecte ações e condições e entenda a ordem dos fluxos." />
+      <GuideCard href="/editor/tipos-de-script" icon="code-slash-outline" color="#4ADE80" title="Escolher onde fica o script" description="Compare Script da cena, Script global e biblioteca." />
+      <GuideCard href="/editor/combinar-comportamentos" icon="extension-puzzle-outline" color="#FB923C" title="Combinar comportamentos" description="Junte imagem, movimento, colisão, animação e efeitos." />
+      <GuideCard href="/editor/aparencia-e-animacao" icon="images" color="#C084FC" title="Dar vida ao visual" description="Gire só o sprite, anime propriedades e crie efeitos." />
     </div>
   </section>
 
-  <section class="home-creation">
-    <div class="home-section-heading">
-      <span>CRIAÇÃO VISUAL</span>
-      <h2>Da ideia ao primeiro teste</h2>
-      <p>Você constrói o jogo em partes fáceis de entender e pode testar cada mudança antes de continuar.</p>
-    </div>
-    <div class="home-path">
-      <div class="home-path-step">
-        <span>1</span>
-        <strong>Crie o projeto</strong>
-        <p>Escolha nome, orientação e tamanho base da tela.</p>
-      </div>
-      <div class="home-path-step">
-        <span>2</span>
-        <strong>Monte a cena</strong>
-        <p>Adicione objetos, instâncias, camadas e comportamentos.</p>
-      </div>
-      <div class="home-path-step">
-        <span>3</span>
-        <strong>Conecte os nós</strong>
-        <p>Defina ações, condições e regras no Script da cena.</p>
-      </div>
-      <div class="home-path-step">
-        <span>4</span>
-        <strong>Teste e exporte</strong>
-        <p>Abra o visualizador, ajuste o jogo e gere a versão final.</p>
-      </div>
+  <section class="home-reference" aria-labelledby="reference-title">
+    <div class="home-section-heading"><h2 id="reference-title">Encontre um recurso</h2><p>Consulte o que ele faz, os campos, as regras e exemplos de uso.</p></div>
+    <div class="guide-grid home-reference-grid">
+      <GuideCard href="/nos/" icon="search-outline" color="#A78BFA" title="Nós" description="Ações, condições e repetições, separadas por categoria." />
+      <GuideCard href="/comportamentos/" icon="extension-puzzle-outline" color="#FB923C" title="Comportamentos" description="As funções que você adiciona aos objetos." />
+      <GuideCard href="/expressoes/" icon="calculator-outline" color="#2DD4BF" title="Expressões" description="Posições, variáveis, tempo e cálculos nos campos." />
     </div>
   </section>
 
-  <section class="home-export">
-    <div class="home-section-heading">
-      <span>ONDE SEU JOGO PODE RODAR</span>
-      <h2>Um projeto, três destinos</h2>
-      <p>A Continue prepara o formato certo para instalar, compartilhar ou publicar.</p>
+  <section class="home-export" aria-labelledby="export-title">
+    <div class="home-section-heading"><h2 id="export-title">Seu jogo pronto para compartilhar</h2><p>Escolha o destino para entender a configuração e o arquivo que será gerado.</p></div>
+    <div class="guide-grid home-reference-grid">
+      <GuideCard href="/exportacao/android" icon="logo-android" color="#63D98B" title="Android" description="APK para instalar. AAB para a Google Play." />
+      <GuideCard href="/exportacao/windows" icon="desktop-outline" color="#69A7FF" title="Windows" description="ZIP com o executável e os arquivos do jogo." />
+      <GuideCard href="/exportacao/web" icon="globe-outline" color="#67E8F9" title="Web" description="Um jogo de navegador para publicar no itch.io e outros sites." />
     </div>
-    <div class="guide-grid home-guide-grid">
-      <GuideCard href="/exportacao/android" icon="logo-android" color="#63d98b" title="Android" description="Gere APK para instalar ou AAB para publicar na Google Play." />
-      <GuideCard href="/exportacao/windows" icon="desktop-outline" color="#69a7ff" title="Windows" description="Receba um ZIP com o executável e os arquivos do jogo." />
-      <GuideCard href="/exportacao/web" icon="globe-outline" color="#67e8f9" title="Web (HTML5)" description="Publique no itch.io ou em outro serviço para jogos no navegador." />
-    </div>
-  </section>
-
-  <section class="home-start">
-    <div class="home-section-heading">
-      <span>CONSULTE QUANDO PRECISAR</span>
-      <h2>Aprenda cada parte da engine</h2>
-    </div>
-    <div class="guide-grid home-guide-grid">
-      <GuideCard href="/editor/visao-geral" icon="construct-outline" color="#60a5fa" title="Conhecer o editor" description="Entenda as ferramentas usadas para montar cada cena." />
-      <GuideCard href="/nos/" icon="search-outline" color="#a78bfa" title="Encontrar um nó" description="Veja cada ação e condição com o mesmo nome e ícone do editor." />
-      <GuideCard href="/comportamentos/" icon="extension-puzzle-outline" color="#fb923c" title="Usar comportamentos" description="Adicione movimento, animação, física, luz e interação." />
-      <GuideCard href="/expressoes/" icon="calculator-outline" color="#2dd4bf" title="Usar expressões" description="Trabalhe com posições, câmera, tempo, toque e matemática." />
-      <GuideCard href="/editor/scripts-visuais" type="flow-glyph" icon="git-branch" color="#f472b6" title="Entender os fluxos" description="Veja a ordem dos nós e como os valores passam pelo script." />
-      <GuideCard href="/exportacao/" icon="share-outline" color="#67e8f9" title="Preparar a exportação" description="Revise as configurações e escolha o formato do jogo." />
-    </div>
-  </section>
-
-  <section class="home-help-row">
-    <div>
-      <strong>É seu primeiro projeto?</strong>
-      <span>Siga o guia desde a criação até o jogo pronto para compartilhar.</span>
-    </div>
-    <a href="./primeiros-passos/conheca-a-engine">Ver guia inicial <span>→</span></a>
   </section>
 </main>

@@ -57,9 +57,9 @@ Guarda as imagens que podem ser exibidas pelo objeto. Os sprites também servem 
 
 ## Comportamentos relacionados
 
+- [Emitir partículas](./emitir-particulas) — Cria efeitos como fumaça, fogo, chuva e faíscas.
 - [Animação com sprites](./animacao-com-sprites) — Reproduz uma sequência de sprites como uma animação.
 - [Animação de propriedades](./animacao-de-propriedades) — Anima valores do objeto com keyframes organizados por nome.
 - [Crescer ao pressionar](./crescer-ao-pressionar) — Muda a escala do objeto quando ele recebe um toque.
-- [Forma](./forma) — Desenha um retângulo configurável sem precisar de sprite.
 
 <a class="behavior-back-link" href="./">← Ver todos os comportamentos</a>

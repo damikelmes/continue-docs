@@ -52,22 +52,43 @@ Se você selecionar três tipos de objeto e usar **Todas as instâncias**, a aç
 
 Campos numéricos podem usar uma operação para definir como o valor será aplicado.
 
-| Operação | Resultado |
-| --- | --- |
-| **Definir como** | Substitui o valor atual. |
-| **Somar** | Acrescenta o valor informado. |
-| **Subtrair** | Retira o valor informado. |
-| **Multiplicar** | Multiplica o valor atual. |
-| **Dividir** | Divide o valor atual. |
+### Definir como
+
+Substitui o valor atual.
+
+### Somar
+
+Acrescenta o valor informado.
+
+### Subtrair
+
+Retira o valor informado.
+
+### Multiplicar
+
+Multiplica o valor atual.
+
+### Dividir
+
+Divide o valor atual.
 
 ## <DocHeadingIcon icon="options-outline" color="#22D3EE" /> Modo de execução
 
-| Modo | Quando a ação funciona |
-| --- | --- |
-| **Sempre** | Continua sendo aplicada enquanto o fluxo estiver ativo. |
-| **Uma única vez** | Executa somente na primeira ativação do fluxo. |
-| **Quantidade** | Repete pela quantidade e intervalo configurados. |
-| **Por tempo** | Continua durante o tempo informado. |
+### Sempre
+
+Continua sendo aplicada enquanto o fluxo estiver ativo.
+
+### Uma única vez
+
+Executa somente na primeira ativação do fluxo.
+
+### Quantidade
+
+Repete pela quantidade e intervalo configurados.
+
+### Por tempo
+
+Continua durante o tempo informado.
 
 ::: warning Ações contínuas
 Movimentos, câmera suave, órbita e outras ações contínuas normalmente devem usar **Sempre** ou outro modo com duração suficiente.

@@ -64,5 +64,8 @@ Cria decisões usando igualdade, diferença, maior, menor e suas variações.
 ## Nós relacionados
 
 - [Aguardar segundos](./aguardar-segundos) — Espera um tempo antes de continuar o fluxo.
+- [Variável foi alterada](./variavel-foi-alterada) — Dispara uma vez quando a variável escolhida muda de valor.
+- [A cada X segundos](./a-cada-x-segundos) — Executa novamente sempre que o intervalo escolhido é completado.
+- [Chance aleatória](./chance-aleatoria) — Executa de acordo com a porcentagem de chance escolhida.
 
 <a class="node-back-link" href="./">← Ver todos os nós</a>

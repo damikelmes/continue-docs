@@ -18,6 +18,7 @@ function renderCard(node) {
   return `  <a class="node-card" style="--node-card-color: ${node.color}" href="./${node.slug}">
     <span class="node-card-icon"><NodeIcon type="${node.type}" icon="${node.icon}" color="${node.color}" :size="30" /></span>
     <span class="node-card-copy">
+      <span class="node-card-kind">${node.kind}</span>
       <strong>${escapeHtml(node.title)}</strong>
       <small>${escapeHtml(node.summary)}</small>
     </span>
@@ -93,9 +94,10 @@ ${related || '- Nenhum nó relacionado nesta categoria.'}
 }
 
 function renderIndex() {
+  const shortcuts = nodeCategories.map(({ key, label, icon, color }) => ({ key, label, icon, color, count: nodesByCategory[key].length }));
   const sections = nodeCategories.map((category) => {
     const cards = nodesByCategory[category.key].map(renderCard).join('\n');
-    return `## <DocHeadingIcon icon="${category.icon}" color="${category.color}" /> ${category.label}
+    return `## <DocHeadingIcon icon="${category.icon}" color="${category.color}" /> ${category.label} {#${category.key}}
 
 <p class="node-category-copy">${escapeHtml(category.description)}</p>
 
@@ -111,12 +113,16 @@ description: Lista completa dos nós disponíveis no editor da Continue.
 
 # <DocHeadingIcon icon="grid-outline" color="#A78BFA" :size="22" /> Todos os nós
 
-Esta página segue as mesmas categorias, nomes, cores e ícones mostrados no seletor de nós do editor. Toque em um nó para abrir sua explicação completa.
+Um nó é uma peça do script visual. **Ações** mudam o jogo; **condições** verificam se o fluxo pode continuar; **repetições** executam uma sequência mais de uma vez. A biblioteca permite chamar uma rotina já montada.
+
+Está começando? Leia [Nós e fluxos: o básico](/editor/scripts-visuais) e [onde colocar o script](/editor/tipos-de-script). Para consultar uma opção, escolha uma categoria abaixo e abra o nó pelo nome usado no editor.
 
 <div class="nodes-intro">
   <strong>${nodes.length}</strong>
   <span>nós documentados individualmente, cada um com campos, exemplo e regras de uso.</span>
 </div>
+
+<CatalogNav :groups='${JSON.stringify(shortcuts).replaceAll("'", '&#39;')}' />
 
 ${sections}
 `;

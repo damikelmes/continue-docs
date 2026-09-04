@@ -5,18 +5,30 @@ description: Lista completa dos comportamentos disponíveis para os objetos da C
 
 # <DocHeadingIcon icon="extension-puzzle-outline" color="#F59E0B" :size="22" /> Todos os comportamentos
 
-Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque em um comportamento para abrir sua página com campos, exemplo e regras.
+Comportamentos são funções prontas que você adiciona a um objeto. Um mesmo objeto pode combinar imagem, animação, colisão, movimento e efeitos. Eles não substituem os nós: os scripts podem controlar quando essas funções atuam.
+
+Leia [como combinar comportamentos](/editor/combinar-comportamentos) para montar seu primeiro objeto. Abaixo, escolha uma função para conhecer seus campos, exemplos e regras.
 
 <div class="behaviors-intro">
-  <strong>13</strong>
+  <strong>14</strong>
   <span>comportamentos documentados individualmente para você encontrar rapidamente o que cada um faz.</span>
 </div>
 
-## <DocHeadingIcon icon="images" color="#A78BFA" /> Visual e animação
+<CatalogNav :groups='[{"key":"visual-e-animacao","label":"Visual e animação","icon":"images","color":"#A78BFA","count":6},{"key":"iluminacao","label":"Iluminação","icon":"bulb","color":"#FDE047","count":2},{"key":"fisica-e-colisao","label":"Física e colisão","icon":"shapes-outline","color":"#60A5FA","count":3},{"key":"interacao","label":"Interação","icon":"hand-left-outline","color":"#38BDF8","count":2},{"key":"dados-do-objeto","label":"Dados do objeto","icon":"server-outline","color":"#60A5FA","count":1}]' />
+
+## <DocHeadingIcon icon="images" color="#A78BFA" /> Visual e animação {#visual-e-animacao}
 
 <p class="behavior-category-copy">Imagem, forma, resposta visual e animações do objeto.</p>
 
 <div class="behavior-grid">
+  <a class="behavior-card" style="--behavior-card-color: #F97316" href="./emitir-particulas">
+    <span class="behavior-card-icon"><BehaviorIcon type="particle-emitter" color="#F97316" :size="30" /></span>
+    <span class="behavior-card-copy">
+      <strong>Emitir partículas</strong>
+      <small>Cria efeitos como fumaça, fogo, chuva e faíscas.</small>
+    </span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+  </a>
   <a class="behavior-card" style="--behavior-card-color: #A78BFA" href="./sprite">
     <span class="behavior-card-icon"><BehaviorIcon type="sprite" color="#A78BFA" :size="30" /></span>
     <span class="behavior-card-copy">
@@ -53,13 +65,13 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
     <span class="behavior-card-icon"><BehaviorIcon type="shape" color="#FB923C" :size="30" /></span>
     <span class="behavior-card-copy">
       <strong>Forma</strong>
-      <small>Desenha um retângulo configurável sem precisar de sprite.</small>
+      <small>Desenha formas configuráveis sem precisar de sprite.</small>
     </span>
     <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
   </a>
 </div>
 
-## <DocHeadingIcon icon="bulb" color="#FDE047" /> Iluminação
+## <DocHeadingIcon icon="bulb" color="#FDE047" /> Iluminação {#iluminacao}
 
 <p class="behavior-category-copy">Luzes, sombras e objetos que bloqueiam ou recebem luz.</p>
 
@@ -82,7 +94,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## <DocHeadingIcon icon="shapes-outline" color="#60A5FA" /> Física e colisão
+## <DocHeadingIcon icon="shapes-outline" color="#60A5FA" /> Física e colisão {#fisica-e-colisao}
 
 <p class="behavior-category-copy">Gravidade, áreas de colisão e exceções entre objetos.</p>
 
@@ -99,7 +111,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
     <span class="behavior-card-icon"><BehaviorIcon type="collision" color="#FBBF24" :size="30" /></span>
     <span class="behavior-card-copy">
       <strong>Colisão</strong>
-      <small>Cria a área sólida usada para contatos e bloqueios.</small>
+      <small>Define a área de contato, os bloqueios e os gatilhos do objeto.</small>
     </span>
     <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
   </a>
@@ -113,7 +125,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## <DocHeadingIcon icon="hand-left-outline" color="#38BDF8" /> Interação
+## <DocHeadingIcon icon="hand-left-outline" color="#38BDF8" /> Interação {#interacao}
 
 <p class="behavior-category-copy">Movimento controlado diretamente pelo toque da pessoa.</p>
 
@@ -136,7 +148,7 @@ Os cards abaixo usam os mesmos nomes, cores e ícones mostrados no editor. Toque
   </a>
 </div>
 
-## <DocHeadingIcon icon="server-outline" color="#60A5FA" /> Dados do objeto
+## <DocHeadingIcon icon="server-outline" color="#60A5FA" /> Dados do objeto {#dados-do-objeto}
 
 <p class="behavior-category-copy">Valores próprios guardados separadamente em cada instância.</p>
 

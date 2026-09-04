@@ -29,12 +29,12 @@ Transforma o objeto em um obstáculo para luzes que projetam sombra. Também per
     <p>Porcentagem bloqueada; 100% impede toda a luz de atravessar.</p>
   </div>
   <div class="doc-field-item">
-    <strong>Entrada de luz</strong>
-    <p>Quantidade de luz que pode alcançar o interior do objeto.</p>
+    <strong>Luz que entra no objeto</strong>
+    <p>Porcentagem da iluminação normal que aparece sobre ele. Aparece quando Receber luz normalmente está ativado.</p>
   </div>
   <div class="doc-field-item">
-    <strong>Receber luz</strong>
-    <p>Define se a aparência do próprio objeto é afetada pelas luzes da cena.</p>
+    <strong>Receber luz normalmente</strong>
+    <p>Mantém a aparência do próprio objeto afetada pelas luzes enquanto ele projeta sombra.</p>
   </div>
   <div class="doc-field-item">
     <strong>Comprimento da sombra</strong>

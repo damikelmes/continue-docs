@@ -30,7 +30,7 @@ Controla o fluxo de acordo com a existência de um objeto ou instância específ
   </div>
   <div class="doc-field-item">
     <strong>Instâncias</strong>
-    <p>Todas as instâncias ou uma instância específica.</p>
+    <p>Qualquer instância, Todas as instâncias ou uma instância específica.</p>
   </div>
   <div class="doc-field-item">
     <strong>Resultado esperado</strong>

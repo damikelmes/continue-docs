@@ -17,16 +17,37 @@ Anima uma propriedade partindo do valor atual até o valor final escolhido.
 - Velocidade.
 - Aceleração.
 
-| Animação | Comportamento |
-| --- | --- |
-| **Linear** | Mantém velocidade constante. |
-| **Acelerar** | Começa devagar e termina rápido. |
-| **Desacelerar** | Começa rápido e termina devagar. |
-| **Suave** | Começa devagar, acelera e desacelera no final. |
-| **Antecipar** | Recua um pouco antes de ir ao destino. |
-| **Ultrapassar** | Passa do destino e volta. |
-| **Quicar** | Chega ao destino com pequenas quicadas. |
-| **Elástico** | Oscila como uma mola antes de parar. |
+### Linear
+
+Mantém velocidade constante.
+
+### Acelerar
+
+Começa devagar e termina rápido.
+
+### Desacelerar
+
+Começa rápido e termina devagar.
+
+### Suave
+
+Começa devagar, acelera e desacelera no final.
+
+### Antecipar
+
+Recua um pouco antes de ir ao destino.
+
+### Ultrapassar
+
+Passa do destino e volta.
+
+### Quicar
+
+Chega ao destino com pequenas quicadas.
+
+### Elástico
+
+Oscila como uma mola antes de parar.
 
 ## <DocHeadingIcon type="action-shake-object" icon="cube-outline" color="#FB923C" /> Chacoalhar objeto
 

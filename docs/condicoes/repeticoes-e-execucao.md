@@ -34,12 +34,21 @@ Repete ou mantém a ação durante o tempo configurado.
 
 ## Quando usar cada modo
 
-| Situação | Modo recomendado |
-| --- | --- |
-| Seguir um objeto continuamente | Sempre |
-| Tocar um som ou criar um objeto uma vez | Uma única vez |
-| Piscar três vezes | Quantidade |
-| Chacoalhar durante dois segundos | Por tempo |
+### Seguir um objeto continuamente
+
+Sempre
+
+### Criar um objeto uma vez
+
+Uma única vez
+
+### Piscar três vezes
+
+Quantidade
+
+### Chacoalhar durante dois segundos
+
+Por tempo
 
 ::: warning Evite criar sem limite
 Uma ação **Criar objeto** configurada como **Sempre** pode adicionar muitas instâncias rapidamente. Use uma condição, intervalo ou limite adequado.

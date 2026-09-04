@@ -81,7 +81,7 @@ Cria personagens e objetos que caem e reagem a superfícies. Pode controlar acel
 
 ## Comportamentos relacionados
 
-- [Colisão](./colisao) — Cria a área sólida usada para contatos e bloqueios.
+- [Colisão](./colisao) — Define a área de contato, os bloqueios e os gatilhos do objeto.
 - [Ignorar colisão](./ignorar-colisao) — Escolhe objetos que não devem colidir com este objeto.
 
 <a class="behavior-back-link" href="./">← Ver todos os comportamentos</a>
