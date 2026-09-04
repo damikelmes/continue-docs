@@ -11,7 +11,7 @@ description: "Verifica o estado de um comportamento."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="condition-behavior-enabled" icon="checkmark-circle-outline" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-behavior-enabled" icon="checkmark-circle-outline" color="#4ADE80" /></span>
   <span>Comportamento está ativado</span>
 </h1>
 

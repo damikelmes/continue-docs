@@ -11,7 +11,7 @@ description: "Compara dois números ou expressões."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="condition-compare-numbers" icon="git-compare-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-compare-numbers" icon="git-compare-outline" color="#60A5FA" /></span>
   <span>Comparar números</span>
 </h1>
 

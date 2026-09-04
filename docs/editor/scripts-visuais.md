@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="code-slash-outline" color="#4ADE80" :size="22" /> Scripts visuais
+# <DocHeadingIcon icon="code-slash-outline" color="#4ADE80" /> Scripts visuais
 
 Os scripts visuais são formados por nós. Cada nó pode verificar uma condição, executar uma ação, repetir uma parte do script ou chamar outro script. As conexões mostram quais nós pertencem ao mesmo fluxo.
 
@@ -30,13 +30,13 @@ Veja o nome do nó, o objeto escolhido e os valores. Uma ação ainda precisa de
 
 ## <DocHeadingIcon icon="git-branch" color="#A78BFA" /> Como ler um fluxo
 
-### <DocHeadingIcon icon="git-branch" color="#A78BFA" :size="17" /> Nó conectado
+### <DocHeadingIcon icon="git-branch" color="#A78BFA" /> Nó conectado
 
 Um nó conectado continua a sequência iniciada pelo nó anterior. A linha colorida entre os cards mostra essa ligação.
 
 Se o primeiro nó for uma condição, os nós conectados abaixo somente serão executados quando ela tiver o resultado esperado. Quando a condição for falsa, a engine pula aquela continuação e procura o próximo fluxo independente.
 
-### <DocHeadingIcon icon="add-circle-outline" color="#34D399" :size="17" /> Novo fluxo
+### <DocHeadingIcon icon="add-circle-outline" color="#34D399" /> Novo fluxo
 
 O texto **Novo fluxo** marca o começo de outra sequência. Esse fluxo não depende do fluxo que aparece acima, mas sua posição na lista ainda define quando ele será processado.
 

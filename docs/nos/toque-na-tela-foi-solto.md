@@ -11,7 +11,7 @@ description: "Dispara uma vez quando um dedo é retirado da tela."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="condition-screen-released" icon="hand-left-outline" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-screen-released" icon="hand-left-outline" color="#38BDF8" /></span>
   <span>Toque na tela foi solto</span>
 </h1>
 

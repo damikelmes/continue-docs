@@ -11,7 +11,7 @@ description: "Detecta o momento em que uma instância é criada."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="condition-object-created" icon="add-circle-outline" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-created" icon="add-circle-outline" color="#4ADE80" /></span>
   <span>Objeto foi criado</span>
 </h1>
 

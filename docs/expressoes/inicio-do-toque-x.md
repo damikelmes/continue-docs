@@ -11,7 +11,7 @@ description: "Posição horizontal do mundo onde o toque começou."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" /></span>
   <span>Início do toque X</span>
 </h1>
 

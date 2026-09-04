@@ -16,12 +16,12 @@ const escapeHtml = (value) => String(value)
 
 function renderCard(expression) {
   return `  <a class="node-card expression-card" style="--node-card-color: ${expression.color}" href="./${expression.slug}">
-    <span class="node-card-icon"><NodeIcon type="${expression.type}" icon="${expression.icon}" color="${expression.color}" :size="30" /></span>
+    <span class="node-card-icon"><NodeIcon type="${expression.type}" icon="${expression.icon}" color="${expression.color}" /></span>
     <span class="node-card-copy">
       <strong>${escapeHtml(expression.title)}</strong>
       <small><code>${escapeHtml(expression.token)}</code></small>
     </span>
-    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" /></span>
   </a>`;
 }
 
@@ -53,7 +53,7 @@ description: ${JSON.stringify(expression.summary)}
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: ${expression.color}">
-  <span class="node-title-icon"><NodeIcon type="${expression.type}" icon="${expression.icon}" color="${expression.color}" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="${expression.type}" icon="${expression.icon}" color="${expression.color}" /></span>
   <span>${escapeHtml(expression.title)}</span>
 </h1>
 
@@ -105,7 +105,7 @@ title: Todas as expressões
 description: Lista completa das expressões numéricas disponíveis na Continue.
 ---
 
-# <DocHeadingIcon icon="calculator-outline" color="#FB923C" :size="22" /> Todas as expressões
+# <DocHeadingIcon icon="calculator-outline" color="#FB923C" /> Todas as expressões
 
 Expressões usam informações do jogo no lugar de um número fixo. Elas podem ler uma posição, consultar uma variável ou calcular um resultado. Consultar um valor não altera o jogo por si só: o nó usa esse resultado no campo escolhido.
 

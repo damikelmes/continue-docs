@@ -11,7 +11,7 @@ description: "Retorna o maior entre dois valores."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="chevron-up-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="chevron-up-outline" color="#FB923C" /></span>
   <span>Maior valor</span>
 </h1>
 

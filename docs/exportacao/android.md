@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="logo-android" color="#63D98B" :size="22" /> Exportar para Android
+# <DocHeadingIcon icon="logo-android" color="#63D98B" /> Exportar para Android
 
 A Continue pode gerar dois formatos para Android: **APK**, usado para instalar e testar o jogo, e **AAB**, usado para publicar na Google Play.
 
@@ -24,11 +24,11 @@ A preparação é feita em uma área privada da sua própria conta. A Continue n
 
 ## <DocHeadingIcon icon="phone-portrait-outline" color="#63D98B" /> Escolher APK ou AAB
 
-### <DocHeadingIcon icon="download-outline" color="#63D98B" :size="17" /> APK
+### <DocHeadingIcon icon="download-outline" color="#63D98B" /> APK
 
 Escolha **APK** para testar no seu celular, enviar para outra pessoa ou instalar o jogo fora de uma loja. O Android pode pedir autorização para instalar aplicativos vindos do navegador ou do gerenciador de arquivos.
 
-### <DocHeadingIcon icon="storefront-outline" color="#63D98B" :size="17" /> AAB
+### <DocHeadingIcon icon="storefront-outline" color="#63D98B" /> AAB
 
 Escolha **AAB** quando o jogo estiver pronto para ser enviado à Google Play. Esse arquivo é um pacote de publicação e não deve ser aberto diretamente no celular.
 

@@ -11,7 +11,7 @@ description: "Verifica movimento em qualquer direção, eixo ou ângulo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="condition-object-moving" icon="trending-up-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-moving" icon="trending-up-outline" color="#2DD4BF" /></span>
   <span>Objeto está se movendo</span>
 </h1>
 

@@ -3,7 +3,7 @@ title: Combinar comportamentos
 description: Monte objetos com várias funções e saiba como evitar que dois movimentos disputem a mesma propriedade.
 ---
 
-# <DocHeadingIcon icon="extension-puzzle-outline" color="#FB923C" :size="22" /> Combinar comportamentos
+# <DocHeadingIcon icon="extension-puzzle-outline" color="#FB923C" /> Combinar comportamentos
 
 Um comportamento adiciona uma função pronta ao objeto. Você pode usar **vários comportamentos diferentes no mesmo objeto**: um cuida da imagem, outro da colisão, outro da animação. Não é necessário escolher apenas um.
 

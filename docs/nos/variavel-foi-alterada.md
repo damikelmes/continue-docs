@@ -11,7 +11,7 @@ description: "Dispara uma vez quando a variável escolhida muda de valor."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FBBF24">
-  <span class="node-title-icon"><NodeIcon type="condition-variable-changed" icon="pulse" color="#FBBF24" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-variable-changed" icon="pulse" color="#FBBF24" /></span>
   <span>Variável foi alterada</span>
 </h1>
 

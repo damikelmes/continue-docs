@@ -11,7 +11,7 @@ description: "Pausa a animação sem perder o progresso."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FBBF24">
-  <span class="node-title-icon"><NodeIcon type="action-pause-property-animation" icon="pause-circle-outline" color="#FBBF24" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-pause-property-animation" icon="pause-circle-outline" color="#FBBF24" /></span>
   <span>Pausar animação de propriedades</span>
 </h1>
 

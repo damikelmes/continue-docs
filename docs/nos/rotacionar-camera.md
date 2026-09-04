@@ -11,7 +11,7 @@ description: "Gira a visão do jogo ao redor do centro da câmera."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="action-rotate-camera" icon="camera-reverse-outline" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-rotate-camera" icon="camera-reverse-outline" color="#38BDF8" /></span>
   <span>Rotacionar câmera</span>
 </h1>
 

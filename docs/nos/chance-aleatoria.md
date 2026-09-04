@@ -11,7 +11,7 @@ description: "Executa de acordo com a porcentagem de chance escolhida."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FACC15">
-  <span class="node-title-icon"><NodeIcon type="condition-random-chance" icon="dice-outline" color="#FACC15" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-random-chance" icon="dice-outline" color="#FACC15" /></span>
   <span>Chance aleatória</span>
 </h1>
 

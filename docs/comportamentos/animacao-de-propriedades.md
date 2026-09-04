@@ -11,7 +11,7 @@ description: "Anima valores do objeto com keyframes organizados por nome."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #2DD4BF">
-  <span class="behavior-title-icon"><BehaviorIcon type="property-animation" color="#2DD4BF" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="property-animation" color="#2DD4BF" /></span>
   <span>Animação de propriedades</span>
 </h1>
 

@@ -20,12 +20,12 @@ const escapeHtml = (value) => value
 
 function renderCard(behavior) {
   return `  <a class="behavior-card" style="--behavior-card-color: ${behavior.color}" href="./${behavior.slug}">
-    <span class="behavior-card-icon"><BehaviorIcon type="${behavior.type}" color="${behavior.color}" :size="30" /></span>
+    <span class="behavior-card-icon"><BehaviorIcon type="${behavior.type}" color="${behavior.color}" /></span>
     <span class="behavior-card-copy">
       <strong>${escapeHtml(behavior.title)}</strong>
       <small>${escapeHtml(behavior.summary)}</small>
     </span>
-    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+    <span class="behavior-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" /></span>
   </a>`;
 }
 
@@ -61,7 +61,7 @@ description: ${JSON.stringify(behavior.summary)}
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: ${behavior.color}">
-  <span class="behavior-title-icon"><BehaviorIcon type="${behavior.type}" color="${behavior.color}" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="${behavior.type}" color="${behavior.color}" /></span>
   <span>${escapeHtml(behavior.title)}</span>
 </h1>
 
@@ -116,7 +116,7 @@ title: Todos os comportamentos
 description: Lista completa dos comportamentos disponíveis para os objetos da Continue.
 ---
 
-# <DocHeadingIcon icon="extension-puzzle-outline" color="#F59E0B" :size="22" /> Todos os comportamentos
+# <DocHeadingIcon icon="extension-puzzle-outline" color="#F59E0B" /> Todos os comportamentos
 
 Comportamentos são funções prontas que você adiciona a um objeto. Um mesmo objeto pode combinar imagem, animação, colisão, movimento e efeitos. Eles não substituem os nós: os scripts podem controlar quando essas funções atuam.
 

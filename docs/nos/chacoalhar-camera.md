@@ -11,7 +11,7 @@ description: "Sacode a visão da cena sem mudar o centro lógico da câmera."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F59E0B">
-  <span class="node-title-icon"><NodeIcon type="action-shake-camera" icon="videocam-outline" color="#F59E0B" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-shake-camera" icon="videocam-outline" color="#F59E0B" /></span>
   <span>Chacoalhar câmera</span>
 </h1>
 

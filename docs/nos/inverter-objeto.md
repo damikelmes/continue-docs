@@ -11,7 +11,7 @@ description: "Espelha o objeto instantaneamente."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #34D399">
-  <span class="node-title-icon"><NodeIcon type="action-flip-object" icon="swap-horizontal-outline" color="#34D399" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-flip-object" icon="swap-horizontal-outline" color="#34D399" /></span>
   <span>Inverter objeto</span>
 </h1>
 

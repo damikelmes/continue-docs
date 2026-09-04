@@ -11,7 +11,7 @@ description: "Detecta uma vez cada novo toque no objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F472B6">
-  <span class="node-title-icon"><NodeIcon type="condition-object-clicked" icon="finger-print-outline" color="#F472B6" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-clicked" icon="finger-print-outline" color="#F472B6" /></span>
   <span>Objeto clicado</span>
 </h1>
 

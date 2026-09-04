@@ -11,7 +11,7 @@ description: "Altera o nível de aproximação da câmera."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="action-set-camera-zoom" icon="search-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-camera-zoom" icon="search-outline" color="#A78BFA" /></span>
   <span>Dar zoom na câmera</span>
 </h1>
 

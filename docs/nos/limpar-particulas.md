@@ -11,7 +11,7 @@ description: "Remove todas as partículas atuais das instâncias escolhidas."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #94A3B8">
-  <span class="node-title-icon"><NodeIcon type="action-clear-particles" icon="trash" color="#94A3B8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-clear-particles" icon="trash" color="#94A3B8" /></span>
   <span>Limpar partículas</span>
 </h1>
 

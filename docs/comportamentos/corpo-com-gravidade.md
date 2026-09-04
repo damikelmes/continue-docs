@@ -11,7 +11,7 @@ description: "Aplica queda, peso, atrito, impulso e resposta física ao objeto."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #60A5FA">
-  <span class="behavior-title-icon"><BehaviorIcon type="gravity-body" color="#60A5FA" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="gravity-body" color="#60A5FA" /></span>
   <span>Corpo com gravidade</span>
 </h1>
 

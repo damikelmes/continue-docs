@@ -178,7 +178,7 @@ const example = computed(() => examples[props.variant]);
           <div class="flow-example-node-header">
             <span v-if="node.newFlow" class="flow-example-toggle">⌄</span>
             <span class="flow-example-icon">
-              <NodeIcon :type="node.type" :icon="node.icon" :color="node.color" :size="25" />
+              <NodeIcon :type="node.type" :icon="node.icon" :color="node.color" />
             </span>
             <span class="flow-example-copy">
               <small>{{ node.kind }}</small>
@@ -219,12 +219,13 @@ const example = computed(() => examples[props.variant]);
 
 .flow-example-bar {
   display: flex;
+  flex-wrap: wrap;
   min-height: 48px;
   gap: 10px;
   align-items: center;
   border-bottom: 1px solid #29262d;
   background: #121214;
-  padding: 0 15px;
+  padding: 10px 15px;
 }
 
 .flow-example-bar > strong {
@@ -235,8 +236,9 @@ const example = computed(() => examples[props.variant]);
 
 .flow-example-mark {
   position: relative;
-  width: 25px;
-  height: 25px;
+  width: var(--continue-icon-standard);
+  height: var(--continue-icon-standard);
+  flex: 0 0 auto;
   border: 2px solid #d8d3db;
   border-radius: 7px;
 }
@@ -253,6 +255,8 @@ const example = computed(() => examples[props.variant]);
 }
 
 .flow-example-status {
+  min-width: 0;
+  overflow-wrap: anywhere;
   margin-left: auto;
   border-radius: 999px;
   background: #252228;
@@ -323,16 +327,17 @@ const example = computed(() => examples[props.variant]);
 }
 
 .flow-example-node-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: var(--continue-icon-box) minmax(0, 1fr) auto;
   min-width: 0;
   gap: 12px;
   align-items: center;
 }
 
 .flow-example-toggle {
-  width: 18px;
-  margin-left: -2px;
-  margin-right: -6px;
+  position: absolute;
+  left: -.15rem;
+  width: .875rem;
   color: #9b939f;
   font-size: 20px;
   line-height: 1;
@@ -340,9 +345,10 @@ const example = computed(() => examples[props.variant]);
 }
 
 .flow-example-icon {
+  --continue-icon-size: var(--continue-icon-standard);
   display: flex;
-  width: 42px;
-  height: 42px;
+  width: var(--continue-icon-box);
+  height: var(--continue-icon-box);
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
@@ -352,6 +358,7 @@ const example = computed(() => examples[props.variant]);
   display: block;
   min-width: 0;
   flex: 1;
+  overflow-wrap: anywhere;
 }
 
 .flow-example-copy small,
@@ -431,13 +438,11 @@ const example = computed(() => examples[props.variant]);
 }
 
 .flow-example-field > strong {
-  overflow: hidden;
   margin-top: 3px;
   color: #d8d3db;
   font-size: 12px;
   font-weight: 800;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
 .flow-example-chips {
@@ -465,7 +470,7 @@ const example = computed(() => examples[props.variant]);
 
   .flow-example-bar {
     min-height: 44px;
-    padding: 0 12px;
+    padding: 10px 12px;
   }
 
   .flow-example-bar > strong {
@@ -510,18 +515,6 @@ const example = computed(() => examples[props.variant]);
 }
 
 @media (max-width: 380px) {
-  .flow-example-status {
-    max-width: 180px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .flow-example-icon {
-    width: 36px;
-    height: 36px;
-  }
-
   .flow-example-copy strong {
     font-size: 14px;
   }
@@ -529,5 +522,13 @@ const example = computed(() => examples[props.variant]);
   .flow-example-true {
     font-size: 9px;
   }
+}
+
+/* O exemplo também se reorganiza em colunas estreitas no computador. */
+.flow-example { container-type: inline-size; }
+@container (max-width: 24rem) {
+  .flow-example-node-header { grid-template-columns: var(--continue-icon-box) minmax(0, 1fr); }
+  .flow-example-true { grid-column: 2; }
+  .flow-example-fields { grid-template-columns: 1fr; }
 }
 </style>

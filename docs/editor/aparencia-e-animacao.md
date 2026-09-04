@@ -3,7 +3,7 @@ title: Aparência e animação
 description: Entenda a diferença entre imagem, objeto, rotação, animação com sprites e animação de propriedades.
 ---
 
-# <DocHeadingIcon icon="images" color="#A78BFA" :size="22" /> Aparência e animação
+# <DocHeadingIcon icon="images" color="#A78BFA" /> Aparência e animação
 
 A imagem de um objeto e o corpo dele não precisam fazer exatamente a mesma coisa. Você pode trocar o desenho, girar só o sprite, espelhar, mudar a cor ou animar propriedades.
 

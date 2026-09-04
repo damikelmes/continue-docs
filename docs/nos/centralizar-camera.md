@@ -11,7 +11,7 @@ description: "Coloca o centro da câmera exatamente no centro do objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="action-center-camera-on-object" icon="videocam" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-center-camera-on-object" icon="videocam" color="#60A5FA" /></span>
   <span>Centralizar câmera</span>
 </h1>
 

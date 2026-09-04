@@ -31,8 +31,27 @@ for (const file of files(docs, '.md').filter((file) => !file.includes('.vitepres
   const source = read(file);
   for (const match of source.matchAll(/icon="([^"]+)"/g)) icons.add(match[1]);
   check(!/^\|.+\|/m.test(source), `Tabela restante: ${file}`);
+  check(!/<(?:NodeIcon|BehaviorIcon|DocHeadingIcon)\b[^>]*\s:size=/.test(source), `Tamanho de ícone fora do padrão compartilhado: ${file}`);
 }
 for (const icon of icons) check(glyphs.has(icon), `Ícone sem glifo: ${icon}`);
+
+// Contrato de layout: páginas e geradores não podem voltar a definir tamanhos isolados.
+const theme = join(docs, '.vitepress/theme');
+for (const file of [...files(theme, '.vue'), ...files(join(root, 'scripts'), '.mjs')]) {
+  check(!/<(?:NodeIcon|BehaviorIcon|DocHeadingIcon)\b[^>]*\s:size=/.test(read(file)), `Tamanho de ícone isolado no componente ou gerador: ${file}`);
+}
+for (const [component, prefix] of [['NodeIcon.vue', 'node'], ['BehaviorIcon.vue', 'behavior']]) {
+  const source = read(join(theme, component));
+  check(source.includes(`--${prefix}-icon-size: var(--continue-icon-size, 1.5rem)`), `Escala compartilhada ausente: ${component}`);
+  const box = source.split(`.${prefix}-glyph {`)[1]?.split('}')[0] ?? '';
+  check(box.includes(`width: var(--${prefix}-icon-size);`) && box.includes(`height: var(--${prefix}-icon-size);`), `Ícone sem caixa quadrada: ${component}`);
+  check(box.includes('flex: 0 0 auto;'), `Ícone pode ser comprimido pelo texto: ${component}`);
+  check(source.includes('letter-spacing: 0;') && source.includes('font-synthesis: none;'), `Ícone herda formatação do título: ${component}`);
+}
+const css = read(join(theme, 'custom.css'));
+check(css.includes('repeat(auto-fit, minmax(min(100%, 18rem), 1fr))'), 'Cards não se adaptam à largura disponível.');
+check(css.includes('repeat(auto-fit, minmax(min(100%, 16rem), 1fr))'), 'Categorias não se adaptam à largura disponível.');
+check(css.includes('--continue-icon-standard: 1.5rem;') && css.includes('--continue-icon-inline: 1.25rem;') && css.includes('--continue-icon-arrow: 1rem;'), 'Escalas de ícones inconsistentes.');
 
 const editorArg = process.argv.find((arg) => arg.startsWith('--editor='));
 if (editorArg) {

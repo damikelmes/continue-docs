@@ -11,7 +11,7 @@ description: "Consulta o progresso da animação de propriedades entre 0 e 100."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="play-forward-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="play-forward-outline" color="#2DD4BF" /></span>
   <span>Progresso da animação de propriedades</span>
 </h1>
 

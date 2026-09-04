@@ -11,7 +11,7 @@ description: "Continua verdadeira enquanto a cena estiver pausada."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F59E0B">
-  <span class="node-title-icon"><NodeIcon type="condition-scene-paused" icon="pause-circle-outline" color="#F59E0B" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-scene-paused" icon="pause-circle-outline" color="#F59E0B" /></span>
   <span>Cena está pausada</span>
 </h1>
 

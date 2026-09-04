@@ -11,7 +11,7 @@ description: "Desenha formas configuráveis sem precisar de sprite."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #FB923C">
-  <span class="behavior-title-icon"><BehaviorIcon type="shape" color="#FB923C" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="shape" color="#FB923C" /></span>
   <span>Forma</span>
 </h1>
 

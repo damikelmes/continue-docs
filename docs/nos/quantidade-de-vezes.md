@@ -11,7 +11,7 @@ description: "Repete os nós conectados pela quantidade escolhida."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #22D3EE">
-  <span class="node-title-icon"><NodeIcon type="repeat-count" icon="repeat-outline" color="#22D3EE" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="repeat-count" icon="repeat-outline" color="#22D3EE" /></span>
   <span>Quantidade de vezes</span>
 </h1>
 

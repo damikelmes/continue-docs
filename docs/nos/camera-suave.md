@@ -11,7 +11,7 @@ description: "Faz a câmera acompanhar um objeto com suavidade."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #22D3EE">
-  <span class="node-title-icon"><NodeIcon type="action-follow-camera-on-object" icon="navigate-circle-outline" color="#22D3EE" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-follow-camera-on-object" icon="navigate-circle-outline" color="#22D3EE" /></span>
   <span>Câmera suave</span>
 </h1>
 

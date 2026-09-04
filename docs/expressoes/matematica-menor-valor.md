@@ -11,7 +11,7 @@ description: "Retorna o menor entre dois valores."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="chevron-down-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="chevron-down-outline" color="#FB923C" /></span>
   <span>Menor valor</span>
 </h1>
 

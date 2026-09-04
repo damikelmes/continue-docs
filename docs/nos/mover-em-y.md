@@ -11,7 +11,7 @@ description: "Move o objeto verticalmente usando velocidade e aceleração."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="action-move-object-y" icon="trending-up-outline" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-move-object-y" icon="trending-up-outline" color="#38BDF8" /></span>
   <span>Mover em Y</span>
 </h1>
 

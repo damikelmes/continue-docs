@@ -11,7 +11,7 @@ description: "Guarda valores separados em cada instância do objeto."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #60A5FA">
-  <span class="behavior-title-icon"><BehaviorIcon type="object-variables" color="#60A5FA" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="object-variables" color="#60A5FA" /></span>
   <span>Variáveis do objeto</span>
 </h1>
 

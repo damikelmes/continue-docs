@@ -11,7 +11,7 @@ description: "Retorna o quadro atual da animação com sprites."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="film" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="film" color="#4ADE80" /></span>
   <span>Quadro atual da animação</span>
 </h1>
 

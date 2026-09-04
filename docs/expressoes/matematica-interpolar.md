@@ -11,7 +11,7 @@ description: "Mistura dois valores usando um progresso."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="swap-horizontal-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="swap-horizontal-outline" color="#FB923C" /></span>
   <span>Interpolar valores</span>
 </h1>
 

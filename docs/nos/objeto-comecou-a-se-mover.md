@@ -11,7 +11,7 @@ description: "Dispara uma vez quando o objeto sai do repouso."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #34D399">
-  <span class="node-title-icon"><NodeIcon type="condition-object-started-moving" icon="play-circle" color="#34D399" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-started-moving" icon="play-circle" color="#34D399" /></span>
   <span>Objeto começou a se mover</span>
 </h1>
 

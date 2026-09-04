@@ -11,7 +11,7 @@ description: "Retorna o tempo, em segundos, usado pela atualização atual."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="time-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="time-outline" color="#2DD4BF" /></span>
   <span>Delta time</span>
 </h1>
 

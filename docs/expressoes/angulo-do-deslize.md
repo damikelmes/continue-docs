@@ -11,7 +11,7 @@ description: "Direção do início até o ponto atual, em graus de 0 até antes 
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="hand-left-outline" color="#FB923C" /></span>
   <span>Ângulo do deslize</span>
 </h1>
 

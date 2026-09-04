@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="play-outline" color="#4ADE80" :size="22" /> Ações
+# <DocHeadingIcon icon="play-outline" color="#4ADE80" /> Ações
 
 ::: tip Documentação nova
 Agora cada ação, condição, repetição e script possui sua própria página na seção [Todos os nós](/nos/).

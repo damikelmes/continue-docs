@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="share-outline" color="#67E8F9" :size="22" /> Exportar o jogo
+# <DocHeadingIcon icon="share-outline" color="#67E8F9" /> Exportar o jogo
 
 Quando o jogo estiver pronto, a Continue transforma o projeto em um arquivo próprio para a plataforma escolhida. Você não precisa refazer cenas, objetos ou scripts: escolha o destino, confira os dados e gere a versão final.
 
@@ -36,18 +36,18 @@ Mudar a versão do jogo antes de uma nova exportação ajuda a identificar qual 
 
 ## <DocHeadingIcon icon="help-circle-outline" color="#FB923C" /> Qual formato escolher
 
-### <DocHeadingIcon icon="logo-android" color="#63D98B" :size="17" /> Quero testar ou instalar no Android
+### <DocHeadingIcon icon="logo-android" color="#63D98B" /> Quero testar ou instalar no Android
 
 Gere um **APK**. Ele pode ser enviado para um celular Android e instalado diretamente.
 
-### <DocHeadingIcon icon="storefront-outline" color="#63D98B" :size="17" /> Quero publicar na Google Play
+### <DocHeadingIcon icon="storefront-outline" color="#63D98B" /> Quero publicar na Google Play
 
 Gere um **AAB**. Esse é o pacote usado para enviar o jogo à loja; ele não é o formato indicado para instalação direta no celular.
 
-### <DocHeadingIcon icon="desktop-outline" color="#69A7FF" :size="17" /> Quero jogar no computador
+### <DocHeadingIcon icon="desktop-outline" color="#69A7FF" /> Quero jogar no computador
 
 Gere a versão para **Windows**. Compartilhe o ZIP completo e extraia o conteúdo antes de abrir o executável.
 
-### <DocHeadingIcon icon="globe-outline" color="#67E8F9" :size="17" /> Quero publicar no itch.io ou no navegador
+### <DocHeadingIcon icon="globe-outline" color="#67E8F9" /> Quero publicar no itch.io ou no navegador
 
 Gere a versão **Web (HTML5)**. O ZIP já fica organizado para serviços que executam jogos no navegador.

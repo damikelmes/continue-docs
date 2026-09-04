@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="cube-outline" color="#34D399" :size="22" /> Objetos e comportamentos
+# <DocHeadingIcon icon="cube-outline" color="#34D399" /> Objetos e comportamentos
 
 ## <DocHeadingIcon icon="cube" color="#4ADE80" /> Criar objeto
 

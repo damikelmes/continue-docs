@@ -11,7 +11,7 @@ description: "Retoma uma cena pausada exatamente do ponto atual."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="action-resume-scene" icon="play-circle-outline" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-resume-scene" icon="play-circle-outline" color="#4ADE80" /></span>
   <span>Continuar cena</span>
 </h1>
 

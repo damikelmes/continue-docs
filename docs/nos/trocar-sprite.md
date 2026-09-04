@@ -11,7 +11,7 @@ description: "Troca a imagem exibida pelo objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #C084FC">
-  <span class="node-title-icon"><NodeIcon type="action-set-object-sprite" icon="images" color="#C084FC" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-object-sprite" icon="images" color="#C084FC" /></span>
   <span>Trocar sprite</span>
 </h1>
 

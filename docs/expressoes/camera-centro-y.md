@@ -11,7 +11,7 @@ description: "Retorna a posição Y do centro lógico da câmera."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="swap-vertical-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="swap-vertical-outline" color="#60A5FA" /></span>
   <span>Centro Y da câmera</span>
 </h1>
 

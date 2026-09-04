@@ -11,7 +11,7 @@ description: "Arredonda sempre para o maior número inteiro."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="arrow-up-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="arrow-up-outline" color="#FB923C" /></span>
   <span>Arredondar para cima</span>
 </h1>
 

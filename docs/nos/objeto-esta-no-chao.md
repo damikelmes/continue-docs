@@ -11,7 +11,7 @@ description: "Verifica se o objeto está apoiado em uma colisão."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="condition-object-grounded" icon="remove-circle-outline" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-grounded" icon="remove-circle-outline" color="#4ADE80" /></span>
   <span>Objeto está no chão</span>
 </h1>
 

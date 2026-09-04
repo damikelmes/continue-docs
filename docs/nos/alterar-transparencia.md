@@ -11,7 +11,7 @@ description: "Muda o quanto o objeto está visível."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="action-set-object-opacity" icon="water-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-object-opacity" icon="water-outline" color="#2DD4BF" /></span>
   <span>Alterar transparência</span>
 </h1>
 

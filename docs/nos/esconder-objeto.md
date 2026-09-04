@@ -11,7 +11,7 @@ description: "Esconde as instâncias escolhidas sem excluí-las da cena."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #94A3B8">
-  <span class="node-title-icon"><NodeIcon type="action-hide-object" icon="eye-off" color="#94A3B8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-hide-object" icon="eye-off" color="#94A3B8" /></span>
   <span>Esconder objeto</span>
 </h1>
 

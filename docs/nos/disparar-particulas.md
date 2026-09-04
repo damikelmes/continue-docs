@@ -11,7 +11,7 @@ description: "Cria imediatamente a quantidade de partículas escolhida."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F97316">
-  <span class="node-title-icon"><NodeIcon type="action-burst-particles" icon="sparkles" color="#F97316" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-burst-particles" icon="sparkles" color="#F97316" /></span>
   <span>Disparar partículas</span>
 </h1>
 

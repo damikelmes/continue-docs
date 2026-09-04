@@ -4,7 +4,7 @@ description: Nós que verificam uma situação antes de continuar o fluxo.
 pageClass: guide-page
 ---
 
-# <DocHeadingIcon icon="git-branch" color="#FACC15" :size="22" /> Condições
+# <DocHeadingIcon icon="git-branch" color="#FACC15" /> Condições
 
 Uma condição deixa os próximos nós continuarem somente quando o resultado for verdadeiro. Escolha um grupo para abrir os nós correspondentes.
 

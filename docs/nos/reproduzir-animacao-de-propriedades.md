@@ -11,7 +11,7 @@ description: "Inicia ou continua uma animação de propriedades."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="action-play-property-animation" icon="play-circle-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-play-property-animation" icon="play-circle-outline" color="#2DD4BF" /></span>
   <span>Reproduzir animação de propriedades</span>
 </h1>
 

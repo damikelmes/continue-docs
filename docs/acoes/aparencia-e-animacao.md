@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="color-palette-outline" color="#C084FC" :size="22" /> Aparência e animação
+# <DocHeadingIcon icon="color-palette-outline" color="#C084FC" /> Aparência e animação
 
 ## <DocHeadingIcon icon="images" color="#C084FC" /> Trocar sprite
 
@@ -12,15 +12,15 @@ Inicia uma animação com sprites pelo nome. O objeto precisa ter essa animaçã
 
 O comportamento **Animação de propriedades** permite criar várias animações nomeadas usando quadros-chave.
 
-### <DocHeadingIcon icon="play-circle-outline" color="#2DD4BF" :size="17" /> Reproduzir animação de propriedades
+### <DocHeadingIcon icon="play-circle-outline" color="#2DD4BF" /> Reproduzir animação de propriedades
 
 Ativa a animação escolhida. Se ela estiver pausada, continua da posição atual.
 
-### <DocHeadingIcon icon="refresh-circle-outline" color="#38BDF8" :size="17" /> Recomeçar animação de propriedades
+### <DocHeadingIcon icon="refresh-circle-outline" color="#38BDF8" /> Recomeçar animação de propriedades
 
 Ativa a animação desde o primeiro quadro, mesmo que ela já estivesse em andamento.
 
-### <DocHeadingIcon icon="pause-circle-outline" color="#FBBF24" :size="17" /> Pausar animação de propriedades
+### <DocHeadingIcon icon="pause-circle-outline" color="#FBBF24" /> Pausar animação de propriedades
 
 Pausa a animação atual sem apagar seu progresso. Use **Reproduzir** para continuar.
 

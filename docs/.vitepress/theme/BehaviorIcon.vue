@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-const props = withDefaults(
-  defineProps<{
-    color: string;
-    size?: number;
-    type: string;
-  }>(),
-  { size: 30 },
-);
+const props = defineProps<{
+  color: string;
+  type: string;
+}>();
 
 const glyphCodes: Record<string, number> = {
   analytics: 61723,
@@ -38,7 +34,6 @@ const iconByType: Record<string, string> = {
 const glyph = (name: string) => String.fromCodePoint(glyphCodes[name] ?? glyphCodes.image);
 const style = computed(() => ({
   '--behavior-color': props.color,
-  '--behavior-icon-size': `${props.size}px`,
 }));
 </script>
 
@@ -74,6 +69,7 @@ const style = computed(() => ({
 
 <style scoped>
 .behavior-glyph {
+  --behavior-icon-size: var(--continue-icon-size, 1.5rem);
   display: inline-flex;
   width: var(--behavior-icon-size);
   height: var(--behavior-icon-size);
@@ -81,15 +77,24 @@ const style = computed(() => ({
   justify-content: center;
   color: var(--behavior-color);
   flex: 0 0 auto;
+  line-height: 1;
   vertical-align: middle;
 }
 
 .ion {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
   color: var(--behavior-color);
   font-family: 'Continue Ionicons';
   font-size: var(--behavior-icon-size);
   font-style: normal;
   font-weight: normal;
+  font-synthesis: none;
+  letter-spacing: 0;
   line-height: 1;
 }
 
@@ -166,8 +171,8 @@ const style = computed(() => ({
 }
 .drag-hand {
   position: absolute;
-  right: -2%;
-  top: -3%;
+  right: 5%;
+  top: 5%;
   font-size: calc(var(--behavior-icon-size) * 0.72);
   transform: rotate(-13deg);
 }
@@ -213,7 +218,7 @@ const style = computed(() => ({
 .variables-icon {
   color: #60A5FA;
   font-family: ui-rounded, 'Arial Rounded MT Bold', system-ui, sans-serif;
-  font-size: max(11px, calc(var(--behavior-icon-size) * 0.54));
+  font-size: calc(var(--behavior-icon-size) * 0.54);
   font-weight: 900;
   letter-spacing: -0.7px;
   line-height: 1;

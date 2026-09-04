@@ -11,7 +11,7 @@ description: "Verifica se o objeto está descendo pela gravidade."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="condition-object-falling" icon="arrow-down-circle-outline" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-falling" icon="arrow-down-circle-outline" color="#38BDF8" /></span>
   <span>Objeto está caindo</span>
 </h1>
 

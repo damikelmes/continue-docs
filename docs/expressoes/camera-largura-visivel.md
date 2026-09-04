@@ -11,7 +11,7 @@ description: "Retorna a largura lógica visível da câmera em pixels."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="videocam-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="videocam-outline" color="#60A5FA" /></span>
   <span>Largura visível da câmera</span>
 </h1>
 

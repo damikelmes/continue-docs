@@ -21,14 +21,14 @@ const resolvedHref = computed(() => props.href.startsWith('#') ? props.href : wi
 <template>
   <a class="guide-card" :href="resolvedHref" :style="{ '--guide-card-color': color }">
     <span class="guide-card-icon">
-      <NodeIcon :type="type" :icon="icon" :color="color" :size="25" />
+      <NodeIcon :type="type" :icon="icon" :color="color" />
     </span>
     <span class="guide-card-copy">
       <strong>{{ title }}</strong>
       <small>{{ description }}</small>
     </span>
     <span class="guide-card-arrow">
-      <NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" />
+      <NodeIcon type="plain" icon="chevron-forward" color="#8a8490" />
     </span>
   </a>
 </template>

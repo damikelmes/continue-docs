@@ -11,7 +11,7 @@ description: "Leva o objeto e seu estado atual para as próximas cenas."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #34D399">
-  <span class="node-title-icon"><NodeIcon type="action-persist-object" icon="link-outline" color="#34D399" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-persist-object" icon="link-outline" color="#34D399" /></span>
   <span>Manter objeto entre cenas</span>
 </h1>
 

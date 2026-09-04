@@ -11,7 +11,7 @@ description: "Eleva uma base ao expoente informado."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="trending-up-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="trending-up-outline" color="#FB923C" /></span>
   <span>Potência</span>
 </h1>
 

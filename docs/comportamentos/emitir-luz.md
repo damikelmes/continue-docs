@@ -11,7 +11,7 @@ description: "Faz o objeto iluminar a cena e projetar sombras."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #FDE047">
-  <span class="behavior-title-icon"><BehaviorIcon type="light-emitter" color="#FDE047" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="light-emitter" color="#FDE047" /></span>
   <span>Emitir luz</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Aplica uma cor sobre o visual do objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F472B6">
-  <span class="node-title-icon"><NodeIcon type="action-set-object-tint" icon="color-palette-outline" color="#F472B6" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-object-tint" icon="color-palette-outline" color="#F472B6" /></span>
   <span>Alterar tonalidade</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Retorna a posição X armazenada pela instância."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="expression-object-x" icon="remove-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="expression-object-x" icon="remove-outline" color="#A78BFA" /></span>
   <span>Posição X do objeto</span>
 </h1>
 

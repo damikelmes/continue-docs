@@ -11,7 +11,7 @@ description: "Dispara uma vez quando o objeto deixa de se mover."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB7185">
-  <span class="node-title-icon"><NodeIcon type="condition-object-stopped-moving" icon="stop-circle" color="#FB7185" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-stopped-moving" icon="stop-circle" color="#FB7185" /></span>
   <span>Objeto parou de se mover</span>
 </h1>
 

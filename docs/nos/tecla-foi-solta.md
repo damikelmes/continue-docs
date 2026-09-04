@@ -11,7 +11,7 @@ description: "Executa uma vez quando a tecla escolhida é liberada."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="condition-key-released" icon="arrow-up-circle-outline" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-key-released" icon="arrow-up-circle-outline" color="#38BDF8" /></span>
   <span>Tecla foi solta</span>
 </h1>
 

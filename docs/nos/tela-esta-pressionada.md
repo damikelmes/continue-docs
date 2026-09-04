@@ -11,7 +11,7 @@ description: "Continua verdadeira enquanto houver um dedo na tela."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="condition-screen-pressed" icon="hand-left" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-screen-pressed" icon="hand-left" color="#FB923C" /></span>
   <span>Tela está pressionada</span>
 </h1>
 

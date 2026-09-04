@@ -3,7 +3,7 @@ title: Trocar, pausar e retomar cenas
 description: Organize menus e fases, escolha transições e entenda o estado de cada cena.
 ---
 
-# <DocHeadingIcon icon="albums-outline" color="#A78BFA" :size="22" /> Controlar as cenas do jogo
+# <DocHeadingIcon icon="albums-outline" color="#A78BFA" /> Controlar as cenas do jogo
 
 Uma cena pode ser um menu, uma fase ou uma tela de resultado. Além de montá-las no editor, você pode escolher quando mudar de uma para outra usando os nós da categoria **Cena**.
 

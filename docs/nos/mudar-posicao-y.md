@@ -11,7 +11,7 @@ description: "Altera apenas a posição vertical do objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="action-set-object-y" icon="swap-vertical-outline" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-object-y" icon="swap-vertical-outline" color="#38BDF8" /></span>
   <span>Mudar posição Y</span>
 </h1>
 

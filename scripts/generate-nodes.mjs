@@ -16,13 +16,13 @@ const escapeHtml = (value) => value
 
 function renderCard(node) {
   return `  <a class="node-card" style="--node-card-color: ${node.color}" href="./${node.slug}">
-    <span class="node-card-icon"><NodeIcon type="${node.type}" icon="${node.icon}" color="${node.color}" :size="30" /></span>
+    <span class="node-card-icon"><NodeIcon type="${node.type}" icon="${node.icon}" color="${node.color}" /></span>
     <span class="node-card-copy">
       <span class="node-card-kind">${node.kind}</span>
       <strong>${escapeHtml(node.title)}</strong>
       <small>${escapeHtml(node.summary)}</small>
     </span>
-    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" :size="17" /></span>
+    <span class="node-card-arrow"><NodeIcon type="plain" icon="chevron-forward" color="#8a8490" /></span>
   </a>`;
 }
 
@@ -56,7 +56,7 @@ description: ${JSON.stringify(node.summary)}
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: ${node.color}">
-  <span class="node-title-icon"><NodeIcon type="${node.type}" icon="${node.icon}" color="${node.color}" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="${node.type}" icon="${node.icon}" color="${node.color}" /></span>
   <span>${escapeHtml(node.title)}</span>
 </h1>
 
@@ -111,7 +111,7 @@ title: Todos os nós
 description: Lista completa dos nós disponíveis no editor da Continue.
 ---
 
-# <DocHeadingIcon icon="grid-outline" color="#A78BFA" :size="22" /> Todos os nós
+# <DocHeadingIcon icon="grid-outline" color="#A78BFA" /> Todos os nós
 
 Um nó é uma peça do script visual. **Ações** mudam o jogo; **condições** verificam se o fluxo pode continuar; **repetições** executam uma sequência mais de uma vez. A biblioteca permite chamar uma rotina já montada.
 

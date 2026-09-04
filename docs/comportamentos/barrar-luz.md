@@ -11,7 +11,7 @@ description: "Faz o objeto bloquear luz e projetar sua área de colisão."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #94A3B8">
-  <span class="behavior-title-icon"><BehaviorIcon type="light-blocker" color="#94A3B8" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="light-blocker" color="#94A3B8" /></span>
   <span>Barrar luz</span>
 </h1>
 

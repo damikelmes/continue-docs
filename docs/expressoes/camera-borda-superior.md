@@ -11,7 +11,7 @@ description: "Retorna a coordenada da extremidade superior visível."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="arrow-up-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="arrow-up-outline" color="#60A5FA" /></span>
   <span>Borda superior da câmera</span>
 </h1>
 

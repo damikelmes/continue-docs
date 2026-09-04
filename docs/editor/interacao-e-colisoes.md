@@ -3,7 +3,7 @@ title: Toque, teclado e colisões
 description: Escolha condições contínuas ou de um único momento e selecione quais instâncias verificar.
 ---
 
-# <DocHeadingIcon icon="hand-left-outline" color="#FB923C" :size="22" /> Toque, teclado e colisões
+# <DocHeadingIcon icon="hand-left-outline" color="#FB923C" /> Toque, teclado e colisões
 
 As condições ajudam o jogo a reagir ao jogador e ao que acontece na cena. Coloque a condição antes das ações e conecte os nós. Estar perto na lista não substitui a conexão.
 

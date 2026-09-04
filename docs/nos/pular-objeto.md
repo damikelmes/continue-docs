@@ -11,7 +11,7 @@ description: "Aplica uma força de pulo a um objeto no chão."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="action-jump-object" icon="arrow-up-circle" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-jump-object" icon="arrow-up-circle" color="#4ADE80" /></span>
   <span>Pular objeto</span>
 </h1>
 

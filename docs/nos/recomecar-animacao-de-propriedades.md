@@ -11,7 +11,7 @@ description: "Reinicia uma animação de propriedades no primeiro quadro."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="action-restart-property-animation" icon="refresh-circle-outline" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-restart-property-animation" icon="refresh-circle-outline" color="#38BDF8" /></span>
   <span>Recomeçar animação de propriedades</span>
 </h1>
 

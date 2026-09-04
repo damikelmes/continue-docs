@@ -11,7 +11,7 @@ description: "Retorna quantas instâncias de um objeto existem na cena."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="layers-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="layers-outline" color="#A78BFA" /></span>
   <span>Quantidade de instâncias</span>
 </h1>
 

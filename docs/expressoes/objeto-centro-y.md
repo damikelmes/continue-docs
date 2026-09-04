@@ -11,7 +11,7 @@ description: "Retorna o centro vertical real da instância, considerando sua alt
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="expression-object-y" icon="contract-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="expression-object-y" icon="contract-outline" color="#A78BFA" /></span>
   <span>Centro Y do objeto</span>
 </h1>
 

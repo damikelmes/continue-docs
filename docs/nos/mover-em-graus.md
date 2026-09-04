@@ -11,7 +11,7 @@ description: "Move o objeto na direção de um ângulo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="action-move-object-angle" icon="compass-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-move-object-angle" icon="compass-outline" color="#2DD4BF" /></span>
   <span>Mover em graus</span>
 </h1>
 

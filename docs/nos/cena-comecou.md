@@ -11,7 +11,7 @@ description: "Dispara uma vez quando a cena começa desde o início."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FBBF24">
-  <span class="node-title-icon"><NodeIcon type="condition-scene-started" icon="flag-outline" color="#FBBF24" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-scene-started" icon="flag-outline" color="#FBBF24" /></span>
   <span>Cena começou</span>
 </h1>
 

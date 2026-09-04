@@ -11,7 +11,7 @@ description: "Muda um valor compartilhado entre todas as cenas do jogo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F4C54B">
-  <span class="node-title-icon"><NodeIcon type="action-change-global-variable" icon="globe-outline" color="#F4C54B" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-change-global-variable" icon="globe-outline" color="#F4C54B" /></span>
   <span>Alterar variável global</span>
 </h1>
 

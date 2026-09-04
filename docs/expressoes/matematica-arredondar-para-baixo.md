@@ -11,7 +11,7 @@ description: "Arredonda sempre para o menor número inteiro."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="arrow-down-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="arrow-down-outline" color="#FB923C" /></span>
   <span>Arredondar para baixo</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Torna visíveis as instâncias escolhidas sem recriá-las."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="action-show-object" icon="eye" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-show-object" icon="eye" color="#4ADE80" /></span>
   <span>Mostrar objeto</span>
 </h1>
 

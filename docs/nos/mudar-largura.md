@@ -11,7 +11,7 @@ description: "Muda a largura do objeto durante o jogo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="action-set-object-width" icon="resize-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-object-width" icon="resize-outline" color="#A78BFA" /></span>
   <span>Mudar largura</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Gira somente o sprite do objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB7185">
-  <span class="node-title-icon"><NodeIcon type="action-rotate-sprite" icon="sync-outline" color="#FB7185" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-rotate-sprite" icon="sync-outline" color="#FB7185" /></span>
   <span>Rotacionar sprite</span>
 </h1>
 

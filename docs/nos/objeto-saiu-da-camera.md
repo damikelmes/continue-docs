@@ -11,7 +11,7 @@ description: "Executa uma vez quando o objeto deixa a visão da câmera."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="condition-object-exited-camera" icon="exit-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-exited-camera" icon="exit-outline" color="#A78BFA" /></span>
   <span>Objeto saiu da câmera</span>
 </h1>
 

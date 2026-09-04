@@ -11,7 +11,7 @@ description: "Muda a ordem em que o objeto é desenhado."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #818CF8">
-  <span class="node-title-icon"><NodeIcon type="action-set-object-z-index" icon="layers-outline" color="#818CF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-object-z-index" icon="layers-outline" color="#818CF8" /></span>
   <span>Alterar ordem Z</span>
 </h1>
 

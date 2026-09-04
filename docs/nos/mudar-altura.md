@@ -11,7 +11,7 @@ description: "Muda a altura do objeto durante o jogo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #C084FC">
-  <span class="node-title-icon"><NodeIcon type="action-set-object-height" icon="resize-outline" color="#C084FC" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-object-height" icon="resize-outline" color="#C084FC" /></span>
   <span>Mudar altura</span>
 </h1>
 

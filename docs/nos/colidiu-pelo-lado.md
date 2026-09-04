@@ -11,7 +11,7 @@ description: "Executa uma vez quando o objeto colide pelo lado escolhido."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FACC15">
-  <span class="node-title-icon"><NodeIcon type="condition-collision-side" icon="move-outline" color="#FACC15" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-collision-side" icon="move-outline" color="#FACC15" /></span>
   <span>Colidiu pelo lado</span>
 </h1>
 

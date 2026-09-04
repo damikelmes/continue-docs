@@ -11,7 +11,7 @@ description: "Apaga o estado guardado para a cena escolhida."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB7185">
-  <span class="node-title-icon"><NodeIcon type="action-clear-scene-state" icon="trash-bin-outline" color="#FB7185" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-clear-scene-state" icon="trash-bin-outline" color="#FB7185" /></span>
   <span>Limpar estado salvo da cena</span>
 </h1>
 

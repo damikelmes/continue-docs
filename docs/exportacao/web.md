@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="globe-outline" color="#67E8F9" :size="22" /> Exportar para Web
+# <DocHeadingIcon icon="globe-outline" color="#67E8F9" /> Exportar para Web
 
 A versão **Web (HTML5)** abre o jogo diretamente em um navegador. Ela pode ser publicada no itch.io ou em outro serviço que aceite jogos para Web.
 

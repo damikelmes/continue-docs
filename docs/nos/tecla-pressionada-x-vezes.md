@@ -11,7 +11,7 @@ description: "Executa quando a tecla é pressionada a quantidade de vezes escolh
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F472B6">
-  <span class="node-title-icon"><NodeIcon type="condition-key-double-pressed" icon="repeat-outline" color="#F472B6" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-key-double-pressed" icon="repeat-outline" color="#F472B6" /></span>
   <span>Tecla pressionada X vezes</span>
 </h1>
 

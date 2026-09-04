@@ -11,7 +11,7 @@ description: "Lê uma variável numérica compartilhada entre as cenas do jogo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F4C54B">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="globe-outline" color="#F4C54B" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="globe-outline" color="#F4C54B" /></span>
   <span>Variável numérica global</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Retorna para a última cena visitada e recupera seu estado."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #C4B5FD">
-  <span class="node-title-icon"><NodeIcon type="action-go-back-scene" icon="return-up-back-outline" color="#C4B5FD" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-go-back-scene" icon="return-up-back-outline" color="#C4B5FD" /></span>
   <span>Voltar para a cena anterior</span>
 </h1>
 

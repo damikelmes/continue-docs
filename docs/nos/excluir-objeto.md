@@ -11,7 +11,7 @@ description: "Remove instâncias da cena durante o jogo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB7185">
-  <span class="node-title-icon"><NodeIcon type="action-delete-object" icon="trash-outline" color="#FB7185" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-delete-object" icon="trash-outline" color="#FB7185" /></span>
   <span>Excluir objeto</span>
 </h1>
 

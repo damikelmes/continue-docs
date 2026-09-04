@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="navigate-circle-outline" color="#60A5FA" :size="22" /> Movimento e posição
+# <DocHeadingIcon icon="navigate-circle-outline" color="#60A5FA" /> Movimento e posição
 
 Estas ações mudam a posição, o tamanho, a rotação ou o movimento de um objeto.
 

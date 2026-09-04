@@ -11,7 +11,7 @@ description: "Altera a rotação completa do objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F59E0B">
-  <span class="node-title-icon"><NodeIcon type="action-rotate-object" icon="refresh-outline" color="#F59E0B" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-rotate-object" icon="refresh-outline" color="#F59E0B" /></span>
   <span>Rotacionar objeto</span>
 </h1>
 

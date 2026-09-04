@@ -11,7 +11,7 @@ description: "Congela objetos, física, comportamentos e animações da cena."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FBBF24">
-  <span class="node-title-icon"><NodeIcon type="action-pause-scene" icon="pause-circle-outline" color="#FBBF24" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-pause-scene" icon="pause-circle-outline" color="#FBBF24" /></span>
   <span>Pausar cena</span>
 </h1>
 

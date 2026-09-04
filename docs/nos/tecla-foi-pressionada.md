@@ -11,7 +11,7 @@ description: "Executa uma vez quando a tecla passa de solta para pressionada."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="condition-key-pressed" icon="arrow-down-circle-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-key-pressed" icon="arrow-down-circle-outline" color="#A78BFA" /></span>
   <span>Tecla foi pressionada</span>
 </h1>
 

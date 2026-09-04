@@ -11,7 +11,7 @@ description: "Calcula a tangente de um ângulo informado em graus."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="analytics-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="analytics-outline" color="#FB923C" /></span>
   <span>Tangente</span>
 </h1>
 

@@ -13,8 +13,8 @@ pageClass: continue-home
     <h1 id="home-title">Sua ideia começa aqui.</h1>
     <p>Crie jogos conectando nós, combinando comportamentos e montando cenas. Aprenda no seu ritmo, do primeiro objeto à exportação.</p>
     <div class="home-actions">
-      <a class="home-primary-action" href="./primeiros-passos/conheca-a-engine"><NodeIcon type="plain" icon="book-outline" color="#fff" :size="20" /> Aprender o básico <span aria-hidden="true">→</span></a>
-      <a class="home-secondary-action" href="./primeiros-passos/criar-projeto"><NodeIcon type="plain" icon="add" color="#7c3aed" :size="20" /> Criar meu primeiro projeto</a>
+      <a class="home-primary-action" href="./primeiros-passos/conheca-a-engine"><NodeIcon type="plain" icon="book-outline" color="#fff" /> Aprender o básico <span aria-hidden="true">→</span></a>
+      <a class="home-secondary-action" href="./primeiros-passos/criar-projeto"><NodeIcon type="plain" icon="add" color="#7c3aed" /> Criar meu primeiro projeto</a>
     </div>
     <p class="home-search-tip">Já sabe o que procura? Use a busca no topo pelo nome do recurso.</p>
   </section>

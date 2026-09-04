@@ -1,15 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-const props = withDefaults(
-  defineProps<{
-    color: string;
-    icon: string;
-    size?: number;
-    type: string;
-  }>(),
-  { size: 30 },
-);
+const props = defineProps<{
+  color: string;
+  icon: string;
+  type: string;
+}>();
 
 const glyphCodes: Record<string, number> = {
   'checkmark-circle': 61982,
@@ -163,7 +159,6 @@ const movementLabel = computed(() => {
 
 const style = computed(() => ({
   '--node-color': props.color,
-  '--node-icon-size': `${props.size}px`,
 }));
 </script>
 
@@ -274,22 +269,32 @@ const style = computed(() => ({
 
 <style scoped>
 .node-glyph {
+  --node-icon-size: var(--continue-icon-size, 1.5rem);
   display: inline-flex;
-  width: calc(var(--node-icon-size) + 10px);
+  width: var(--node-icon-size);
   height: var(--node-icon-size);
   align-items: center;
   justify-content: center;
   color: var(--node-color);
   flex: 0 0 auto;
+  line-height: 1;
   vertical-align: middle;
 }
 
 .ion {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
   color: var(--node-color);
   font-family: 'Continue Ionicons';
   font-size: var(--node-icon-size);
   font-style: normal;
   font-weight: normal;
+  font-synthesis: none;
+  letter-spacing: 0;
   line-height: 1;
 }
 
@@ -297,8 +302,6 @@ const style = computed(() => ({
   content: attr(data-glyph);
 }
 
-.icon-pair,
-.icon-axis,
 .shaking,
 .moving-camera {
   display: inline-flex;
@@ -306,24 +309,39 @@ const style = computed(() => ({
   justify-content: center;
 }
 
-.icon-pair .ion,
-.icon-axis .ion {
-  font-size: calc(var(--node-icon-size) * 0.66);
+.icon-pair,
+.icon-axis {
+  position: relative;
+  display: block;
+  width: var(--node-icon-size);
+  height: var(--node-icon-size);
 }
 
-.icon-pair.compact { gap: 1px; }
-.icon-pair:not(.compact) { gap: 2px; }
-.icon-pair .secondary { font-size: calc(var(--node-icon-size) * 0.58); }
+.icon-pair > .ion:first-child,
+.icon-axis > .ion {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: calc(var(--node-icon-size) * 0.78);
+}
+.icon-pair > .ion:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: calc(var(--node-icon-size) * 0.52);
+}
+.icon-pair.compact > .secondary { font-size: calc(var(--node-icon-size) * 0.42); }
 
-.icon-axis { gap: 3px; }
 .icon-axis b,
 .axis-only {
   color: var(--node-color);
-  font-size: calc(var(--node-icon-size) * 0.56);
+  font-family: var(--vp-font-family-base);
+  font-size: calc(var(--node-icon-size) * 0.44);
   font-weight: 900;
+  letter-spacing: 0;
   line-height: 1;
 }
-.icon-axis.movement .ion { font-size: calc(var(--node-icon-size) * 0.68); }
+.icon-axis b { position: absolute; right: 0; bottom: 0; }
 .axis-only { font-size: calc(var(--node-icon-size) * 0.88); }
 
 .scene-object,
@@ -332,8 +350,8 @@ const style = computed(() => ({
   width: var(--node-icon-size);
   height: var(--node-icon-size);
 }
-.scene-object .scan,
-.repeat-count > .ion { position: absolute; inset: 0; }
+.scene-object .scan { position: absolute; inset: 0; }
+.repeat-count > .ion { position: absolute; top: 0; left: 0; font-size: calc(var(--node-icon-size) * 0.9); }
 .scene-object .scene-cube {
   position: absolute;
   left: 50%;
@@ -343,20 +361,22 @@ const style = computed(() => ({
 }
 .repeat-count b {
   position: absolute;
-  right: -4px;
-  bottom: -1px;
+  right: 0;
+  bottom: 0;
   color: var(--node-color);
   font-size: calc(var(--node-icon-size) * 0.29);
+  letter-spacing: 0;
   line-height: 1;
 }
 
 .grounded {
   display: inline-flex;
-  width: calc(var(--node-icon-size) + 6px);
+  width: var(--node-icon-size);
   height: var(--node-icon-size);
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: calc(var(--node-icon-size) * 0.04);
 }
 .grounded .ion { font-size: calc(var(--node-icon-size) * 0.7); }
 .ground-line {
@@ -401,7 +421,7 @@ const style = computed(() => ({
 }
 
 .moving-camera { transform: rotate(-13deg); }
-.moving-camera .ion { font-size: calc(var(--node-icon-size) * 0.92); }
+.moving-camera .ion { font-size: calc(var(--node-icon-size) * 0.62); }
 .camera-trails,
 .shake-lines {
   display: inline-flex;
@@ -416,14 +436,14 @@ const style = computed(() => ({
   background: var(--node-color);
 }
 .camera-trails i:nth-child(1),
-.camera-trails i:nth-child(3) { width: calc(var(--node-icon-size) * 0.28); opacity: 0.45; }
-.camera-trails i:nth-child(2) { width: calc(var(--node-icon-size) * 0.48); }
+.camera-trails i:nth-child(3) { width: calc(var(--node-icon-size) * 0.15); opacity: 0.45; }
+.camera-trails i:nth-child(2) { width: calc(var(--node-icon-size) * 0.22); }
 
-.shaking { gap: 2px; }
-.shaking > .ion { font-size: calc(var(--node-icon-size) * 0.76); transform: rotate(-6deg); }
+.shaking { gap: calc(var(--node-icon-size) * 0.04); }
+.shaking > .ion { font-size: calc(var(--node-icon-size) * 0.52); transform: rotate(-6deg); }
 .shake-lines { gap: calc(var(--node-icon-size) * 0.12); }
-.shake-lines i { width: calc(var(--node-icon-size) * 0.19); opacity: 0.7; }
-.shake-lines i:nth-child(2) { width: calc(var(--node-icon-size) * 0.27); opacity: 1; }
+.shake-lines i { width: calc(var(--node-icon-size) * 0.12); opacity: 0.7; }
+.shake-lines i:nth-child(2) { width: calc(var(--node-icon-size) * 0.16); opacity: 1; }
 .shake-lines.left { align-items: flex-end; transform: rotate(7deg); }
 .shake-lines.right { align-items: flex-start; transform: rotate(-7deg); }
 

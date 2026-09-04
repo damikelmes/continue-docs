@@ -11,7 +11,7 @@ description: "Dispara uma vez quando um novo toque começa na tela."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F472B6">
-  <span class="node-title-icon"><NodeIcon type="condition-screen-touched" icon="finger-print" color="#F472B6" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-screen-touched" icon="finger-print" color="#F472B6" /></span>
   <span>Tela foi tocada</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Retorna a direção do movimento atual entre 0 e 360 graus."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="navigate-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="navigate-outline" color="#A78BFA" /></span>
   <span>Ângulo do movimento</span>
 </h1>
 

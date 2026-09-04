@@ -11,7 +11,7 @@ description: "Executa uma vez quando o dedo que pressionou o objeto é levantado
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F472B6">
-  <span class="node-title-icon"><NodeIcon type="condition-object-released" icon="hand-left-outline" color="#F472B6" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-released" icon="hand-left-outline" color="#F472B6" /></span>
   <span>Objeto foi solto</span>
 </h1>
 

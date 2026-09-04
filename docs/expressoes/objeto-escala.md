@@ -11,7 +11,7 @@ description: "Retorna o multiplicador de escala atual da instância."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="expand-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="expand-outline" color="#A78BFA" /></span>
   <span>Escala do objeto</span>
 </h1>
 

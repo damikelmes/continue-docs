@@ -11,7 +11,7 @@ description: "Recarrega a cena atual desde o começo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="action-restart-scene" icon="refresh-circle-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-restart-scene" icon="refresh-circle-outline" color="#60A5FA" /></span>
   <span>Reiniciar cena</span>
 </h1>
 

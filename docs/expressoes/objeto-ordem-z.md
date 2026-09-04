@@ -11,7 +11,7 @@ description: "Retorna a ordem de desenho atual da instância."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="reorder-three-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="reorder-three-outline" color="#A78BFA" /></span>
   <span>Ordem Z do objeto</span>
 </h1>
 

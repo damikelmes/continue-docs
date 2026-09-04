@@ -11,7 +11,7 @@ description: "Cria novas instâncias durante o jogo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="action-create-object" icon="cube-outline" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-create-object" icon="cube-outline" color="#4ADE80" /></span>
   <span>Criar objeto</span>
 </h1>
 

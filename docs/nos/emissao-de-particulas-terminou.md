@@ -11,7 +11,7 @@ description: "Detecta quando os emissores da instância terminam e não restam p
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="condition-particle-emission-finished" icon="checkmark-circle" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-particle-emission-finished" icon="checkmark-circle" color="#38BDF8" /></span>
   <span>Emissão de partículas terminou</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Muda uma variável separadamente em cada instância escolhida."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="action-change-object-variable" icon="calculator-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-change-object-variable" icon="calculator-outline" color="#60A5FA" /></span>
   <span>Alterar variável do objeto</span>
 </h1>
 

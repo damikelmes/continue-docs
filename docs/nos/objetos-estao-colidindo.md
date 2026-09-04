@@ -11,7 +11,7 @@ description: "Continua verdadeiro enquanto os dois objetos permanecem encostados
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #4ADE80">
-  <span class="node-title-icon"><NodeIcon type="condition-collision-active" icon="link-outline" color="#4ADE80" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-collision-active" icon="link-outline" color="#4ADE80" /></span>
   <span>Objetos estão colidindo</span>
 </h1>
 

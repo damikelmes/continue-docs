@@ -11,7 +11,7 @@ description: "Abre outra cena do projeto usando a transição escolhida."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="action-change-scene" icon="albums-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-change-scene" icon="albums-outline" color="#A78BFA" /></span>
   <span>Trocar de cena</span>
 </h1>
 

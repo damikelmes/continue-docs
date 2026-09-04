@@ -11,7 +11,7 @@ description: "Permite mover o objeto diretamente com o dedo."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #38BDF8">
-  <span class="behavior-title-icon"><BehaviorIcon type="drag-drop" color="#38BDF8" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="drag-drop" color="#38BDF8" /></span>
   <span>Arrastar e soltar</span>
 </h1>
 

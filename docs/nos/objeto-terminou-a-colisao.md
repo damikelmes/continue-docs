@@ -11,7 +11,7 @@ description: "Executa uma vez quando os dois objetos deixam de encostar."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="condition-collision-ended" icon="expand-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-collision-ended" icon="expand-outline" color="#60A5FA" /></span>
   <span>Objeto terminou a colisão</span>
 </h1>
 

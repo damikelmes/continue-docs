@@ -11,7 +11,7 @@ description: "Executa quando o objeto recebe a quantidade de cliques escolhida."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F472B6">
-  <span class="node-title-icon"><NodeIcon type="condition-object-clicked-times" icon="finger-print-outline" color="#F472B6" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-clicked-times" icon="finger-print-outline" color="#F472B6" /></span>
   <span>Objeto clicado X vezes</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Executa uma vez quando um deslize na direção escolhida começa s
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #22D3EE">
-  <span class="node-title-icon"><NodeIcon type="condition-object-swiped" icon="swap-horizontal-outline" color="#22D3EE" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-swiped" icon="swap-horizontal-outline" color="#22D3EE" /></span>
   <span>Deslizou sobre o objeto</span>
 </h1>
 

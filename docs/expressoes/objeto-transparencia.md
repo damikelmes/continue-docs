@@ -11,7 +11,7 @@ description: "Retorna a transparência atual da instância, de 0 a 100."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="contrast-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="contrast-outline" color="#A78BFA" /></span>
   <span>Transparência do objeto</span>
 </h1>
 

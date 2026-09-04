@@ -11,7 +11,7 @@ description: "Move o objeto suavemente até a posição tocada."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #34D399">
-  <span class="behavior-title-icon"><BehaviorIcon type="move-to-touch" color="#34D399" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="move-to-touch" color="#34D399" /></span>
   <span>Mover até o toque</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Altera apenas o centro horizontal da câmera."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="action-set-camera-x" icon="arrow-forward-circle-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-camera-x" icon="arrow-forward-circle-outline" color="#60A5FA" /></span>
   <span>Mudar posição X da câmera</span>
 </h1>
 

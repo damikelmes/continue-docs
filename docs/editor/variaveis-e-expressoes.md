@@ -3,7 +3,7 @@ title: Variáveis e expressões
 description: Guarde informações do jogo e use valores calculados no lugar de números fixos.
 ---
 
-# <DocHeadingIcon icon="calculator-outline" color="#2DD4BF" :size="22" /> Variáveis e expressões
+# <DocHeadingIcon icon="calculator-outline" color="#2DD4BF" /> Variáveis e expressões
 
 Uma **variável guarda um valor**. Uma **expressão consulta ou calcula um valor**. Por exemplo, Vida pode guardar 100, enquanto uma expressão calcula quanto sobra depois de receber 10 de dano.
 

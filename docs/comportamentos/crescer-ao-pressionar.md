@@ -11,7 +11,7 @@ description: "Muda a escala do objeto quando ele recebe um toque."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #F472B6">
-  <span class="behavior-title-icon"><BehaviorIcon type="press-scale" color="#F472B6" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="press-scale" color="#F472B6" /></span>
   <span>Crescer ao pressionar</span>
 </h1>
 

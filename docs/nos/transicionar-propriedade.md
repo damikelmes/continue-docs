@@ -11,7 +11,7 @@ description: "Anima uma propriedade do valor atual até o valor final."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="action-transition-object-property" icon="pulse-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-transition-object-property" icon="pulse-outline" color="#A78BFA" /></span>
   <span>Transicionar propriedade</span>
 </h1>
 

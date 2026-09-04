@@ -11,7 +11,7 @@ description: "Remove as casas decimais sem arredondar."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="cut-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="cut-outline" color="#FB923C" /></span>
   <span>Truncar</span>
 </h1>
 

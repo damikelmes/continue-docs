@@ -11,7 +11,7 @@ description: "Retorna a quantidade atual de quadros por segundo do jogo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="speedometer-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="speedometer-outline" color="#2DD4BF" /></span>
   <span>Quadros por segundo</span>
 </h1>
 

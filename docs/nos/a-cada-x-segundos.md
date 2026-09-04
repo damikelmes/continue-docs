@@ -11,7 +11,7 @@ description: "Executa novamente sempre que o intervalo escolhido é completado."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #22D3EE">
-  <span class="node-title-icon"><NodeIcon type="condition-every-seconds" icon="timer-outline" color="#22D3EE" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-every-seconds" icon="timer-outline" color="#22D3EE" /></span>
   <span>A cada X segundos</span>
 </h1>
 

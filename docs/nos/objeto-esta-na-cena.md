@@ -11,7 +11,7 @@ description: "Verifica se existe uma instância do objeto na cena."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FACC15">
-  <span class="node-title-icon"><NodeIcon type="condition-object-exists" icon="git-branch" color="#FACC15" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-exists" icon="git-branch" color="#FACC15" /></span>
   <span>Objeto está na cena</span>
 </h1>
 

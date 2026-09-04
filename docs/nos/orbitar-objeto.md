@@ -11,7 +11,7 @@ description: "Faz um objeto girar continuamente ao redor de outro."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #38BDF8">
-  <span class="node-title-icon"><NodeIcon type="action-orbit-object" icon="planet-outline" color="#38BDF8" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-orbit-object" icon="planet-outline" color="#38BDF8" /></span>
   <span>Orbitar objeto</span>
 </h1>
 

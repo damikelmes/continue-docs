@@ -11,7 +11,7 @@ description: "Remove o sinal negativo e retorna a distância até zero."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="remove-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="remove-outline" color="#FB923C" /></span>
   <span>Valor absoluto</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Continua verdadeiro enquanto o objeto estiver na visão da câmera
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="condition-object-in-camera" icon="scan-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-in-camera" icon="scan-outline" color="#60A5FA" /></span>
   <span>Objeto está na câmera</span>
 </h1>
 

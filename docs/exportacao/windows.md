@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="desktop-outline" color="#69A7FF" :size="22" /> Exportar para Windows
+# <DocHeadingIcon icon="desktop-outline" color="#69A7FF" /> Exportar para Windows
 
 A exportação para Windows cria um ZIP com o executável e todos os arquivos necessários para abrir o jogo em um computador.
 

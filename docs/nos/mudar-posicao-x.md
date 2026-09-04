@@ -11,7 +11,7 @@ description: "Altera apenas a posição horizontal do objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="action-set-object-x" icon="swap-horizontal-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-object-x" icon="swap-horizontal-outline" color="#60A5FA" /></span>
   <span>Mudar posição X</span>
 </h1>
 

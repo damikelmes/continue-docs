@@ -11,7 +11,7 @@ description: "Define a área de contato, os bloqueios e os gatilhos do objeto."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #FBBF24">
-  <span class="behavior-title-icon"><BehaviorIcon type="collision" color="#FBBF24" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="collision" color="#FBBF24" /></span>
   <span>Colisão</span>
 </h1>
 

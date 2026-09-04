@@ -11,7 +11,7 @@ description: "Verifica se o objeto está na parte ascendente do pulo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="condition-object-jumping" icon="arrow-up-circle-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-object-jumping" icon="arrow-up-circle-outline" color="#A78BFA" /></span>
   <span>Objeto está pulando</span>
 </h1>
 

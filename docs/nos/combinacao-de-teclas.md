@@ -11,7 +11,7 @@ description: "Executa enquanto todas as teclas escolhidas estiverem pressionadas
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="condition-key-combination" icon="git-merge-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-key-combination" icon="git-merge-outline" color="#2DD4BF" /></span>
   <span>Combinação de teclas</span>
 </h1>
 

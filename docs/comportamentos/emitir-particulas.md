@@ -11,7 +11,7 @@ description: "Cria efeitos como fumaça, fogo, chuva e faíscas."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #F97316">
-  <span class="behavior-title-icon"><BehaviorIcon type="particle-emitter" color="#F97316" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="particle-emitter" color="#F97316" /></span>
   <span>Emitir partículas</span>
 </h1>
 

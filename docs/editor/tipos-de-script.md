@@ -3,7 +3,7 @@ title: Script da cena, global e biblioteca
 description: Entenda onde colocar cada regra e quando cada tipo de script é executado.
 ---
 
-# <DocHeadingIcon icon="code-slash-outline" color="#4ADE80" :size="22" /> Onde colocar seu script
+# <DocHeadingIcon icon="code-slash-outline" color="#4ADE80" /> Onde colocar seu script
 
 Os três usam a mesma edição visual de nós. A diferença é **quando são executados**, **onde você quer usar aquela lógica** e quais nós estão disponíveis. Você não precisa usar todos no primeiro projeto.
 

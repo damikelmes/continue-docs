@@ -11,7 +11,7 @@ description: "Retorna a largura atual da instância em pixels."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="resize-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="resize-outline" color="#A78BFA" /></span>
   <span>Largura do objeto</span>
 </h1>
 

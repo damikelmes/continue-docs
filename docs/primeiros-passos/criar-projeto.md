@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="rocket-outline" color="#34D399" :size="22" /> Criar um projeto
+# <DocHeadingIcon icon="rocket-outline" color="#34D399" /> Criar um projeto
 
 Na tela inicial, use o botão para criar um projeto e preencha as configurações principais.
 
@@ -19,13 +19,13 @@ Por exemplo, uma resolução de `1280 × 720` cria uma câmera base em formato d
 
 ## <DocHeadingIcon icon="resize-outline" color="#C4B5FD" /> Ajuste em outras telas
 
-### <DocHeadingIcon icon="swap-horizontal-outline" color="#C4B5FD" :size="17" /> Ajustar a largura
+### <DocHeadingIcon icon="swap-horizontal-outline" color="#C4B5FD" /> Ajustar a largura
 
 A altura definida na resolução fica fixa. Em telas com outro formato, a câmera mostra mais ou menos espaço nas laterais.
 
 Use quando o jogo precisa manter sempre a mesma área vertical.
 
-### <DocHeadingIcon icon="swap-vertical-outline" color="#C4B5FD" :size="17" /> Ajustar a altura
+### <DocHeadingIcon icon="swap-vertical-outline" color="#C4B5FD" /> Ajustar a altura
 
 A largura definida na resolução fica fixa. Em telas com outro formato, a câmera mostra mais ou menos espaço em cima e embaixo.
 

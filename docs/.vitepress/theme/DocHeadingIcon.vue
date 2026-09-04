@@ -5,11 +5,9 @@ withDefaults(
   defineProps<{
     color: string;
     icon: string;
-    size?: number;
     type?: string;
   }>(),
   {
-    size: 19,
     type: 'plain',
   },
 );
@@ -17,6 +15,6 @@ withDefaults(
 
 <template>
   <span class="doc-heading-icon" :style="{ '--doc-heading-color': color }">
-    <NodeIcon :type="type" :icon="icon" :color="color" :size="size" />
+    <NodeIcon :type="type" :icon="icon" :color="color" />
   </span>
 </template>

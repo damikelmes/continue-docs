@@ -11,7 +11,7 @@ description: "Executa uma vez quando qualquer tecla compatível é pressionada."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F59E0B">
-  <span class="node-title-icon"><NodeIcon type="condition-any-key-pressed" icon="apps-outline" color="#F59E0B" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-any-key-pressed" icon="apps-outline" color="#F59E0B" /></span>
   <span>Qualquer tecla foi pressionada</span>
 </h1>
 

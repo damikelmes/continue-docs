@@ -11,7 +11,7 @@ description: "Executa uma vez no instante em que os dois objetos encostam."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="condition-collision-started" icon="contract-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-collision-started" icon="contract-outline" color="#FB923C" /></span>
   <span>Objeto começou a colidir</span>
 </h1>
 

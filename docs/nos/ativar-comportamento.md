@@ -11,7 +11,7 @@ description: "Ativa ou desativa um comportamento do objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #60A5FA">
-  <span class="node-title-icon"><NodeIcon type="action-set-behavior-enabled" icon="power-outline" color="#60A5FA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-set-behavior-enabled" icon="power-outline" color="#60A5FA" /></span>
   <span>Ativar comportamento</span>
 </h1>
 

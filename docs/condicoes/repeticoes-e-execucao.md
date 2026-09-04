@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="repeat-outline" color="#22D3EE" :size="22" /> Repetições e execução
+# <DocHeadingIcon icon="repeat-outline" color="#22D3EE" /> Repetições e execução
 
 ## <DocHeadingIcon icon="sync-outline" color="#22D3EE" /> Quantidade de vezes
 

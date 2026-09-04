@@ -11,7 +11,7 @@ description: "Verifica se a posição atual do dedo está sobre o objeto."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FACC15">
-  <span class="node-title-icon"><NodeIcon type="condition-finger-over-object" icon="locate-outline" color="#FACC15" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-finger-over-object" icon="locate-outline" color="#FACC15" /></span>
   <span>Dedo sobre o objeto</span>
 </h1>
 

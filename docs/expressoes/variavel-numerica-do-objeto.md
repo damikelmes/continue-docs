@@ -11,7 +11,7 @@ description: "Retorna o valor atual de uma variável numérica da instância."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="plain" icon="calculator-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="plain" icon="calculator-outline" color="#A78BFA" /></span>
   <span>Variável numérica do objeto</span>
 </h1>
 

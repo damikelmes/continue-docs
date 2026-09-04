@@ -11,7 +11,7 @@ description: "Escolhe objetos que não devem colidir com este objeto."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #22D3EE">
-  <span class="behavior-title-icon"><BehaviorIcon type="ignore-collision" color="#22D3EE" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="ignore-collision" color="#22D3EE" /></span>
   <span>Ignorar colisão</span>
 </h1>
 

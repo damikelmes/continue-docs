@@ -11,7 +11,7 @@ description: "Espelha o objeto com uma animação de virada."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #2DD4BF">
-  <span class="node-title-icon"><NodeIcon type="action-flip-object-animated" icon="swap-horizontal-outline" color="#2DD4BF" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-flip-object-animated" icon="swap-horizontal-outline" color="#2DD4BF" /></span>
   <span>Flipar objeto</span>
 </h1>
 

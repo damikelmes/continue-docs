@@ -1,4 +1,4 @@
-# <DocHeadingIcon icon="apps-outline" color="#A78BFA" :size="22" /> Cenas, camadas e objetos
+# <DocHeadingIcon icon="apps-outline" color="#A78BFA" /> Cenas, camadas e objetos
 
 O projeto reúne tudo. Dentro dele, as cenas organizam as telas do jogo. Você cria objetos como modelos e coloca instâncias desses modelos nas cenas. As camadas ajudam a organizar o desenho.
 

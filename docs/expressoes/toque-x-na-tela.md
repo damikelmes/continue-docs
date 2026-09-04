@@ -11,7 +11,7 @@ description: "Retorna a posição X direta do toque na tela do aparelho."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="expression-touch-x" icon="phone-portrait-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="expression-touch-x" icon="phone-portrait-outline" color="#FB923C" /></span>
   <span>Toque X na tela</span>
 </h1>
 

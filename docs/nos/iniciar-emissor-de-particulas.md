@@ -11,7 +11,7 @@ description: "Inicia ou continua o emissor das instâncias escolhidas."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #F97316">
-  <span class="node-title-icon"><NodeIcon type="action-start-particle-emitter" icon="play" color="#F97316" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-start-particle-emitter" icon="play" color="#F97316" /></span>
   <span>Iniciar emissor de partículas</span>
 </h1>
 

@@ -11,7 +11,7 @@ description: "Interrompe novas partículas e deixa as atuais terminarem."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB7185">
-  <span class="node-title-icon"><NodeIcon type="action-stop-particle-emitter" icon="stop" color="#FB7185" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-stop-particle-emitter" icon="stop" color="#FB7185" /></span>
   <span>Parar emissor de partículas</span>
 </h1>
 

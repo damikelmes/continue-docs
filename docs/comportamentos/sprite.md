@@ -11,7 +11,7 @@ description: "Adiciona imagens nomeadas para representar o objeto."
 </div>
 
 <h1 class="behavior-page-title" style="--behavior-page-color: #A78BFA">
-  <span class="behavior-title-icon"><BehaviorIcon type="sprite" color="#A78BFA" :size="26" /></span>
+  <span class="behavior-title-icon"><BehaviorIcon type="sprite" color="#A78BFA" /></span>
   <span>Sprite</span>
 </h1>
 

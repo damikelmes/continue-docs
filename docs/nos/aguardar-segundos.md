@@ -11,7 +11,7 @@ description: "Espera um tempo antes de continuar o fluxo."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #A78BFA">
-  <span class="node-title-icon"><NodeIcon type="condition-wait-seconds" icon="timer-outline" color="#A78BFA" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="condition-wait-seconds" icon="timer-outline" color="#A78BFA" /></span>
   <span>Aguardar segundos</span>
 </h1>
 

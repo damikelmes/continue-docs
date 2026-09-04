@@ -11,7 +11,7 @@ description: "Sacode o visual do objeto sem mudar sua posição real."
 </div>
 
 <h1 class="node-page-title" style="--node-page-color: #FB923C">
-  <span class="node-title-icon"><NodeIcon type="action-shake-object" icon="cube-outline" color="#FB923C" :size="26" /></span>
+  <span class="node-title-icon"><NodeIcon type="action-shake-object" icon="cube-outline" color="#FB923C" /></span>
   <span>Chacoalhar objeto</span>
 </h1>
 
