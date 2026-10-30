@@ -1,35 +1,25 @@
-![Ícone da Continue](docs/public/logo.png)
-
 # Continue
 
-A Continue é uma engine para criar jogos diretamente pelo celular. Ela foi feita para transformar ideias em jogos de forma visual, organizada e fácil de entender.
+A Continue é uma engine para criar jogos de forma visual pelo celular.
 
-## Crie seu jogo do seu jeito
+[Abrir a documentação](https://damikelmes.github.io/continue-docs/)
 
-Na Continue, você pode montar fases, menus e telas usando cenas. Dentro de cada cena, é possível adicionar objetos, posicionar suas instâncias, organizar camadas e acompanhar tudo pelo editor visual.
+## Monte o jogo por partes
 
-## Dê vida aos objetos
+Crie cenas, coloque objetos e organize suas instâncias em camadas. Combine comportamentos para adicionar imagens, formas, textos, animações, movimento, física, partículas e iluminação.
 
-Os comportamentos adicionam recursos prontos aos objetos, como:
+## Crie as regras com nós
 
-- Sprites e animações.
-- Gravidade e colisão.
-- Movimento pelo toque.
-- Arrastar e soltar.
-- Luzes e sombras.
-- Animação de propriedades.
-- Variáveis próprias do objeto.
+Conecte condições e ações para definir o que acontece no jogo. Use expressões para trabalhar com posições, variáveis, tempo e cálculos.
 
-## Monte a lógica visualmente
+## Teste enquanto cria
 
-O sistema de scripts visuais permite conectar ações, condições e repetições para definir o funcionamento do jogo. Você pode movimentar objetos, controlar a câmera, verificar toques, criar animações e organizar diferentes fluxos sem precisar escrever código.
+Abra o visualizador para testar a cena atual. Use o debug quando precisar conferir colisões e raios de detecção.
 
-## Teste e exporte
+## Compartilhe o jogo
 
-O visualizador permite acompanhar o jogo durante a criação. Quando o projeto estiver pronto, ele pode ser exportado para Android em APK ou AAB, para Windows com seu próprio executável ou para Web em um pacote HTML5 pronto para serviços como o itch.io.
+Exporte para Android em APK ou AAB usando sua conta do GitHub. O guia de exportação explica as configurações e como baixar o resultado.
 
-## Aprenda a usar a Continue
+## Encontre uma explicação
 
-Esta documentação explica o editor, os comportamentos, as ações, as condições, as expressões e a exportação do jogo de maneira simples e direta.
-
-[Começar pela documentação](docs/primeiros-passos/conheca-a-engine.md)
+O site reúne primeiros passos, conceitos do editor e referências de comportamentos, ações, condições e expressões, com exemplos de uso.

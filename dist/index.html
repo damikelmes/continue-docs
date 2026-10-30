@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Aprenda a criar jogos com a Continue. Primeiros passos, editor, comportamentos, ações, condições e expressões, explicados de forma simples.">
+  <title>Continue · Documentação</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./app.css">
+  <script>try{const t=localStorage.getItem('continue-docs-theme');if(['dark','light','rose','gray','midnight'].includes(t))document.documentElement.dataset.theme=t}catch{}</script>
+  <script src="./icons.js" defer></script>
+  <script src="./reference.js" defer></script>
+  <script src="./guides.js" defer></script>
+  <script src="./behaviors.js" defer></script>
+  <script src="./examples.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <div class="nav-scrim" id="nav-scrim" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="Navegação da documentação">
+    <a href="#/" class="brand" aria-label="Continue, início da documentação"><span class="brand-symbol" data-icon="app-page/brand"></span><span>continue<span class="brand-caption">documentação</span></span></a>
+    <button class="sidebar-search" data-search><span data-icon="common/search"></span><span>Buscar na documentação</span><kbd>⌘ K</kbd></button>
+    <nav id="navigation" aria-label="Páginas"></nav>
+  </aside>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="topbar-leading"><button class="icon-button mobile-menu" id="menu-button" aria-label="Abrir navegação" aria-expanded="false" aria-controls="sidebar"><span data-icon="common/menu"></span></button><div class="breadcrumb" id="breadcrumb">Documentação</div></div>
+      <div class="topbar-actions"><span class="topbar-note">Um passo de cada vez.</span><button class="icon-button" data-search aria-label="Buscar na documentação"><span data-icon="common/search"></span></button><button class="icon-button top-theme" data-theme-button aria-label="Escolher tema"><span data-icon="theme/dark"></span></button></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer"><a href="#/" class="footer-brand">continue</a><span>Do primeiro objeto ao seu jogo.</span><a href="#/guia/sobre">Sobre esta documentação <span aria-hidden="true">↗</span></a></footer>
+  </div>
+  <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title">
+    <div class="dialog-head"><h2 id="search-title">O que você quer fazer?</h2><button class="icon-button" data-close-dialog="search-dialog" aria-label="Fechar busca"><span data-icon="common/close"></span></button></div>
+    <div class="search-input-wrap"><span data-icon="common/search"></span><input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Tente “mover”, “colisão” ou “variável”" aria-label="Buscar páginas"><kbd>ESC</kbd></div>
+    <div class="search-filters" id="search-filters" role="group" aria-label="Tipo de resultado"></div>
+    <div id="search-results" class="search-results" aria-live="polite"></div>
+    <div class="dialog-foot">Use a busca para encontrar uma página ou um recurso.</div>
+  </dialog>
+  <dialog id="theme-dialog" class="theme-dialog" aria-labelledby="theme-title"><div class="dialog-head"><div><h2 id="theme-title">Aparência</h2><p>Escolha o tema da documentação.</p></div><button class="icon-button" data-close-dialog="theme-dialog" aria-label="Fechar escolha de tema"><span data-icon="common/close"></span></button></div><div id="theme-options"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">Ative o JavaScript para navegar pela documentação da Continue.</div></noscript>
+</body>
+</html>
